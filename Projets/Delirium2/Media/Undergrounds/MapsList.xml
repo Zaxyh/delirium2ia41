@@ -1,0 +1,35 @@
+<Maps MapsPerLevel="20">
+
+  <List>
+	<Map Name="smallmap.xml" />
+	<Map Name="smallmap2.xml" />
+	<Map Name="smallmap3.xml" />
+	<Map Name="smallmap4.xml" />
+	<Map Name="smallmap5.xml" />
+    <Map Name="defmap_L001_N001.xml" />
+    <Map Name="defmap_L001_N002.xml" />
+    <Map Name="defmap_L001_N003.xml" />
+    <Map Name="defmap_L001_N004.xml" />
+    <Map Name="defmap_L001_N005.xml" />
+    <Map Name="defmap_L001_N006.xml" />
+    <Map Name="defmap_L001_N007.xml" />
+    <Map Name="defmap_L001_N008.xml" />
+    <Map Name="defmap_L001_N009.xml" />
+    <Map Name="defmap_L001_N010.xml" />
+    <Map Name="defmap_L001_N011.xml" />
+    <Map Name="defmap_L001_N012.xml" />
+    <Map Name="defmap_L001_N013.xml" />
+    <Map Name="defmap_L001_N014.xml" />
+    <Map Name="defmap_L001_N015.xml" />
+    <Map Name="defmap_L001_N016.xml" />
+    <Map Name="defmap_L001_N017.xml" />
+    <Map Name="defmap_L001_N018.xml" />
+    <Map Name="defmap_L001_N019.xml" />
+
+    
+  </List>
+
+  <!--<Load Name="defmap_L001_N001.xml" RandomMap="0" />-->
+	<Load Name="smallmap.xml" RandomMap="0" />
+	
+</Maps>

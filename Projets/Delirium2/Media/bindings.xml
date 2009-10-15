@@ -1,0 +1,64 @@
+<Joypads>
+  <Joypad Id="0" Sensibility="1000" />
+</Joypads>
+
+
+<Bindings>
+  <Event Name="Player1MoveLeft" Key1="LEFT" Key2="JOYPAD1_LEFT" />
+  <Event Name="Player1MoveRight" Key1="RIGHT" Key2="JOYPAD1_RIGHT" />
+  <Event Name="Player1MoveUp" Key1="UP" Key2="JOYPAD1_UP" />
+  <Event Name="Player1MoveDown" Key1="DOWN" Key2="JOYPAD1_DOWN" />
+  <Event Name="Player1Dig" Key1="SPACE" Key2="JOYPAD1_BUTTON1" />
+  <Event Name="Player1Lay" Key1="CTRL" Key2="JOYPAD1_BUTTON2" />
+  <Event Name="Player1NextItem" Key1="Q" Key2="" />
+  <Event Name="Player1PreviousItem" Key1="W" Key2="" />
+  <Event Name="Player1EverybodyIsAFriend" Key1="F3" Key2="" />
+  <Event Name="Player1Invincible" Key1="F4" Key2="" />
+  <Event Name="Player1ModeAI" Key1="P" Key2="" />
+
+  <Event Name="Player2MoveLeft" Key1="NUMPAD_1" Key2="JOYPAD2_LEFT" />
+  <Event Name="Player2MoveRight" Key1="NUMPAD_3" Key2="JOYPAD2_RIGHT" />
+  <Event Name="Player2MoveUp" Key1="NUMPAD_5" Key2="JOYPAD2_UP" />
+  <Event Name="Player2MoveDown" Key1="NUMPAD_2" Key2="JOYPAD2_DOWN" />
+  <Event Name="Player2Dig" Key1="NUMPAD_0" Key2="JOYPAD2_BUTTON1" />
+  <Event Name="Player2Lay" Key1="NUMPAD_POINT" Key2="JOYPAD2_BUTTON2" />
+  <Event Name="Player2NextItem" Key1="NUMPAD_DIVIDE" Key2="" />
+  <Event Name="Player2PreviousItem" Key1="NUMPAD_MULTIPLY" Key2="" />
+  <Event Name="Player2EverybodyIsAFriend" Key1="F7" Key2="" />
+  <Event Name="Player2Invincible" Key1="F8" Key2="" />
+  <Event Name="Player2ModeAI" Key1="O" Key2="" />
+
+  <Event Name="NextCave" Key1="NUMPAD_ADD" Key2="" />
+  <Event Name="PreviousCave" Key1="NUMPAD_SUBTRACT" Key2="" />
+  <Event Name="AccessLevel" Key1="SHIFT" Key2="" />
+  <Event Name="Retry" Key1="RETURN" Key2="" />
+
+  <Event Name="MoveNXCamera" Key1="Z" Key2="" />
+  <Event Name="MovePXCamera" Key1="C" Key2="" />
+  <Event Name="MoveNYCamera" Key1="X" Key2="" />
+  <Event Name="MovePYCamera" Key1="S" Key2="" />
+  <Event Name="MoveNZCamera" Key1="PAGE_DOWN" Key2="" />
+  <Event Name="MovePZCamera" Key1="PAGE_UP" Key2="" />
+  <Event Name="RotateCamera" Key1="MOUSE_BUTTON1" Key2="" />
+  <Event Name="IncreaseCameraSpeed" Key1="SHIFT" Key2="" />
+  <Event Name="RotateNZCamera" Key1="V" Key2="" />rd
+  <Event Name="RotatePZCamera" Key1="N" Key2="" />
+  <Event Name="ResetCamera" Key1="H" Key2="" />
+
+  <Event Name="IncreaseCameraFOV" Key1="D" Key2="" />
+  <Event Name="DecreaseCameraFOV" Key1="A" Key2="" />
+
+  <Event Name="Fullscreen" Key1="CTRL+F1" Key2="" />
+
+  <Event Name="ShowCameraInfos" Key1="CTRL+SHIFT+F11" Key2="" />
+  <Event Name="ShowStats" Key1="CTRL+SHIFT+F12" Key2="" />
+
+  <Event Name="Quit" Key1="ESCAPE" Key2="" />
+
+  <Event Name="OnePlayer" Key1="1" Key2="" />
+  <Event Name="TwoPlayers" Key1="2" Key2="" />
+
+  <Event% Name="GameDifficulty-Easy" Key1="1" Key2="" />
+  <Event% Name="GameDifficulty-Medium" Key1="2" Key2="" />
+  <Event% Name="GameDifficulty-Hard" Key1="3" Key2="" />
+</Bindings>

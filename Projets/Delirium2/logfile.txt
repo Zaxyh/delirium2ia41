@@ -1,0 +1,679 @@
+Parsing file: 'bindings.xml'...
+Parsing file: 'delirium2.xml'...
+Parsing file: 'delirium2.xml'...
+Loading library 'AvatarPrologAIp.dll'...
+!!!  Brain 'AvatarPrologAIp.dll' loaded  !!!
+Loading library 'AvatarPrologAIp.dll'...
+!!!  Brain 'AvatarPrologAIp.dll' loaded  !!!
+Parsing file: 'mapsList.xml'...
+Parsing file: 'smallmap.xml'...
+------------------------------------------------------------------
+Initializing Input Devices...
+  0 joystick(s) installed!
+------------------------------------------------------------------
+
+------------------------------------------------------------------
+Vendor: Microsoft Corporation
+Renderer: GDI Generic
+Version: 1.1.0
+------------------------------------------------------------------
+GLEW initialized!
+------------------------------------------------------------------
+
+* Vertex shader "toon.vert" compiled
+* Fragment shader "toon.frag" compiled
+Error: Failed to create shader "toon"
+Reason: Invalid vertex shader
+* Vertex shader "gooch.vert" compiled
+* Fragment shader "gooch.frag" compiled
+Error: Failed to create shader "gooch"
+Reason: Invalid vertex shader
+
+>> Shaders loaded: 0
+------------------------------------------------------------------
+
+Parsing file: 'font01.xml'...
+Texture 'font01.tga' loaded (256x256)!
+Texture 'dirt01.tga' loaded (128x128)!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #1: 'grass01.3ds' loaded!
+Ambient:0.25,0.25,0.25
+Diffuse:0.55,0.55,0.55
+Specular:0.00,0.00,0.00
+Shininess: 10.00
+Specular Level: 50.00
+Opacity: 0.90
+Ambient:0.25,0.25,0.25
+Diffuse:1.00,1.00,1.00
+Specular:0.00,0.00,0.00
+Shininess: 10.00
+Specular Level: 50.00
+Opacity: 0.90
+Model #2: 'diamond01.3ds' loaded!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #3: 'stone01.3ds' loaded!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #4: 'stoneWall01.3ds' loaded!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #5: 'stoneWall02.3ds' loaded!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #6: 'stoneWall03.3ds' loaded!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #7: 'stoneWall04.3ds' loaded!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:1.00,1.00,1.00
+Shininess: 45.00
+Specular Level: 90.00
+Opacity: 1.00
+Model #8: 'silverWall01.3ds' loaded!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:1.00,1.00,1.00
+Shininess: 30.00
+Specular Level: 40.00
+Opacity: 1.00
+Model #9: 'silverWall02.3ds' loaded!
+Ambient:0.78,0.42,0.32
+Diffuse:0.78,0.42,0.32
+Specular:0.90,0.90,0.90
+Shininess: 25.00
+Specular Level: 5.00
+Opacity: 1.00
+Ambient:0.97,0.96,0.98
+Diffuse:0.97,0.96,0.98
+Specular:0.90,0.90,0.90
+Shininess: 25.00
+Specular Level: 5.00
+Opacity: 1.00
+Ambient:0.01,0.36,0.44
+Diffuse:0.01,0.36,0.44
+Specular:0.90,0.90,0.90
+Shininess: 25.00
+Specular Level: 5.00
+Opacity: 1.00
+Ambient:0.39,1.00,0.39
+Diffuse:0.39,1.00,0.39
+Specular:0.90,0.90,0.90
+Shininess: 25.00
+Specular Level: 5.00
+Opacity: 1.00
+Model #10: 'miner01.3ds' loaded!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.98,0.98,0.98
+Diffuse:0.98,0.98,0.98
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.35,0.26,0.18
+Diffuse:0.35,0.26,0.18
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #11: 'monster01.3ds' loaded!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.98,0.98,0.98
+Diffuse:0.98,0.98,0.98
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.35,0.26,0.18
+Diffuse:0.35,0.26,0.18
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #12: 'monster02.3ds' loaded!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.98,0.98,0.98
+Diffuse:0.98,0.98,0.98
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.35,0.26,0.18
+Diffuse:0.35,0.26,0.18
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #13: 'monster03.3ds' loaded!
+Ambient:0.86,0.71,0.08
+Diffuse:0.86,0.71,0.08
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.98,0.98,0.98
+Diffuse:0.98,0.98,0.98
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.08,0.27,0.78
+Diffuse:0.08,0.27,0.78
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #14: 'monster04.3ds' loaded!
+Ambient:0.63,0.16,0.71
+Diffuse:0.63,0.16,0.71
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.98,0.98,0.98
+Diffuse:0.98,0.98,0.98
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.08,0.27,0.78
+Diffuse:0.08,0.27,0.78
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #15: 'monster05.3ds' loaded!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 0.80
+Model #16: 'amoeba01.3ds' loaded!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #17: 'exit01.3ds' loaded!
+Ambient:0.59,0.59,0.59
+Diffuse:0.59,0.59,0.59
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #18: 'arrowWall01.3ds' loaded!
+Ambient:0.84,0.84,0.84
+Diffuse:0.84,0.84,0.84
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.15,0.07,0.38
+Diffuse:0.15,0.07,0.38
+Specular:0.90,0.90,0.90
+Shininess: 20.00
+Specular Level: 90.00
+Opacity: 1.00
+Model #19: 'bomb.3ds' loaded!
+Ambient:1.00,0.00,0.00
+Diffuse:1.00,0.00,0.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.15,0.15,0.15
+Diffuse:0.15,0.15,0.15
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #20: 'detonator.3ds' loaded!
+Ambient:0.15,0.15,0.15
+Diffuse:0.15,0.15,0.15
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:1.00,0.00,0.00
+Diffuse:1.00,0.00,0.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.58,0.43,0.13
+Diffuse:0.58,0.43,0.13
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #21: 'tnt.3ds' loaded!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.71,0.68,0.89
+Diffuse:0.71,0.68,0.89
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 0.20
+Ambient:0.26,0.23,0.15
+Diffuse:0.26,0.23,0.15
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #22: 'nitro.3ds' loaded!
+Ambient:0.64,0.65,0.09
+Diffuse:0.64,0.65,0.09
+Specular:0.40,0.29,0.11
+Shininess: 30.00
+Specular Level: 60.00
+Opacity: 1.00
+Model #23: 'key.3ds' loaded!
+Ambient:0.58,0.58,0.58
+Diffuse:0.58,0.58,0.58
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.58,0.58,0.58
+Diffuse:0.58,0.58,0.58
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #24: 'lock.3ds' loaded!
+Ambient:0.99,0.99,0.99
+Diffuse:0.99,0.99,0.99
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #25: 'door01.3ds' loaded!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #26: 'door02.3ds' loaded!
+Ambient:0.59,0.59,0.59
+Diffuse:0.59,0.59,0.59
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.15,0.15,0.15
+Diffuse:0.15,0.15,0.15
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:1.00,0.00,0.00
+Diffuse:1.00,0.00,0.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #27: 'door01cmd.3ds' loaded!
+Ambient:0.59,0.59,0.59
+Diffuse:0.59,0.59,0.59
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.15,0.15,0.15
+Diffuse:0.15,0.15,0.15
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:1.00,0.00,0.00
+Diffuse:1.00,0.00,0.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #28: 'door02cmd.3ds' loaded!
+Ambient:0.59,0.80,0.78
+Diffuse:0.59,0.80,0.78
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #29: 'distributor01.3ds' loaded!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #30: 'gravityUp.3ds' loaded!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #31: 'gravityDown.3ds' loaded!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 20.00
+Specular Level: 50.00
+Opacity: 1.00
+Ambient:0.15,0.15,0.15
+Diffuse:0.15,0.15,0.15
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:1.00,0.00,0.00
+Diffuse:1.00,0.00,0.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:1.00,1.00,1.00
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #32: 'gravityUpCmd.3ds' loaded!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 15.00
+Specular Level: 50.00
+Opacity: 1.00
+Ambient:0.15,0.15,0.15
+Diffuse:0.15,0.15,0.15
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:1.00,0.00,0.00
+Diffuse:1.00,0.00,0.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #33: 'gravityDownCmd.3ds' loaded!
+Ambient:0.08,0.08,1.00
+Diffuse:0.08,0.08,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.41,0.41,0.41
+Diffuse:0.41,0.41,0.41
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #34: 'blueLeftTreadmill.3ds' loaded!
+Ambient:0.08,0.08,1.00
+Diffuse:0.08,0.08,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.41,0.41,0.41
+Diffuse:0.41,0.41,0.41
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #35: 'blueCenterTreadmill.3ds' loaded!
+Ambient:0.08,0.08,1.00
+Diffuse:0.08,0.08,1.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.41,0.41,0.41
+Diffuse:0.41,0.41,0.41
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #36: 'blueRightTreadmill.3ds' loaded!
+Ambient:1.00,0.08,0.08
+Diffuse:1.00,0.08,0.08
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.41,0.41,0.41
+Diffuse:0.41,0.41,0.41
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #37: 'redLeftTreadmill.3ds' loaded!
+Ambient:0.41,0.41,0.41
+Diffuse:0.41,0.41,0.41
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:1.00,0.08,0.08
+Diffuse:1.00,0.08,0.08
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #38: 'redCenterTreadmill.3ds' loaded!
+Ambient:1.00,0.08,0.08
+Diffuse:1.00,0.08,0.08
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.41,0.41,0.41
+Diffuse:0.41,0.41,0.41
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #39: 'redRightTreadmill.3ds' loaded!
+Ambient:0.08,1.00,0.08
+Diffuse:0.08,1.00,0.08
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.41,0.41,0.41
+Diffuse:0.41,0.41,0.41
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #40: 'greenLeftTreadmill.3ds' loaded!
+Ambient:0.08,1.00,0.08
+Diffuse:0.08,1.00,0.08
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.41,0.41,0.41
+Diffuse:0.41,0.41,0.41
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #41: 'greenCenterTreadmill.3ds' loaded!
+Ambient:0.08,1.00,0.08
+Diffuse:0.08,1.00,0.08
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:0.41,0.41,0.41
+Diffuse:0.41,0.41,0.41
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #42: 'greenRightTreadmill.3ds' loaded!
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:0.90,0.90,0.90
+Shininess: 20.00
+Specular Level: 50.00
+Opacity: 1.00
+Ambient:0.15,0.15,0.15
+Diffuse:0.15,0.15,0.15
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:1.00,0.00,0.00
+Diffuse:1.00,0.00,0.00
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Ambient:1.00,1.00,1.00
+Diffuse:1.00,1.00,1.00
+Specular:1.00,1.00,1.00
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #43: 'greenTreadmillCmd.3ds' loaded!
+Ambient:0.42,0.78,0.32
+Diffuse:0.42,0.78,0.32
+Specular:0.90,0.90,0.90
+Shininess: 25.00
+Specular Level: 5.00
+Opacity: 1.00
+Ambient:0.97,0.96,0.98
+Diffuse:0.97,0.96,0.98
+Specular:0.90,0.90,0.90
+Shininess: 25.00
+Specular Level: 5.00
+Opacity: 1.00
+Ambient:0.29,0.20,0.06
+Diffuse:0.29,0.20,0.06
+Specular:0.90,0.90,0.90
+Shininess: 25.00
+Specular Level: 5.00
+Opacity: 1.00
+Ambient:1.00,0.39,0.39
+Diffuse:1.00,0.39,0.39
+Specular:0.90,0.90,0.90
+Shininess: 25.00
+Specular Level: 5.00
+Opacity: 1.00
+Model #44: 'miner02.3ds' loaded!
+Ambient:0.98,0.15,0.09
+Diffuse:0.98,0.15,0.09
+Specular:0.90,0.90,0.90
+Shininess: 10.00
+Specular Level: 0.00
+Opacity: 1.00
+Model #45: 'explosion01.3ds' loaded!
+
+>> Models loaded: 45
+------------------------------------------------------------------
+
+Texture 'GRASS01.TGA' loaded (256x256)!
+Texture 'STONE01.TGA' loaded (256x256)!
+Texture 'STWALL01.TGA' loaded (256x256)!
+Texture 'STWALL02.TGA' loaded (256x256)!
+Texture 'STWALL03.TGA' loaded (256x256)!
+Texture 'STWALL04.TGA' loaded (256x256)!
+Texture 'SIWALL01.TGA' loaded (256x256)!
+Texture 'SIWALL02.TGA' loaded (256x256)!
+Texture 'HAIR01.TGA' loaded (256x256)!
+Texture 'HAIR02.TGA' loaded (256x256)!
+Texture 'SHELLS01.TGA' loaded (60x60)!
+Texture 'LIQUID01.TGA' loaded (512x512)!
+Texture 'EXIT01.TGA' loaded (256x128)!
+Texture 'ROCKWALL.TGA' loaded (256x256)!
+Texture 'DEADHEAD.TGA' loaded (256x256)!
+Texture 'LOCK.TGA' loaded (256x256)!
+Texture 'DOOR01.TGA' loaded (400x400)!
+Texture 'DOOR02.TGA' loaded (512x512)!
+Texture 'METAL01.TGA' loaded (256x256)!
+Texture 'GRAVITY.TGA' loaded (256x256)!
+Texture 'ARROW.TGA' loaded (64x98)!
+Texture 'TAXIS.BMP' loaded (192x192)!
+Texture 'GREENTR.TGA' loaded (384x192)!
+Parsing file: 'smallmap2.xml'...
+Parsing file: 'smallmap3.xml'...
+Parsing file: 'smallmap3.xml'...
+Parsing file: 'smallmap3.xml'...
+Parsing file: 'smallmap3.xml'...
+Parsing file: 'smallmap3.xml'...
+Parsing file: 'smallmap3.xml'...
+Parsing file: 'smallmap3.xml'...
+Parsing file: 'smallmap4.xml'...
+Parsing file: 'smallmap5.xml'...
+Parsing file: 'smallmap5.xml'...
+Parsing file: 'defmap_L001_N001.xml'...
