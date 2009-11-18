@@ -13,23 +13,25 @@ Initializing Input Devices...
 ------------------------------------------------------------------
 
 ------------------------------------------------------------------
-Vendor: Microsoft Corporation
-Renderer: GDI Generic
-Version: 1.1.0
+Vendor: ATI Technologies Inc.
+Renderer: ATI Radeon HD 4600 Series 
+Version: 2.1.8787
 ------------------------------------------------------------------
 GLEW initialized!
 ------------------------------------------------------------------
 
 * Vertex shader "toon.vert" compiled
 * Fragment shader "toon.frag" compiled
-Error: Failed to create shader "toon"
-Reason: Invalid vertex shader
+-----------------------------------------
+* Shader "toon" successfully linked
+-----------------------------------------
 * Vertex shader "gooch.vert" compiled
 * Fragment shader "gooch.frag" compiled
-Error: Failed to create shader "gooch"
-Reason: Invalid vertex shader
+-----------------------------------------
+* Shader "gooch" successfully linked
+-----------------------------------------
 
->> Shaders loaded: 0
+>> Shaders loaded: 2
 ------------------------------------------------------------------
 
 Parsing file: 'font01.xml'...
@@ -667,13 +669,3 @@ Texture 'TAXIS.BMP' loaded (192x192)!
 Texture 'GREENTR.TGA' loaded (384x192)!
 Parsing file: 'smallmap2.xml'...
 Parsing file: 'smallmap3.xml'...
-Parsing file: 'smallmap3.xml'...
-Parsing file: 'smallmap3.xml'...
-Parsing file: 'smallmap3.xml'...
-Parsing file: 'smallmap3.xml'...
-Parsing file: 'smallmap3.xml'...
-Parsing file: 'smallmap3.xml'...
-Parsing file: 'smallmap4.xml'...
-Parsing file: 'smallmap5.xml'...
-Parsing file: 'smallmap5.xml'...
-Parsing file: 'defmap_L001_N001.xml'...
