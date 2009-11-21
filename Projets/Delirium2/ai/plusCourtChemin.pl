@@ -3,6 +3,18 @@
 
 
 /*
+	quelElementEn :
+		Courant : envoyer 0
+		I : indice interessant (celui que l'on veux voir)
+		Element : valeur de retour : code prolog de l'élément ( 2 = diamant par exemple)
+		L : Liste des éléments
+*/
+quelElementEn(Courant, I, Element, [T|_]) :- Courant = I, !, Element is T.
+quelElementEn(Courant, I, Element, [_|R]) :- Courant2 is Courant + 1, quelElementEn(Courant2, I, Element, R).
+
+
+
+/*
 	passage : renvoie vrai si un pasage est possible d'une case A à une case B dans L qui à pour longueur de ligne Size
 	OU affecte à B la case possible a atteindre
 */

@@ -141,15 +141,3 @@ dir( 4, 0, 0 ).
 display( X,Y,0 ) :- write( X ), write( ',' ), write( Y ), nl.
 display( X,Y,1 ) :- write( X ), write( ',' ), write( Y ), write( ' - Tous les diamants necessaires ont ete recoltes !' ), nl.
 
-
-
-/*
-	quelElementEn :
-		Courant : envoyer 0
-		I : indice interessant (celui que l'on veux voir)
-		Element : valeur de retour : code prolog de l'élément ( 2 = diamant par exemple)
-		L : Liste des éléments
-*/
-quelElementEn(Courant, I, Element, [T|_]) :- Courant = I, !, Element is T.
-quelElementEn(Courant, I, Element, [_|R]) :- Courant2 is Courant + 1, quelElementEn(Courant2, I, Element, R).
-
