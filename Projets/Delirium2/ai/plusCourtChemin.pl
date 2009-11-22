@@ -18,14 +18,26 @@ quelElementEn(Courant, I, Element, [_|R]) :- Courant2 is Courant + 1, quelElemen
 	passage : renvoie vrai si un pasage est possible d'une case A à une case B dans L qui à pour longueur de ligne Size
 	OU affecte à B la case possible a atteindre
 */
-% en haut
+
+/*
+ en haut
+*/
+% si ya rien en haut
 passageH(A, B, Size, L) :- Ay is A // Size,
 						  Ay > 0,
 						  B is A - Size - 2,
 						  quelElementEn(0, B, El, L),
 						  ( El < 3 ; El = 17 ).
+% juste un cailloux (pas de regard si un autre cailloux derriere ...
+passageH(A, B, Size, L) :- Ay is A // Size,
+						  Ay > 0,
+						  B is A - Size - 2,
+						  quelElementEn(0, B, El, L),
+						  El = 3.
 
-% en bas
+/*						  
+en bas
+*/
 passageB(A, B, Size, L) :- Ay is A // Size,
 						  NbLigne is 25 // Size,
 						  Ay =< NbLigne,
@@ -33,7 +45,9 @@ passageB(A, B, Size, L) :- Ay is A // Size,
 						  quelElementEn(0, B, El, L),
 						  ( El < 3 ; El = 17 ).
 
-% a gauche
+/*						  
+a gauche
+*/
 passageG(A, B, Size, L) :- Ax is A mod Size,
 						  Ax > -1,
 						  B is A - 1,
@@ -41,7 +55,9 @@ passageG(A, B, Size, L) :- Ax is A mod Size,
 						  ( El < 3 ; El = 17 ).
 
 
-% a droite
+/*
+a droite
+*/
 passageD(A, B, Size, L) :- Ax is A mod Size,
 						  Ax < Size,
 						  B is A + 1,
