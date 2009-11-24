@@ -13,7 +13,29 @@ quelElementEn(Courant, I, Element, [T|_]) :- Courant = I, !, Element is T.
 quelElementEn(Courant, I, Element, [_|R]) :- Courant2 is Courant + 1, quelElementEn(Courant2, I, Element, R).
 
 
+/*
+numCaseXXX(Case en cours, Taille d'une ligne dans la liste de jeux, Valeur de retour)
 
+Valeur de retour : le numéro de la case en haut, en base à gauche ou à droite de la case en cours
+*/
+numCaseHaut(N, Size, Ret) :- Ny is N // Size,
+							 Ny > 0,
+							 Ret is N - Size - 2.
+
+numCaseBas(N, Size, Ret) :- %Ny is N // Size,
+						    %NbLigne is 25 // Size,
+						    %Ny =< NbLigne,
+						    Ret is N + Size + 2.
+							 
+
+numCaseGauche(N, Size, Ret) :-  Nx is N mod Size,
+								Nx > -1,
+								Ret is N - 1.
+
+numCaseDroite(N, Size, Ret) :-  Nx is N mod Size,
+								Nx < Size,
+								Ret is N + 1.
+								
 /*
 	passage : renvoie vrai si un pasage est possible d'une case A à une case B dans L qui à pour longueur de ligne Size
 	OU affecte à B la case possible a atteindre
@@ -23,46 +45,57 @@ quelElementEn(Courant, I, Element, [_|R]) :- Courant2 is Courant + 1, quelElemen
  en haut
 */
 % si ya rien en haut
-passageH(A, B, Size, L) :- Ay is A // Size,
-						  Ay > 0,
-						  B is A - Size - 2,
-						  quelElementEn(0, B, El, L),
-						  ( El < 3 ; El = 17 ).
+passageH(A, B, Size, L) :- numCaseHaut(A, Size, B),
+						   quelElementEn(0, B, El, L),
+						   ( El < 3 ; El = 17 ).
 % juste un cailloux (pas de regard si un autre cailloux derriere ...
-passageH(A, B, Size, L) :- Ay is A // Size,
-						  Ay > 0,
-						  B is A - Size - 2,
-						  quelElementEn(0, B, El, L),
-						  El = 3.
+passageH(A, B, Size, L) :- numCaseHaut(A, Size, B),
+						   quelElementEn(0, B, El, L),
+						   El = 3.
 
 /*						  
 en bas
 */
-passageB(A, B, Size, L) :- Ay is A // Size,
-						  NbLigne is 25 // Size,
-						  Ay =< NbLigne,
-						  B is A + Size + 2,
-						  quelElementEn(0, B, El, L),
-						  ( El < 3 ; El = 17 ).
+passageB(A, B, Size, L) :- numCaseBas(A, Size, B),
+						   quelElementEn(0, B, El, L),
+						   ( El < 3 ; El = 17 ).
 
 /*						  
 a gauche
 */
-passageG(A, B, Size, L) :- Ax is A mod Size,
-						  Ax > -1,
-						  B is A - 1,
-						  quelElementEn(0, B, El, L),
-						  ( El < 3 ; El = 17 ).
+passageG(A, B, Size, L) :- numCaseGauche(A, Size, B),
+						   quelElementEn(0, B, El, L),
+						   ( El < 3 ; El = 17 ).
 
 
 /*
 a droite
 */
-passageD(A, B, Size, L) :- Ax is A mod Size,
-						  Ax < Size,
-						  B is A + 1,
-						  quelElementEn(0, B, El, L),
-						  ( El < 3 ; El = 17 ).
+/*
+% anti montre droite droite
+passageD(A, B, Size, L) :- quelElementEn(0, A, El, L),
+						   El = 10,
+						   numCaseDroite(A, Size, B),
+						   numCaseDroite(B, Size, C),
+						   quelElementEn(0, C, El2, L),
+						   El2 = 11,
+						   !,
+						   fail.
+% anti montre droite haut
+passageD(A, B, Size, L) :- quelElementEn(0, A, El, L),
+						   El = 10,
+						   numCaseDroite(A, Size, B),
+						   numCaseHaut(B, Size, C),
+						   quelElementEn(0, C, El2, L),
+						   El2 = 11,
+						   !,
+						   fail.
+*/
+						   
+
+passageD(A, B, Size, L) :- numCaseDroite(A, Size, B),
+						   quelElementEn(0, B, El, L),
+						   ( El < 3 ; El = 17 ).
 
 
 						  
