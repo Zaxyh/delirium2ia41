@@ -108,7 +108,7 @@ trouverOuAller(Xplayer, Yplayer , L, Size, Direction, CanGotoExit) :-	CanGotoExi
 
 move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- eviterMonstre(L, Pos, Size, Direction),
 																dir( Direction, Dx, Dy ), 
-																ecrire2('Il y a eu danger'),
+																ecrire('Il y a eu danger'),
 																!.
 
 move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- CanGotoExit = 1,
