@@ -65,18 +65,18 @@ typeEchappement(Num, Type) :- Num = 2,
 typeEchappement(Num, Type) :- Num = 3,
 	Type is 1.
 typeEchappement(Num, Type) :- Num = 5,
-	Type is 1.
+	Type is 5.
 typeEchappement(Num, Type) :- Num = 6,
 	Type is 1.
 typeEchappement(Num, Type) :- Num = 7,
-	Type is 1.
+	Type is 6.
 	
 typeEchappement(Num, Type) :- Num = 14,
-	Type is 2.
+	Type is 7.
 typeEchappement(Num, Type) :- Num = 15,
 	Type is 2.
 typeEchappement(Num, Type) :- Num = 16,
-	Type is 2.
+	Type is 8.
 typeEchappement(Num, Type) :- Num = 18,
 	Type is 2.
 typeEchappement(Num, Type) :- Num = 19,
@@ -101,7 +101,7 @@ typeEchappement(Num, Type) :- Num = 12,
 	Type is 3.
 typeEchappement(Num, Type) :- Num = 17,
 	Type is 3.
-
+	
 verifierMonstre(_, [], _, _, _) :- fail,!.
 
 verifierMonstre(L, [T|R], LD, Direction, NumH) :- 
@@ -139,6 +139,35 @@ trouverEchappement(L, [T|R], LD, Direction, NumH) :-
 	Type = 4,
 	random(0,2, DirectionChoisie),
 	nth0(DirectionChoisie, [1, 2, 3], DirectionFinale),
+	Direction is DirectionFinale,!.
+	
+% Direction supplémentaire / Angles spéciaux
+trouverEchappement(L, [T|R], LD, Direction, NumH) :- 
+	typeEchappement(NumH, Type),
+	Type = 5,
+	random(0,1, DirectionChoisie),
+	nth0(DirectionChoisie, [1, 3], DirectionFinale),
+	Direction is DirectionFinale,!.
+	
+trouverEchappement(L, [T|R], LD, Direction, NumH) :- 
+	typeEchappement(NumH, Type),
+	Type = 6,
+	random(0,1, DirectionChoisie),
+	nth0(DirectionChoisie, [0, 3], DirectionFinale),
+	Direction is DirectionFinale,!.
+	
+trouverEchappement(L, [T|R], LD, Direction, NumH) :- 
+	typeEchappement(NumH, Type),
+	Type = 7,
+	random(0,1, DirectionChoisie),
+	nth0(DirectionChoisie, [1, 2], DirectionFinale),
+	Direction is DirectionFinale,!.
+	
+trouverEchappement(L, [T|R], LD, Direction, NumH) :- 
+	typeEchappement(NumH, Type),
+	Type = 8,
+	random(0,1, DirectionChoisie),
+	nth0(DirectionChoisie, [0, 2], DirectionFinale),
 	Direction is DirectionFinale,!.
 	
 /**  
