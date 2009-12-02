@@ -104,9 +104,33 @@ typeEchappement(Num, Type) :- Num = 17,
 	
 verifierMonstre(_, [], _, _, _) :- fail,!.
 
-verifierMonstre(L, [T|R], LD, Direction, NumH) :- 
+verifierMonstre(L, [T|R], [D,_,_,_], Direction, NumH) :- 
 	caseDanger(L, T),trouverEchappement(L, [T|R], LD, DirectionChoisie, NumH),
-	Direction is DirectionChoisie,!.
+	Direction is DirectionChoisie,
+	Direction = 2,
+	caseAccessible(L, D)
+,!.
+
+verifierMonstre(L, [T|R], [_,D,_,_], Direction, NumH) :- 
+	caseDanger(L, T),trouverEchappement(L, [T|R], LD, DirectionChoisie, NumH),
+	Direction is DirectionChoisie,
+	Direction = 0,
+	caseAccessible(L, D)
+,!.
+
+verifierMonstre(L, [T|R], [_,_,D,_], Direction, NumH) :- 
+	caseDanger(L, T),trouverEchappement(L, [T|R], LD, DirectionChoisie, NumH),
+	Direction is DirectionChoisie,
+	Direction = 1,
+	caseAccessible(L, D)
+,!.
+
+verifierMonstre(L, [T|R], [_,_,_,D], Direction, NumH) :- 
+	caseDanger(L, T),trouverEchappement(L, [T|R], LD, DirectionChoisie, NumH),
+	Direction is DirectionChoisie,
+	Direction = 3,
+	caseAccessible(L, D)
+,!.
 
 verifierMonstre(L, [T|R], LD, Direction, NumH) :- 
 	NumH2 is NumH + 1,
