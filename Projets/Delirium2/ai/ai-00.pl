@@ -1,4 +1,6 @@
-:-use_module(plusCourtChemin).
+:-use_module('outilsCarte').
+:-use_module('plusCourtChemin').
+:-use_module('eviterMonstre').
 
 /*
   Définition de l'IA du mineur
@@ -61,7 +63,8 @@ trouverPpcDiamant(L, Size, D) :- 	trouverPositionElement(L, 2, 0, I),   %  I = p
 trouverPpcSortie(L, Size, D) :- trouverPositionElement(L, 17, 0, I),  %  I = position sortie
 								trouverPositionElement(L, 10, 0, I2), %  I2 = position joueur
 								pccDestination(I2, I, L, Size ,D).
-								
+	
+
 /* 
 	trouve ou aller s il reste des diamants 
 	Xplayer, Yplayer : position du joueur
@@ -103,20 +106,27 @@ trouverOuAller(Xplayer, Yplayer , L, Size, Direction, CanGotoExit) :-	CanGotoExi
 % Mouvement aléatoire avec le prédicat move/12
 %  avec augmentation du périmètre de vue si aucun diamant n'est en vue
 
+move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- eviterMonstre(L, Pos, Size, Direction),
+																dir( Direction, Dx, Dy ), 
+																ecrire2('Il y a eu danger'),
+																!.
+
 move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- CanGotoExit = 1,
 																trouverOuAller(X, Y, L, Size, Direction, CanGotoExit),
-																dir( Direction, Dx, Dy ), 
+																dir( Direction, Dx, Dy ), ecrire('ok on va a la sortie'),
 																!.
 			
-move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _) :- 	member( 2, L ), 
+move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _) :-  member( 2, L ), 
 																trouverOuAller(X, Y, L, Size, Direction, CanGotoExit), 
-																dir( Direction, Dx, Dy ), 
+																dir( Direction, Dx, Dy ), ecrire('ok on prendl e diamant'), 
 																!.
 
 move( L, X, Y, Pos, Size, CanGotoExit, _, _, Vx, Vy, Vx1, Vy1 ) :- Vx1 is Vx+1, Vy1 is Vy+1.
 
 
 ecrire( T ) :- open( 'trace.txt', append, L ), write( L, T ), nl( L ), close( L ).
+
+ecrire2( T ) :- open( 'dangerMonstre.txt', append, L ), write( L, T ), nl( L ), close( L ).
 
 
 /*
