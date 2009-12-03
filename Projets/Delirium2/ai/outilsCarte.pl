@@ -34,5 +34,5 @@ caseAccessible(L, Indice) :- getElement(L, Indice, Element), Element = 0, !.
 * Permet de savoir si une case est un danger
 * @profil : caseDanger(+L, +Indice)
 **/
-caseDanger(L, Value) :- Value = 11, !.
-caseDanger(L, Value) :- Value = 12, !.
+caseDanger(L, Indice) :- getElement(L, Indice, Element), Element = 11, !.
+caseDanger(L, Indice) :- getElement(L, Indice, Element), Element = 12, !.
