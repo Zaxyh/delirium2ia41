@@ -128,6 +128,11 @@ ecrire( T ) :- open( 'trace.txt', append, L ), write( L, T ), nl( L ), close( L 
 
 ecrire2( T ) :- open( 'dangerMonstre.txt', append, L ), write( L, T ), nl( L ), close( L ).
 
+ecrire3( T ) :- open( 'L.txt', append, L ), write( L, T ), nl( L ), close( L ).
+
+ecrireL([]) :- ecrire3('------------------------------------------------').
+ecrireL([T|R]) :- 
+	ecrire3(T), ecrireL(R).
 
 /*
   Définition des quatre directions

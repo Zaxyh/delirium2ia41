@@ -27,12 +27,12 @@ getElement(L, Indice, Element) :- nth0(Indice, L, E), Element is E.
 * Permet de savoir si une case est accecible (case vide ou herbe)
 * @profil : caseAccessible(+L, +Indice)
 **/
-caseAccessible(L, Indice) :- caseExist(L, Indice), getElement(L, Indice, Element), Element = 0, !.
-caseAccessible(L, Indice) :- caseExist(L, Indice), getElement(L, Indice, Element), Element = 1, !.
+caseAccessible(L, Indice) :- getElement(L, Indice, Element), Element = 1, !.
+caseAccessible(L, Indice) :- getElement(L, Indice, Element), Element = 0, !.
 
 /**
 * Permet de savoir si une case est un danger
 * @profil : caseDanger(+L, +Indice)
 **/
-caseDanger(L, Indice) :- getElement(L, Indice, Element), Element = 11, !.
-caseDanger(L, Indice) :- getElement(L, Indice, Element), Element = 12, !.
+caseDanger(L, Value) :- Value = 11, !.
+caseDanger(L, Value) :- Value = 12, !.
