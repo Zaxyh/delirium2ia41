@@ -1,973 +1,370 @@
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 17
------- Type 20
------- Type 18
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 16
------- Type 16
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 8
------- Type 8
------- Type 14
------- Type 19
------- Type 19
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 12
------- Type 12
------- Type 12
------- Type 12
------- Type 12
------- Type 12
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 20
------- Type 20
------- Type 20
------- Type 20
------- Type 20
------- Type 20
------- Type 20
------- Type 20
------- Type 20
------- Type 20
------- Type 20
------- Type 20
------- Type 17
------- Type 20
------- Type 18
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 17
------- Type 20
------- Type 18
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 12
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 17
------- Type 20
------- Type 18
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 8
------- Type 8
------- Type 14
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 12
------- Type 12
------- Type 12
------- Type 12
------- Type 12
------- Type 12
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 17
------- Type 20
------- Type 18
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 4
------- Type 16
------- Type 16
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 14
------- Type 19
------- Type 19
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 12
------- Type 12
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 14
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 5
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 14
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 16
------- Type 16
------- Type 16
------- Type 16
------- Type 12
------- Type 12
------- Type 12
------- Type 12
------- Type 12
------- Type 17
------- Type 18
------- Type 18
------- Type 18
------- Type 13
------- Type 13
------- Type 13
------- Type 16
------- Type 19
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 16
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 12
------- Type 12
------- Type 12
------- Type 12
------- Type 8
------- Type 8
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 8
------- Type 8
------- Type 8
------- Type 8
------- Type 7
------- Type 7
------- Type 8
------- Type 8
------- Type 9
------- Type 9
------- Type 9
------- Type 8
------- Type 8
------- Type 9
------- Type 9
------- Type 9
------- Type 8
------- Type 8
------- Type 9
------- Type 13
------- Type 13
------- Type 13
------- Type 12
------- Type 12
------- Type 12
------- Type 12
------- Type 8
------- Type 8
------- Type 8
------- Type 8
------- Type 3
------- Type 3
------- Type 3
------- Type 3
------- Type 3
------- Type 3
------- Type 7
------- Type 7
------- Type 7
------- Type 7
------- Type 17
------- Type 18
------- Type 18
------- Type 18
------- Type 13
------- Type 13
------- Type 13
------- Type 16
------- Type 19
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 16
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 19
------- Type 13
------- Type 13
------- Type 13
------- Type 13
------- Type 12
------- Type 12
------- Type 12
------- Type 12
------- Type 8
------- Type 8
------- Type 9
------- Type 9
------- Type 9
------- Type 9
------- Type 8
------- Type 8
------- Type 8
------- Type 8
------- Type 7
------- Type 7
------- Type 8
------- Type 8
------- Type 9
------- Type 9
------- Type 9
------- Type 8
------- Type 8
------- Type 9
------- Type 9
------- Type 9
------- Type 8
------- Type 8
------- Type 9
------- Type 13
------- Type 13
------- Type 13
------- Type 12
------- Type 12
------- Type 12
------- Type 12
------- Type 8
------- Type 8
------- Type 8
------- Type 8
------- Type 3
------- Type 3
------- Type 3
------- Type 3
------- Type 3
------- Type 3
------- Type 7
------- Type 7
------- Type 7
------- Type 7
+Monstre autour commence
+Par exemple h1 = 
+-5
+Monstre autour commence
+Par exemple h1 = 
+-6
+Monstre autour commence
+Par exemple h1 = 
+-7
+Monstre autour commence
+Par exemple h1 = 
+-8
+Monstre autour commence
+Par exemple h1 = 
+0
+Monstre autour commence
+Par exemple h1 = 
+0
+Monstre autour commence
+Par exemple h1 = 
+0
+Monstre autour commence
+Par exemple h1 = 
+5
+Monstre autour commence
+Par exemple h1 = 
+6
+Monstre autour commence
+Par exemple h1 = 
+5
+Monstre autour commence
+Par exemple h1 = 
+7
+Monstre autour commence
+Par exemple h1 = 
+7
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+9
+Situation 8 je vais en 
+0
+Situation 8 je vais en 
+2
+Situation 8 je vais en 
+2
+Situation 8 je vais en 
+3
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+9
+Situation 5 je vais en 
+3
+Situation 5 je vais en 
+1
+Situation 5 je vais en 
+3
+Situation 5 je vais en 
+2
+Monstre autour commence
+Par exemple h1 = 
+9
+Situation 5 je vais en 
+3
+Situation 5 je vais en 
+1
+Situation 5 je vais en 
+1
+Situation 5 je vais en 
+2
+Monstre autour commence
+Par exemple h1 = 
+8
+Monstre autour commence
+Par exemple h1 = 
+17
+Monstre autour commence
+Par exemple h1 = 
+28
+Monstre autour commence
+Par exemple h1 = 
+41
+Monstre autour commence
+Par exemple h1 = 
+8
+Monstre autour commence
+Par exemple h1 = 
+17
+Monstre autour commence
+Par exemple h1 = 
+28
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+19
+Monstre autour commence
+Par exemple h1 = 
+31
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+21
+Monstre autour commence
+Par exemple h1 = 
+34
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+21
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+21
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+21
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+12
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+12
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+12
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+12
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+12
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+12
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+12
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+-5
+Monstre autour commence
+Par exemple h1 = 
+-6
+Monstre autour commence
+Par exemple h1 = 
+-7
+Monstre autour commence
+Par exemple h1 = 
+-8
+Monstre autour commence
+Par exemple h1 = 
+0
+Monstre autour commence
+Par exemple h1 = 
+0
+Monstre autour commence
+Par exemple h1 = 
+0
+Monstre autour commence
+Par exemple h1 = 
+5
+Monstre autour commence
+Par exemple h1 = 
+6
+Monstre autour commence
+Par exemple h1 = 
+5
+Monstre autour commence
+Par exemple h1 = 
+7
+Monstre autour commence
+Par exemple h1 = 
+7
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+8
+Monstre autour commence
+Par exemple h1 = 
+17
+Monstre autour commence
+Par exemple h1 = 
+28
+Monstre autour commence
+Par exemple h1 = 
+41
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+19
+Monstre autour commence
+Par exemple h1 = 
+31
+Monstre autour commence
+Par exemple h1 = 
+45
+Monstre autour commence
+Par exemple h1 = 
+9
+Situation 5 je vais en 
+2
+Monstre autour commence
+Par exemple h1 = 
+9
+Situation 5 je vais en 
+3
+Situation 5 je vais en 
+1
+Situation 5 je vais en 
+1
+Monstre autour commence
+Par exemple h1 = 
+8
+Monstre autour commence
+Par exemple h1 = 
+17
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+19
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+21
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+21
+Monstre autour commence
+Par exemple h1 = 
+9
+Monstre autour commence
+Par exemple h1 = 
+21
+Monstre autour commence
+Par exemple h1 = 
+9
+Situation 11 je vais en 
+2
+Monstre autour commence
+Par exemple h1 = 
+2
+Monstre autour commence
+Par exemple h1 = 
+3
+Monstre autour commence
+Par exemple h1 = 
+2
+Monstre autour commence
+Par exemple h1 = 
+2
+Monstre autour commence
+Par exemple h1 = 
+3
+Monstre autour commence
+Par exemple h1 = 
+2
+Monstre autour commence
+Par exemple h1 = 
+2
+Monstre autour commence
+Par exemple h1 = 
+3
+Monstre autour commence
+Par exemple h1 = 
+2
+Monstre autour commence
+Par exemple h1 = 
+2
+Monstre autour commence
+Par exemple h1 = 
+3
+Monstre autour commence
+Par exemple h1 = 
+2
+Monstre autour commence
+Par exemple h1 = 
+2
+Monstre autour commence
+Par exemple h1 = 
+3
+Monstre autour commence
+Par exemple h1 = 
+2

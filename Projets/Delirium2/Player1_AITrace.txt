@@ -7,8 +7,8 @@ ViewPerimeter: 3,3
     SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2 Avatar1                        
     SlW2                                
-    SlW2                                
-    SlW2                                
+    SlW2       .       .       .       .
+    SlW2       .       .       .       .
 
 X,Y: 1,1 - Pos: 6 - LineSize: 5
 
@@ -17,8 +17,8 @@ ViewPerimeter: 4,4
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2 Avatar1                                
     SlW2                                        
-    SlW2                                        
-    SlW2                                    StW1
+    SlW2       .       .       .       .        
+    SlW2       .       .       .       .    StW1
     SlW2                                        
 
 X,Y: 1,1 - Pos: 7 - LineSize: 6
@@ -28,8 +28,8 @@ ViewPerimeter: 5,5
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2 Avatar1                                        
     SlW2                                                
-    SlW2                                                
-    SlW2                                    StW1    StW1
+    SlW2       .       .       .       .                
+    SlW2       .       .       .       .    StW1    StW1
     SlW2                                                
     SlW2                                                
 
@@ -40,10 +40,10 @@ ViewPerimeter: 6,6
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2 Avatar1                                                
     SlW2                                                        
-    SlW2                                                        
-    SlW2                                    StW1    StW1    StW1
-    SlW2                                                        
+    SlW2       .       .       .       .                        
+    SlW2       .       .       .       .    StW1    StW1    StW1
     SlW2                                                      M1
+    SlW2                                                        
     SlW2                            Diam    Diam    Diam    Diam
 
 X,Y: 1,1 - Pos: 9 - LineSize: 8
@@ -58,8 +58,8 @@ ViewPerimeter: 3,3
     SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2                                
     SlW2 Avatar1                        
-    SlW2                                
-    SlW2                                
+    SlW2       .       .       .       .
+    SlW2       .       .       .       .
     SlW2                                
 
 X,Y: 1,2 - Pos: 11 - LineSize: 5
@@ -69,8 +69,8 @@ ViewPerimeter: 4,4
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2                                        
     SlW2 Avatar1                                
-    SlW2                                        
-    SlW2                                    StW1
+    SlW2       .       .       .       .        
+    SlW2       .       .       .       .    StW1
     SlW2                                        
     SlW2                                        
 
@@ -81,10 +81,10 @@ ViewPerimeter: 5,5
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2                                                
     SlW2 Avatar1                                        
+    SlW2       .       .       .       .                
+    SlW2       .       .       .       .    StW1    StW1
     SlW2                                                
-    SlW2                                    StW1    StW1
     SlW2                                                
-    SlW2                                              M1
     SlW2                            Diam    Diam    Diam
 
 X,Y: 1,2 - Pos: 15 - LineSize: 7
@@ -99,8 +99,8 @@ ViewPerimeter: 3,3
     SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2                                
     SlW2                                
-    SlW2 Avatar1                        
-    SlW2                                
+    SlW2 Avatar1       .       .       .
+    SlW2       .       .       .       .
     SlW2                                
     SlW2                                
 
@@ -111,10 +111,10 @@ ViewPerimeter: 4,4
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2                                        
     SlW2                                        
-    SlW2 Avatar1                                
-    SlW2                                    StW1
+    SlW2 Avatar1       .       .       .        
+    SlW2       .       .       .       .    StW1
     SlW2                                        
-    SlW2                                      M1
+    SlW2                                        
     SlW2                            Diam    Diam
 
 X,Y: 1,3 - Pos: 19 - LineSize: 6
@@ -128,47 +128,47 @@ ViewPerimeter: 3,3
 ------------------------------------------------------------------
     SlW2                                
     SlW2                                
+    SlW2               .       .       .
+    SlW2 Avatar1       .       .       .
     SlW2                                
-    SlW2 Avatar1                        
     SlW2                                
-    SlW2                              M1
     SlW2                            Diam
 
 X,Y: 1,4 - Pos: 16 - LineSize: 5
 
-==>  Head for: 0,1
+==>  Head for: 1,0
 ------------------------------------------------------------------
 
 Iteration: 5
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-    SlW2                                
-    SlW2                                
-    SlW2                                
-    SlW2 Avatar1                        
-    SlW2                      M1        
-    SlW2                            Diam
-    SlW2    SlW2    SlW2    SlW2    SlW2
+    SlW2                                        
+    SlW2                                        
+    SlW2               .       .       .        
+    SlW2         Avatar1       .       .    StW1
+    SlW2                                        
+    SlW2                                        
+    SlW2                            Diam    Diam
 
-X,Y: 1,5 - Pos: 16 - LineSize: 5
+X,Y: 2,4 - Pos: 20 - LineSize: 6
 
-==>  Head for: 0,-1
+==>  Head for: 0,1
 ------------------------------------------------------------------
 
 Iteration: 6
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-    SlW2                                
-    SlW2                                
-    SlW2                                
-    SlW2 Avatar1                        
-    SlW2                                
-    SlW2                                
-    SlW2                      M1    Diam
+    SlW2                                        
+    SlW2               .       .       .        
+    SlW2                       .       .    StW1
+    SlW2         Avatar1                        
+    SlW2                                        
+    SlW2                            Diam    Diam
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
-X,Y: 1,4 - Pos: 16 - LineSize: 5
+X,Y: 2,5 - Pos: 20 - LineSize: 6
 
 ==>  Head for: 1,0
 ------------------------------------------------------------------
@@ -177,15 +177,15 @@ Iteration: 7
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-    SlW2                                        
-    SlW2                                        
-    SlW2                                        
-    SlW2         Avatar1                    StW1
-    SlW2                                        
-    SlW2                                        
-    SlW2              M1            Diam    Diam
+    SlW2                                                
+    SlW2               .       .       .                
+    SlW2                       .       .    StW1    StW1
+    SlW2                 Avatar1                        
+    SlW2                                              M1
+    SlW2                            Diam    Diam    Diam
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
-X,Y: 2,4 - Pos: 20 - LineSize: 6
+X,Y: 3,5 - Pos: 24 - LineSize: 7
 
 ==>  Head for: 0,1
 ------------------------------------------------------------------
@@ -194,32 +194,29 @@ Iteration: 8
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-    SlW2                                        
-    SlW2                                        
-    SlW2                                    StW1
-    SlW2         Avatar1                        
-    SlW2                                        
-    SlW2      M1                    Diam    Diam
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+    SlW2               .       .       .                
+    SlW2                       .       .    StW1    StW1
+    SlW2                                                
+    SlW2                 Avatar1              M1        
+    SlW2                            Diam    Diam    Diam
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
-X,Y: 2,5 - Pos: 20 - LineSize: 6
+X,Y: 3,6 - Pos: 24 - LineSize: 7
 
-==>  Head for: 1,0
+==>  Head for: 0,1
 ------------------------------------------------------------------
 
 Iteration: 9
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
+    SlW2                       .       .    StW1    StW1
     SlW2                                                
-    SlW2                                                
-    SlW2                                    StW1    StW1
-    SlW2                 Avatar1                        
-    SlW2      M1                                        
-    SlW2                            Diam    Diam    Diam
+    SlW2                              M1                
+    SlW2                 Avatar1    Diam    Diam    Diam
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
-X,Y: 3,5 - Pos: 24 - LineSize: 7
+X,Y: 3,7 - Pos: 24 - LineSize: 7
 
 ==>  Head for: 1,0
 ------------------------------------------------------------------
@@ -228,42 +225,9 @@ Iteration: 10
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
+                       .       .    StW1    StW1    StW1
                                                         
-                                                        
-                                    StW1    StW1    StW1
-      M1                 Avatar1                        
-                                                        
-                            Diam    Diam    Diam    Diam
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 4,5 - Pos: 24 - LineSize: 7
-
-==>  Head for: 0,1
-------------------------------------------------------------------
-
-Iteration: 11
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-                                                        
-      M1                            StW1    StW1    StW1
-                                                        
-                         Avatar1                        
-                            Diam    Diam    Diam    Diam
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 4,6 - Pos: 24 - LineSize: 7
-
-==>  Head for: 0,1
-------------------------------------------------------------------
-
-Iteration: 12
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-                                    StW1    StW1    StW1
-                                                        
-                                                        
+                      M1                                
                          Avatar1    Diam    Diam    Diam
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
@@ -272,14 +236,14 @@ X,Y: 4,7 - Pos: 24 - LineSize: 7
 ==>  Head for: 1,0
 ------------------------------------------------------------------
 
-Iteration: 13
+Iteration: 11
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-                            StW1    StW1    StW1        
+               .       .    StW1    StW1    StW1        
                                                     StW1
                                                         
-                         Avatar1    Diam    Diam        
+              M1         Avatar1    Diam    Diam        
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
 X,Y: 5,7 - Pos: 24 - LineSize: 7
@@ -287,14 +251,14 @@ X,Y: 5,7 - Pos: 24 - LineSize: 7
 ==>  Head for: 1,0
 ------------------------------------------------------------------
 
-Iteration: 14
+Iteration: 12
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-                    StW1    StW1    StW1            SlW2
+       .       .    StW1    StW1    StW1            SlW2
                                             StW1    SlW2
                                                     SlW2
-                         Avatar1    Diam            SlW2
+              M1         Avatar1    Diam            SlW2
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
 X,Y: 6,7 - Pos: 24 - LineSize: 7
@@ -302,13 +266,13 @@ X,Y: 6,7 - Pos: 24 - LineSize: 7
 ==>  Head for: 1,0
 ------------------------------------------------------------------
 
-Iteration: 15
+Iteration: 13
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-            StW1    StW1    StW1            SlW2
+       .    StW1    StW1    StW1            SlW2
                                     StW1    SlW2
-                                            SlW2
+      M1                                    SlW2
                          Avatar1            SlW2
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
@@ -316,10 +280,10 @@ X,Y: 7,7 - Pos: 21 - LineSize: 6
 
 ViewPerimeter: 4,4
 ------------------------------------------------------------------
-                                                    SlW2
-                    StW1    StW1    StW1            SlW2
+       .       .                            StW1    SlW2
+       .       .    StW1    StW1    StW1            SlW2
                                             StW1    SlW2
-                                                    SlW2
+              M1                                    SlW2
                                  Avatar1            SlW2
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
@@ -328,10 +292,10 @@ X,Y: 7,7 - Pos: 32 - LineSize: 7
 ViewPerimeter: 5,5
 ------------------------------------------------------------------
                                                             SlW2
-                                                            SlW2
-                            StW1    StW1    StW1            SlW2
+       .       .       .                            StW1    SlW2
+               .       .    StW1    StW1    StW1            SlW2
                                                     StW1    SlW2
-                                                            SlW2
+                      M1                                    SlW2
                                          Avatar1            SlW2
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
@@ -339,16 +303,98 @@ X,Y: 7,7 - Pos: 45 - LineSize: 8
 
 ViewPerimeter: 6,6
 ------------------------------------------------------------------
-              M1                                            Exit    SlW2
+                                                            Exit    SlW2
                                                                     SlW2
-                                                                    SlW2
-                                    StW1    StW1    StW1            SlW2
+               .       .       .                            StW1    SlW2
+                       .       .    StW1    StW1    StW1            SlW2
                                                             StW1    SlW2
-                                                                    SlW2
+                              M1                                    SlW2
                                                  Avatar1            SlW2
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
 X,Y: 7,7 - Pos: 60 - LineSize: 9
+
+==>  Head for: 0,-1
+------------------------------------------------------------------
+
+Iteration: 14
+------------------------------------------------------------------
+ViewPerimeter: 3,3
+------------------------------------------------------------------
+       .                            StW1    SlW2
+       .    StW1    StW1    StW1            SlW2
+                                    StW1    SlW2
+                         Avatar1            SlW2
+                                            SlW2
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+
+X,Y: 7,6 - Pos: 21 - LineSize: 6
+
+ViewPerimeter: 4,4
+------------------------------------------------------------------
+                                                    SlW2
+       .       .                            StW1    SlW2
+       .       .    StW1    StW1    StW1            SlW2
+                                            StW1    SlW2
+      M1                         Avatar1            SlW2
+                                                    SlW2
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+
+X,Y: 7,6 - Pos: 32 - LineSize: 7
+
+ViewPerimeter: 5,5
+------------------------------------------------------------------
+                                                    Exit    SlW2
+                                                            SlW2
+       .       .       .                            StW1    SlW2
+               .       .    StW1    StW1    StW1            SlW2
+                                                    StW1    SlW2
+              M1                         Avatar1            SlW2
+                                                            SlW2
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+
+X,Y: 7,6 - Pos: 45 - LineSize: 8
+
+==>  Head for: -1,0
+------------------------------------------------------------------
+
+Iteration: 15
+------------------------------------------------------------------
+ViewPerimeter: 3,3
+------------------------------------------------------------------
+       .       .                            StW1    SlW2
+       .       .    StW1    StW1    StW1            SlW2
+                                            StW1    SlW2
+                         Avatar1                    SlW2
+      M1                                            SlW2
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+
+X,Y: 6,6 - Pos: 24 - LineSize: 7
+
+ViewPerimeter: 4,4
+------------------------------------------------------------------
+                                                            SlW2
+       .       .       .                            StW1    SlW2
+               .       .    StW1    StW1    StW1            SlW2
+                                                    StW1    SlW2
+                                 Avatar1                    SlW2
+              M1                                            SlW2
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+
+X,Y: 6,6 - Pos: 36 - LineSize: 8
+
+ViewPerimeter: 5,5
+------------------------------------------------------------------
+                                                            Exit    SlW2
+                                                                    SlW2
+               .       .       .                            StW1    SlW2
+                       .       .    StW1    StW1    StW1            SlW2
+                                                            StW1    SlW2
+                                         Avatar1                    SlW2
+                      M1                                            SlW2
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+
+X,Y: 6,6 - Pos: 50 - LineSize: 9
 
 ==>  Head for: -1,0
 ------------------------------------------------------------------
@@ -357,49 +403,39 @@ Iteration: 16
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-                    StW1    StW1    StW1            SlW2
-                                            StW1    SlW2
-                                                    SlW2
-                         Avatar1                    SlW2
+       .       .       .                            StW1
+               .       .    StW1    StW1    StW1        
+                                                    StW1
+                         Avatar1                        
+                      M1                                
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
-X,Y: 6,7 - Pos: 24 - LineSize: 7
+X,Y: 5,6 - Pos: 24 - LineSize: 7
 
 ViewPerimeter: 4,4
 ------------------------------------------------------------------
-                                                            SlW2
-                            StW1    StW1    StW1            SlW2
-                                                    StW1    SlW2
-                                                            SlW2
-                                 Avatar1                    SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+                                                                    SlW2
+               .       .       .                            StW1    SlW2
+                       .       .    StW1    StW1    StW1            SlW2
+                                                            StW1    SlW2
+                                 Avatar1                            SlW2
+                              M1                                    SlW2
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
-X,Y: 6,7 - Pos: 36 - LineSize: 8
+X,Y: 5,6 - Pos: 40 - LineSize: 9
 
 ViewPerimeter: 5,5
 ------------------------------------------------------------------
-                                                                    SlW2
-                                                                    SlW2
-                                    StW1    StW1    StW1            SlW2
-                                                            StW1    SlW2
-                                                                    SlW2
-                                         Avatar1                    SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 6,7 - Pos: 50 - LineSize: 9
-
-ViewPerimeter: 6,6
-------------------------------------------------------------------
-    SlW2                      M1                                    Exit    SlW2
+    SlW2                                                            Exit    SlW2
     SlW2                                                                    SlW2
-    SlW2                                                                    SlW2
-    SlW2                                    StW1    StW1    StW1            SlW2
+    SlW2               .       .       .                            StW1    SlW2
+    SlW2                       .       .    StW1    StW1    StW1            SlW2
     SlW2                                                            StW1    SlW2
-    SlW2                                                                    SlW2
-    SlW2                                         Avatar1                    SlW2
+    SlW2                                 Avatar1                            SlW2
+    SlW2                              M1                                    SlW2
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
-X,Y: 6,7 - Pos: 66 - LineSize: 10
+X,Y: 5,6 - Pos: 55 - LineSize: 10
 
 ==>  Head for: 0,-1
 ------------------------------------------------------------------
@@ -408,39 +444,28 @@ Iteration: 17
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-                                                    SlW2
-                    StW1    StW1    StW1            SlW2
-                                            StW1    SlW2
-                         Avatar1                    SlW2
-                                                    SlW2
+                                                        
+       .       .       .                            StW1
+               .       .    StW1    StW1    StW1        
+                         Avatar1                    StW1
+                      M1                                
+                                                        
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
-X,Y: 6,6 - Pos: 24 - LineSize: 7
+X,Y: 5,5 - Pos: 24 - LineSize: 7
 
 ViewPerimeter: 4,4
 ------------------------------------------------------------------
-                                                            SlW2
-                                                            SlW2
-                            StW1    StW1    StW1            SlW2
-                                                    StW1    SlW2
-                                 Avatar1                    SlW2
-                                                            SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 6,6 - Pos: 36 - LineSize: 8
-
-ViewPerimeter: 5,5
-------------------------------------------------------------------
-                              M1                            Exit    SlW2
+                                                            Exit    SlW2
                                                                     SlW2
-                                                                    SlW2
-                                    StW1    StW1    StW1            SlW2
-                                                            StW1    SlW2
-                                         Avatar1                    SlW2
+               .       .       .                            StW1    SlW2
+                       .       .    StW1    StW1    StW1            SlW2
+                                 Avatar1                    StW1    SlW2
+                              M1                                    SlW2
                                                                     SlW2
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
-X,Y: 6,6 - Pos: 50 - LineSize: 9
+X,Y: 5,5 - Pos: 40 - LineSize: 9
 
 ==>  Head for: -1,0
 ------------------------------------------------------------------
@@ -450,38 +475,27 @@ Iteration: 18
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
                                                         
-                            StW1    StW1    StW1        
-                                                    StW1
+               .       .       .                        
+                       .       .    StW1    StW1    StW1
                          Avatar1                        
+                      M1                                
                                                         
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
-X,Y: 5,6 - Pos: 24 - LineSize: 7
+X,Y: 4,5 - Pos: 24 - LineSize: 7
 
 ViewPerimeter: 4,4
 ------------------------------------------------------------------
-                                                                    SlW2
-                                                                    SlW2
-                                    StW1    StW1    StW1            SlW2
-                                                            StW1    SlW2
-                                 Avatar1                            SlW2
-                                                                    SlW2
+    SlW2                                                            Exit
+    SlW2                                                                
+    SlW2               .       .       .                            StW1
+    SlW2                       .       .    StW1    StW1    StW1        
+    SlW2                         Avatar1                            StW1
+    SlW2                      M1                                        
+    SlW2                                                                
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
-X,Y: 5,6 - Pos: 40 - LineSize: 9
-
-ViewPerimeter: 5,5
-------------------------------------------------------------------
-    SlW2                                      M1                    Exit    SlW2
-    SlW2                                                                    SlW2
-    SlW2                                                                    SlW2
-    SlW2                                    StW1    StW1    StW1            SlW2
-    SlW2                                                            StW1    SlW2
-    SlW2                                 Avatar1                            SlW2
-    SlW2                                                                    SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 5,6 - Pos: 55 - LineSize: 10
+X,Y: 4,5 - Pos: 40 - LineSize: 9
 
 ==>  Head for: 0,-1
 ------------------------------------------------------------------
@@ -492,71 +506,11 @@ ViewPerimeter: 3,3
 ------------------------------------------------------------------
                                                         
                                                         
-                            StW1    StW1    StW1        
-                         Avatar1                    StW1
+               .       .       .                        
+                       . Avatar1    StW1    StW1    StW1
                                                         
                                                         
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 5,5 - Pos: 24 - LineSize: 7
-
-ViewPerimeter: 4,4
-------------------------------------------------------------------
-                                              M1            Exit    SlW2
-                                                                    SlW2
-                                                                    SlW2
-                                    StW1    StW1    StW1            SlW2
-                                 Avatar1                    StW1    SlW2
-                                                                    SlW2
-                                                                    SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 5,5 - Pos: 40 - LineSize: 9
-
-==>  Head for: -1,0
-------------------------------------------------------------------
-
-Iteration: 20
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-                                                        
-                                                        
-                                    StW1    StW1    StW1
-                         Avatar1                        
-                                                        
-                                                        
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 4,5 - Pos: 24 - LineSize: 7
-
-ViewPerimeter: 4,4
-------------------------------------------------------------------
-    SlW2                                                      M1    Exit
-    SlW2                                                                
-    SlW2                                                                
-    SlW2                                    StW1    StW1    StW1        
-    SlW2                         Avatar1                            StW1
-    SlW2                                                                
-    SlW2                                                                
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 4,5 - Pos: 40 - LineSize: 9
-
-==>  Head for: 0,-1
-------------------------------------------------------------------
-
-Iteration: 21
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-                                                        
-                                                      M1
-                                                        
-                         Avatar1    StW1    StW1    StW1
-                                                        
-                                                        
-                                                        
+                      M1                                
 
 X,Y: 4,4 - Pos: 24 - LineSize: 7
 
@@ -564,12 +518,12 @@ ViewPerimeter: 4,4
 ------------------------------------------------------------------
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2                                                            Exit
-    SlW2                                                      M1        
     SlW2                                                                
-    SlW2                         Avatar1    StW1    StW1    StW1        
+    SlW2               .       .       .                            StW1
+    SlW2                       . Avatar1    StW1    StW1    StW1        
     SlW2                                                            StW1
     SlW2                                                                
-    SlW2                                                                
+    SlW2                      M1                                        
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
 X,Y: 4,4 - Pos: 40 - LineSize: 9
@@ -577,15 +531,15 @@ X,Y: 4,4 - Pos: 40 - LineSize: 9
 ==>  Head for: 0,-1
 ------------------------------------------------------------------
 
-Iteration: 22
+Iteration: 20
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
                                                         
                                                         
-                         Avatar1                        
-                                    StW1    StW1    StW1
+               .       . Avatar1                        
+                       .            StW1    StW1    StW1
                                                         
                                                         
 
@@ -595,11 +549,58 @@ ViewPerimeter: 4,4
 ------------------------------------------------------------------
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2                                                            Exit
-    SlW2                                                              M1
-    SlW2                         Avatar1                                
-    SlW2                                    StW1    StW1    StW1        
+    SlW2                                                                
+    SlW2               .       . Avatar1                            StW1
+    SlW2                       .            StW1    StW1    StW1        
     SlW2                                                            StW1
     SlW2                                                                
+    SlW2                              M1                                
+
+X,Y: 4,3 - Pos: 31 - LineSize: 9
+
+==>  Head for: 1,0
+------------------------------------------------------------------
+
+Iteration: 21
+------------------------------------------------------------------
+ViewPerimeter: 3,3
+------------------------------------------------------------------
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+                                                    Exit
+                                                        
+       .       .         Avatar1                    StW1
+               .            StW1    StW1    StW1        
+                                                    StW1
+                      M1                                
+
+X,Y: 5,3 - Pos: 24 - LineSize: 7
+
+==>  Head for: -1,0
+------------------------------------------------------------------
+
+Iteration: 22
+------------------------------------------------------------------
+ViewPerimeter: 3,3
+------------------------------------------------------------------
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+                                                        
+                                                        
+               .       . Avatar1                        
+                       .            StW1    StW1    StW1
+                                                        
+                      M1                                
+
+X,Y: 4,3 - Pos: 24 - LineSize: 7
+
+ViewPerimeter: 4,4
+------------------------------------------------------------------
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+    SlW2                                                            Exit
+    SlW2                                                                
+    SlW2               .       . Avatar1                            StW1
+    SlW2                       .            StW1    StW1    StW1        
+    SlW2                                                            StW1
+    SlW2                      M1                                        
     SlW2                                                                
 
 X,Y: 4,3 - Pos: 31 - LineSize: 9
@@ -614,8 +615,8 @@ ViewPerimeter: 3,3
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
                                                     Exit
                                                         
-                         Avatar1                      M1
-                            StW1    StW1    StW1        
+       .       .         Avatar1                    StW1
+               .            StW1    StW1    StW1        
                                                     StW1
                                                         
 
@@ -631,8 +632,8 @@ ViewPerimeter: 3,3
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
                                                         
                                                         
-                         Avatar1                        
-                                    StW1    StW1    StW1
+               .       . Avatar1                        
+                       .            StW1    StW1    StW1
                                                         
                                                         
 
@@ -643,11 +644,11 @@ ViewPerimeter: 4,4
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2                                                            Exit
     SlW2                                                                
-    SlW2                         Avatar1                                
-    SlW2                                    StW1    StW1    StW1      M1
+    SlW2               .       . Avatar1                            StW1
+    SlW2                       .            StW1    StW1    StW1        
     SlW2                                                            StW1
     SlW2                                                                
-    SlW2                                                                
+    SlW2                              M1                                
 
 X,Y: 4,3 - Pos: 31 - LineSize: 9
 
@@ -661,10 +662,10 @@ ViewPerimeter: 3,3
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
                                                     Exit
                                                         
-                         Avatar1                      M1
-                            StW1    StW1    StW1        
+       .       .         Avatar1                    StW1
+               .            StW1    StW1    StW1        
                                                     StW1
-                                                        
+                      M1                                
 
 X,Y: 5,3 - Pos: 24 - LineSize: 7
 
@@ -678,10 +679,10 @@ ViewPerimeter: 3,3
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
                                                         
                                                         
-                         Avatar1                      M1
-                                    StW1    StW1    StW1
+               .       . Avatar1                        
+                       .            StW1    StW1    StW1
                                                         
-                                                        
+                      M1                                
 
 X,Y: 4,3 - Pos: 24 - LineSize: 7
 
@@ -690,10 +691,10 @@ ViewPerimeter: 4,4
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2                                                            Exit
     SlW2                                                                
-    SlW2                         Avatar1                      M1        
-    SlW2                                    StW1    StW1    StW1        
+    SlW2               .       . Avatar1                            StW1
+    SlW2                       .            StW1    StW1    StW1        
     SlW2                                                            StW1
-    SlW2                                                                
+    SlW2                      M1                                        
     SlW2                                                                
 
 X,Y: 4,3 - Pos: 31 - LineSize: 9
@@ -705,11 +706,169 @@ Iteration: 27
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+                                                    Exit
+                                                        
+       .       .         Avatar1                    StW1
+               .            StW1    StW1    StW1        
+                                                    StW1
+                                                        
+
+X,Y: 5,3 - Pos: 24 - LineSize: 7
+
+==>  Head for: -1,0
+------------------------------------------------------------------
+
+Iteration: 28
+------------------------------------------------------------------
+ViewPerimeter: 3,3
+------------------------------------------------------------------
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+                                                        
+                                                        
+               .       . Avatar1                        
+                       .            StW1    StW1    StW1
+                                                        
+                                                        
+
+X,Y: 4,3 - Pos: 24 - LineSize: 7
+
+ViewPerimeter: 4,4
+------------------------------------------------------------------
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+    SlW2                                                            Exit
+    SlW2                                                                
+    SlW2               .       . Avatar1                            StW1
+    SlW2                       .            StW1    StW1    StW1        
+    SlW2                                                            StW1
+    SlW2                                                                
+    SlW2                              M1                                
+
+X,Y: 4,3 - Pos: 31 - LineSize: 9
+
+==>  Head for: 1,0
+------------------------------------------------------------------
+
+Iteration: 29
+------------------------------------------------------------------
+ViewPerimeter: 3,3
+------------------------------------------------------------------
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+                                                    Exit
+                                                        
+       .       .         Avatar1                    StW1
+               .            StW1    StW1    StW1        
+                                                    StW1
+                      M1                                
+
+X,Y: 5,3 - Pos: 24 - LineSize: 7
+
+==>  Head for: -1,0
+------------------------------------------------------------------
+
+Iteration: 30
+------------------------------------------------------------------
+ViewPerimeter: 3,3
+------------------------------------------------------------------
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+                                                        
+                                                        
+               .       . Avatar1                        
+                       .            StW1    StW1    StW1
+                                                        
+                      M1                                
+
+X,Y: 4,3 - Pos: 24 - LineSize: 7
+
+ViewPerimeter: 4,4
+------------------------------------------------------------------
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+    SlW2                                                            Exit
+    SlW2                                                                
+    SlW2               .       . Avatar1                            StW1
+    SlW2                       .            StW1    StW1    StW1        
+    SlW2                                                            StW1
+    SlW2                      M1                                        
+    SlW2                                                                
+
+X,Y: 4,3 - Pos: 31 - LineSize: 9
+
+==>  Head for: 1,0
+------------------------------------------------------------------
+
+Iteration: 31
+------------------------------------------------------------------
+ViewPerimeter: 3,3
+------------------------------------------------------------------
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+                                                    Exit
+                                                        
+       .       .         Avatar1                    StW1
+               .            StW1    StW1    StW1        
+                                                    StW1
+                                                        
+
+X,Y: 5,3 - Pos: 24 - LineSize: 7
+
+==>  Head for: -1,0
+------------------------------------------------------------------
+
+Iteration: 32
+------------------------------------------------------------------
+ViewPerimeter: 3,3
+------------------------------------------------------------------
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+                                                        
+                                                        
+               .       . Avatar1                        
+                       .            StW1    StW1    StW1
+                                                        
+                                                        
+
+X,Y: 4,3 - Pos: 24 - LineSize: 7
+
+ViewPerimeter: 4,4
+------------------------------------------------------------------
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+    SlW2                                                            Exit
+    SlW2                                                                
+    SlW2               .       . Avatar1                            StW1
+    SlW2                       .            StW1    StW1    StW1        
+    SlW2                                                            StW1
+    SlW2                                                                
+    SlW2                              M1                                
+
+X,Y: 4,3 - Pos: 31 - LineSize: 9
+
+==>  Head for: 1,0
+------------------------------------------------------------------
+
+Iteration: 33
+------------------------------------------------------------------
+ViewPerimeter: 3,3
+------------------------------------------------------------------
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+                                                    Exit
+                                                        
+       .       .         Avatar1                    StW1
+               .            StW1    StW1    StW1        
+                                                    StW1
+                      M1                                
+
+X,Y: 5,3 - Pos: 24 - LineSize: 7
+
+==>  Head for: -1,0
+------------------------------------------------------------------
+
+Iteration: 34
+------------------------------------------------------------------
+ViewPerimeter: 3,3
+------------------------------------------------------------------
     SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2 Avatar1                        
     SlW2                                
-    SlW2                                
-    SlW2                                
+    SlW2       .       .       .       .
+    SlW2       .       .       .       .
 
 X,Y: 1,1 - Pos: 6 - LineSize: 5
 
@@ -718,8 +877,8 @@ ViewPerimeter: 4,4
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2 Avatar1                                
     SlW2                                        
-    SlW2                                        
-    SlW2                                    StW1
+    SlW2       .       .       .       .        
+    SlW2       .       .       .       .    StW1
     SlW2                                        
 
 X,Y: 1,1 - Pos: 7 - LineSize: 6
@@ -729,8 +888,8 @@ ViewPerimeter: 5,5
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2 Avatar1                                        
     SlW2                                                
-    SlW2                                                
-    SlW2                                    StW1    StW1
+    SlW2       .       .       .       .                
+    SlW2       .       .       .       .    StW1    StW1
     SlW2                                              M1
     SlW2                                                
 
@@ -741,8 +900,8 @@ ViewPerimeter: 6,6
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2 Avatar1                                                
     SlW2                                                        
-    SlW2                                                        
-    SlW2                                    StW1    StW1    StW1
+    SlW2       .       .       .       .                        
+    SlW2       .       .       .       .    StW1    StW1    StW1
     SlW2                                              M1        
     SlW2                                                    Diam
     SlW2                            Diam    Diam    Diam        
@@ -752,15 +911,15 @@ X,Y: 1,1 - Pos: 9 - LineSize: 8
 ==>  Head for: 0,1
 ------------------------------------------------------------------
 
-Iteration: 28
+Iteration: 35
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
     SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2                                
     SlW2 Avatar1                        
-    SlW2                                
-    SlW2                                
+    SlW2       .       .       .       .
+    SlW2       .       .       .       .
     SlW2                                
 
 X,Y: 1,2 - Pos: 11 - LineSize: 5
@@ -770,8 +929,8 @@ ViewPerimeter: 4,4
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2                                        
     SlW2 Avatar1                                
-    SlW2                                        
-    SlW2                                    StW1
+    SlW2       .       .       .       .        
+    SlW2       .       .       .       .    StW1
     SlW2                                        
     SlW2                                        
 
@@ -782,8 +941,8 @@ ViewPerimeter: 5,5
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2                                                
     SlW2 Avatar1                                        
-    SlW2                                                
-    SlW2                                    StW1    StW1
+    SlW2       .       .       .       .                
+    SlW2       .       .       .       .    StW1    StW1
     SlW2                                                
     SlW2                                                
     SlW2                            Diam    Diam    Diam
@@ -793,15 +952,15 @@ X,Y: 1,2 - Pos: 15 - LineSize: 7
 ==>  Head for: 0,1
 ------------------------------------------------------------------
 
-Iteration: 29
+Iteration: 36
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
     SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2                                
     SlW2                                
-    SlW2 Avatar1                        
-    SlW2                                
+    SlW2 Avatar1       .       .       .
+    SlW2       .       .       .       .
     SlW2                                
     SlW2                                
 
@@ -812,8 +971,8 @@ ViewPerimeter: 4,4
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
     SlW2                                        
     SlW2                                        
-    SlW2 Avatar1                                
-    SlW2                                    StW1
+    SlW2 Avatar1       .       .       .        
+    SlW2       .       .       .       .    StW1
     SlW2                                        
     SlW2                                        
     SlW2                            Diam    Diam
@@ -823,14 +982,14 @@ X,Y: 1,3 - Pos: 19 - LineSize: 6
 ==>  Head for: 0,1
 ------------------------------------------------------------------
 
-Iteration: 30
+Iteration: 37
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
     SlW2                                
     SlW2                                
-    SlW2                                
-    SlW2 Avatar1                        
+    SlW2               .       .       .
+    SlW2 Avatar1       .       .       .
     SlW2                                
     SlW2                                
     SlW2                            Diam
@@ -840,14 +999,14 @@ X,Y: 1,4 - Pos: 16 - LineSize: 5
 ==>  Head for: 1,0
 ------------------------------------------------------------------
 
-Iteration: 31
+Iteration: 38
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
     SlW2                                        
     SlW2                                        
-    SlW2                                        
-    SlW2         Avatar1                    StW1
+    SlW2               .       .       .        
+    SlW2         Avatar1       .       .    StW1
     SlW2                                        
     SlW2                                        
     SlW2                            Diam    Diam
@@ -857,13 +1016,13 @@ X,Y: 2,4 - Pos: 20 - LineSize: 6
 ==>  Head for: 0,1
 ------------------------------------------------------------------
 
-Iteration: 32
+Iteration: 39
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
     SlW2                                        
-    SlW2                                        
-    SlW2                                    StW1
+    SlW2               .       .       .        
+    SlW2                       .       .    StW1
     SlW2         Avatar1                        
     SlW2                                      M1
     SlW2                            Diam    Diam
@@ -874,13 +1033,13 @@ X,Y: 2,5 - Pos: 20 - LineSize: 6
 ==>  Head for: 1,0
 ------------------------------------------------------------------
 
-Iteration: 33
+Iteration: 40
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
     SlW2                                                
-    SlW2                                                
-    SlW2                                    StW1    StW1
+    SlW2               .       .       .                
+    SlW2                       .       .    StW1    StW1
     SlW2                 Avatar1                        
     SlW2                              M1                
     SlW2                            Diam    Diam    Diam
@@ -888,98 +1047,17 @@ ViewPerimeter: 3,3
 
 X,Y: 3,5 - Pos: 24 - LineSize: 7
 
-==>  Head for: 0,-1
+==>  Head for: 0,1
 ------------------------------------------------------------------
 
-Iteration: 34
+Iteration: 41
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-    SlW2                                                
-    SlW2                                                
-    SlW2                                                
-    SlW2                 Avatar1            StW1    StW1
-    SlW2                                                
-    SlW2                      M1                        
-    SlW2                            Diam    Diam    Diam
-
-X,Y: 3,4 - Pos: 24 - LineSize: 7
-
-==>  Head for: 0,-1
-------------------------------------------------------------------
-
-Iteration: 35
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                                                
-    SlW2                                                
+    SlW2               .       .       .                
+    SlW2                       .       .    StW1    StW1
+    SlW2                              M1                
     SlW2                 Avatar1                        
-    SlW2                                    StW1    StW1
-    SlW2                                                
-    SlW2                                                
-
-X,Y: 3,3 - Pos: 24 - LineSize: 7
-
-ViewPerimeter: 4,4
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                                                        
-    SlW2                                                        
-    SlW2                 Avatar1                                
-    SlW2                                    StW1    StW1    StW1
-    SlW2                                                        
-    SlW2                                                        
-    SlW2                      M1    Diam    Diam    Diam    Diam
-
-X,Y: 3,3 - Pos: 27 - LineSize: 8
-
-==>  Head for: 0,1
-------------------------------------------------------------------
-
-Iteration: 36
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2                                                
-    SlW2                                                
-    SlW2                                                
-    SlW2                 Avatar1            StW1    StW1
-    SlW2                                                
-    SlW2                                                
-    SlW2              M1            Diam    Diam    Diam
-
-X,Y: 3,4 - Pos: 24 - LineSize: 7
-
-==>  Head for: 0,1
-------------------------------------------------------------------
-
-Iteration: 37
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2                                                
-    SlW2                                                
-    SlW2                                    StW1    StW1
-    SlW2                 Avatar1                        
-    SlW2                                                
-    SlW2      M1                    Diam    Diam    Diam
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 3,5 - Pos: 24 - LineSize: 7
-
-==>  Head for: 0,1
-------------------------------------------------------------------
-
-Iteration: 38
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2                                                
-    SlW2                                    StW1    StW1
-    SlW2                                                
-    SlW2      M1         Avatar1                        
     SlW2                            Diam    Diam    Diam
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
@@ -988,13 +1066,13 @@ X,Y: 3,6 - Pos: 24 - LineSize: 7
 ==>  Head for: 1,0
 ------------------------------------------------------------------
 
-Iteration: 39
+Iteration: 42
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-                                                        
-                                    StW1    StW1    StW1
-      M1                                                
+               .       .       .                        
+                       .       .    StW1    StW1    StW1
+                      M1                                
                          Avatar1                        
                             Diam    Diam    Diam    Diam
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
@@ -1004,13 +1082,13 @@ X,Y: 4,6 - Pos: 24 - LineSize: 7
 ==>  Head for: 0,1
 ------------------------------------------------------------------
 
-Iteration: 40
+Iteration: 43
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-      M1                            StW1    StW1    StW1
+                       .       .    StW1    StW1    StW1
                                                         
-                                                        
+                      M1                                
                          Avatar1    Diam    Diam    Diam
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
@@ -1019,13 +1097,13 @@ X,Y: 4,7 - Pos: 24 - LineSize: 7
 ==>  Head for: 1,0
 ------------------------------------------------------------------
 
-Iteration: 41
+Iteration: 44
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-                            StW1    StW1    StW1        
+               .       .    StW1    StW1    StW1        
                                                     StW1
-                                                        
+                      M1                                
                          Avatar1    Diam    Diam        
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
@@ -1034,12 +1112,12 @@ X,Y: 5,7 - Pos: 24 - LineSize: 7
 ==>  Head for: 1,0
 ------------------------------------------------------------------
 
-Iteration: 42
+Iteration: 45
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-                    StW1    StW1    StW1            SlW2
-                                            StW1    SlW2
+       .       .    StW1    StW1    StW1            SlW2
+              M1                            StW1    SlW2
                                                     SlW2
                          Avatar1    Diam            SlW2
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
@@ -1049,11 +1127,11 @@ X,Y: 6,7 - Pos: 24 - LineSize: 7
 ==>  Head for: 1,0
 ------------------------------------------------------------------
 
-Iteration: 43
+Iteration: 46
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-            StW1    StW1    StW1            SlW2
+       .    StW1    StW1    StW1            SlW2
                                     StW1    SlW2
                                             SlW2
                          Avatar1            SlW2
@@ -1063,9 +1141,9 @@ X,Y: 7,7 - Pos: 21 - LineSize: 6
 
 ViewPerimeter: 4,4
 ------------------------------------------------------------------
-                                                    SlW2
-                    StW1    StW1    StW1            SlW2
-                                            StW1    SlW2
+       .       .                            StW1    SlW2
+       .       .    StW1    StW1    StW1            SlW2
+      M1                                    StW1    SlW2
                                                     SlW2
                                  Avatar1            SlW2
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
@@ -1075,9 +1153,9 @@ X,Y: 7,7 - Pos: 32 - LineSize: 7
 ViewPerimeter: 5,5
 ------------------------------------------------------------------
                                                             SlW2
-                                                            SlW2
-                            StW1    StW1    StW1            SlW2
-                                                    StW1    SlW2
+       .       .       .                            StW1    SlW2
+               .       .    StW1    StW1    StW1            SlW2
+              M1                                    StW1    SlW2
                                                             SlW2
                                          Avatar1            SlW2
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
@@ -1086,11 +1164,11 @@ X,Y: 7,7 - Pos: 45 - LineSize: 8
 
 ViewPerimeter: 6,6
 ------------------------------------------------------------------
-      M1                                                    Exit    SlW2
+                                                            Exit    SlW2
                                                                     SlW2
-                                                                    SlW2
-                                    StW1    StW1    StW1            SlW2
-                                                            StW1    SlW2
+               .       .       .                            StW1    SlW2
+                       .       .    StW1    StW1    StW1            SlW2
+                      M1                                    StW1    SlW2
                                                                     SlW2
                                                  Avatar1            SlW2
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
@@ -1100,13 +1178,13 @@ X,Y: 7,7 - Pos: 60 - LineSize: 9
 ==>  Head for: -1,0
 ------------------------------------------------------------------
 
-Iteration: 44
+Iteration: 47
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-                    StW1    StW1    StW1            SlW2
+       .       .    StW1    StW1    StW1            SlW2
                                             StW1    SlW2
-                                                    SlW2
+      M1                                            SlW2
                          Avatar1                    SlW2
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
@@ -1114,10 +1192,10 @@ X,Y: 6,7 - Pos: 24 - LineSize: 7
 
 ViewPerimeter: 4,4
 ------------------------------------------------------------------
-                                                            SlW2
-                            StW1    StW1    StW1            SlW2
+       .       .       .                            StW1    SlW2
+               .       .    StW1    StW1    StW1            SlW2
                                                     StW1    SlW2
-                                                            SlW2
+              M1                                            SlW2
                                  Avatar1                    SlW2
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
@@ -1126,10 +1204,10 @@ X,Y: 6,7 - Pos: 36 - LineSize: 8
 ViewPerimeter: 5,5
 ------------------------------------------------------------------
                                                                     SlW2
-                                                                    SlW2
-                                    StW1    StW1    StW1            SlW2
+               .       .       .                            StW1    SlW2
+                       .       .    StW1    StW1    StW1            SlW2
                                                             StW1    SlW2
-                                                                    SlW2
+                      M1                                            SlW2
                                          Avatar1                    SlW2
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
@@ -1137,12 +1215,12 @@ X,Y: 6,7 - Pos: 50 - LineSize: 9
 
 ViewPerimeter: 6,6
 ------------------------------------------------------------------
-    SlW2              M1                                            Exit    SlW2
+    SlW2                                                            Exit    SlW2
     SlW2                                                                    SlW2
-    SlW2                                                                    SlW2
-    SlW2                                    StW1    StW1    StW1            SlW2
+    SlW2               .       .       .                            StW1    SlW2
+    SlW2                       .       .    StW1    StW1    StW1            SlW2
     SlW2                                                            StW1    SlW2
-    SlW2                                                                    SlW2
+    SlW2                      M1                                            SlW2
     SlW2                                         Avatar1                    SlW2
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
@@ -1151,144 +1229,18 @@ X,Y: 6,7 - Pos: 66 - LineSize: 10
 ==>  Head for: 0,-1
 ------------------------------------------------------------------
 
-Iteration: 45
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-                                                    SlW2
-                    StW1    StW1    StW1            SlW2
-                                            StW1    SlW2
-                         Avatar1                    SlW2
-                                                    SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 6,6 - Pos: 24 - LineSize: 7
-
-ViewPerimeter: 4,4
-------------------------------------------------------------------
-                                                            SlW2
-                                                            SlW2
-                            StW1    StW1    StW1            SlW2
-                                                    StW1    SlW2
-                                 Avatar1                    SlW2
-                                                            SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 6,6 - Pos: 36 - LineSize: 8
-
-ViewPerimeter: 5,5
-------------------------------------------------------------------
-                      M1                                    Exit    SlW2
-                                                                    SlW2
-                                                                    SlW2
-                                    StW1    StW1    StW1            SlW2
-                                                            StW1    SlW2
-                                         Avatar1                    SlW2
-                                                                    SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 6,6 - Pos: 50 - LineSize: 9
-
-==>  Head for: -1,0
-------------------------------------------------------------------
-
-Iteration: 46
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-                                                        
-                            StW1    StW1    StW1        
-                                                    StW1
-                         Avatar1                        
-                                                        
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 5,6 - Pos: 24 - LineSize: 7
-
-ViewPerimeter: 4,4
-------------------------------------------------------------------
-                                                                    SlW2
-                                                                    SlW2
-                                    StW1    StW1    StW1            SlW2
-                                                            StW1    SlW2
-                                 Avatar1                            SlW2
-                                                                    SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 5,6 - Pos: 40 - LineSize: 9
-
-ViewPerimeter: 5,5
-------------------------------------------------------------------
-    SlW2                              M1                            Exit    SlW2
-    SlW2                                                                    SlW2
-    SlW2                                                                    SlW2
-    SlW2                                    StW1    StW1    StW1            SlW2
-    SlW2                                                            StW1    SlW2
-    SlW2                                 Avatar1                            SlW2
-    SlW2                                                                    SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 5,6 - Pos: 55 - LineSize: 10
-
-==>  Head for: 0,-1
-------------------------------------------------------------------
-
-Iteration: 47
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-                                                        
-                                                        
-                            StW1    StW1    StW1        
-                         Avatar1                    StW1
-                                                        
-                                                        
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 5,5 - Pos: 24 - LineSize: 7
-
-ViewPerimeter: 4,4
-------------------------------------------------------------------
-                                      M1                    Exit    SlW2
-                                                                    SlW2
-                                                                    SlW2
-                                    StW1    StW1    StW1            SlW2
-                                 Avatar1                    StW1    SlW2
-                                                                    SlW2
-                                                                    SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 5,5 - Pos: 40 - LineSize: 9
-
-==>  Head for: -1,0
-------------------------------------------------------------------
-
 Iteration: 48
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-                                                        
-                                                        
-                                    StW1    StW1    StW1
-                         Avatar1                        
-                                                        
-                                                        
+       .       .                            StW1    SlW2
+       .       .    StW1    StW1    StW1            SlW2
+                                            StW1    SlW2
+              M1         Avatar1                    SlW2
+                                                    SlW2
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
 
-X,Y: 4,5 - Pos: 24 - LineSize: 7
-
-ViewPerimeter: 4,4
-------------------------------------------------------------------
-    SlW2                                              M1            Exit
-    SlW2                                                                
-    SlW2                                                                
-    SlW2                                    StW1    StW1    StW1        
-    SlW2                         Avatar1                            StW1
-    SlW2                                                                
-    SlW2                                                                
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 4,5 - Pos: 40 - LineSize: 9
+X,Y: 6,6 - Pos: 24 - LineSize: 7
 
 ==>  Head for: 0,-1
 ------------------------------------------------------------------
@@ -1297,11 +1249,148 @@ Iteration: 49
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-                                                      M1
+                                                    SlW2
+       .       .                            StW1    SlW2
+       .       .    StW1    StW1    StW1            SlW2
+              M1         Avatar1            StW1    SlW2
+                                                    SlW2
+                                                    SlW2
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+
+X,Y: 6,5 - Pos: 24 - LineSize: 7
+
+==>  Head for: 1,0
+------------------------------------------------------------------
+
+Iteration: 50
+------------------------------------------------------------------
+ViewPerimeter: 3,3
+------------------------------------------------------------------
+                                            SlW2
+       .                            StW1    SlW2
+       .    StW1    StW1    StW1            SlW2
+                         Avatar1    StW1    SlW2
+                                            SlW2
+                                            SlW2
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+
+X,Y: 7,5 - Pos: 21 - LineSize: 6
+
+ViewPerimeter: 4,4
+------------------------------------------------------------------
+                                            Exit    SlW2
+                                                    SlW2
+       .       .                            StW1    SlW2
+       .       .    StW1    StW1    StW1            SlW2
+      M1                         Avatar1    StW1    SlW2
+                                                    SlW2
+                                                    SlW2
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+
+X,Y: 7,5 - Pos: 32 - LineSize: 7
+
+==>  Head for: -1,0
+------------------------------------------------------------------
+
+Iteration: 51
+------------------------------------------------------------------
+ViewPerimeter: 3,3
+------------------------------------------------------------------
+                                                    SlW2
+       .       .                            StW1    SlW2
+       .       .    StW1    StW1    StW1            SlW2
+                         Avatar1            StW1    SlW2
+      M1                                            SlW2
+                                                    SlW2
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+
+X,Y: 6,5 - Pos: 24 - LineSize: 7
+
+ViewPerimeter: 4,4
+------------------------------------------------------------------
+                                                    Exit    SlW2
+                                                            SlW2
+       .       .       .                            StW1    SlW2
+               .       .    StW1    StW1    StW1            SlW2
+                                 Avatar1            StW1    SlW2
+              M1                                            SlW2
+                                                            SlW2
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+
+X,Y: 6,5 - Pos: 36 - LineSize: 8
+
+==>  Head for: -1,0
+------------------------------------------------------------------
+
+Iteration: 52
+------------------------------------------------------------------
+ViewPerimeter: 3,3
+------------------------------------------------------------------
+                                                        
+       .       .       .                            StW1
+               .       .    StW1    StW1    StW1        
+                         Avatar1                    StW1
+                      M1                                
+                                                        
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+
+X,Y: 5,5 - Pos: 24 - LineSize: 7
+
+ViewPerimeter: 4,4
+------------------------------------------------------------------
+                                                            Exit    SlW2
+                                                                    SlW2
+               .       .       .                            StW1    SlW2
+                       .       .    StW1    StW1    StW1            SlW2
+                                 Avatar1                    StW1    SlW2
+                              M1                                    SlW2
+                                                                    SlW2
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+
+X,Y: 5,5 - Pos: 40 - LineSize: 9
+
+==>  Head for: -1,0
+------------------------------------------------------------------
+
+Iteration: 53
+------------------------------------------------------------------
+ViewPerimeter: 3,3
+------------------------------------------------------------------
+                                                        
+               .       .       .                        
+                       .       .    StW1    StW1    StW1
+                         Avatar1                        
+                                      M1                
+                                                        
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+
+X,Y: 4,5 - Pos: 24 - LineSize: 7
+
+ViewPerimeter: 4,4
+------------------------------------------------------------------
+    SlW2                                                            Exit
+    SlW2                                                                
+    SlW2               .       .       .                            StW1
+    SlW2                       .       .    StW1    StW1    StW1        
+    SlW2                         Avatar1                            StW1
+    SlW2                                      M1                        
+    SlW2                                                                
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+
+X,Y: 4,5 - Pos: 40 - LineSize: 9
+
+==>  Head for: 0,-1
+------------------------------------------------------------------
+
+Iteration: 54
+------------------------------------------------------------------
+ViewPerimeter: 3,3
+------------------------------------------------------------------
                                                         
                                                         
-                         Avatar1    StW1    StW1    StW1
-                                                        
+               .       .       .                        
+                       . Avatar1    StW1    StW1    StW1
+                                      M1                
                                                         
                                                         
 
@@ -1310,11 +1399,11 @@ X,Y: 4,4 - Pos: 24 - LineSize: 7
 ViewPerimeter: 4,4
 ------------------------------------------------------------------
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                                                      M1    Exit
+    SlW2                                                            Exit
     SlW2                                                                
-    SlW2                                                                
-    SlW2                         Avatar1    StW1    StW1    StW1        
-    SlW2                                                            StW1
+    SlW2               .       .       .                            StW1
+    SlW2                       . Avatar1    StW1    StW1    StW1        
+    SlW2                                      M1                    StW1
     SlW2                                                                
     SlW2                                                                
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
@@ -1324,150 +1413,21 @@ X,Y: 4,4 - Pos: 40 - LineSize: 9
 ==>  Head for: 0,-1
 ------------------------------------------------------------------
 
-Iteration: 50
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-                                                        
-                                                      M1
-                         Avatar1                        
-                                    StW1    StW1    StW1
-                                                        
-                                                        
-
-X,Y: 4,3 - Pos: 24 - LineSize: 7
-
-ViewPerimeter: 4,4
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                                                            Exit
-    SlW2                                                      M1        
-    SlW2                         Avatar1                                
-    SlW2                                    StW1    StW1    StW1        
-    SlW2                                                            StW1
-    SlW2                                                                
-    SlW2                                                                
-
-X,Y: 4,3 - Pos: 31 - LineSize: 9
-
-==>  Head for: 0,-1
-------------------------------------------------------------------
-
-Iteration: 51
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-                                                        
-                         Avatar1                        
-                                                        
-                                    StW1    StW1    StW1
-                                                        
-
-X,Y: 4,2 - Pos: 17 - LineSize: 7
-
-ViewPerimeter: 4,4
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                                                            Exit
-    SlW2                         Avatar1                              M1
-    SlW2                                                                
-    SlW2                                    StW1    StW1    StW1        
-    SlW2                                                            StW1
-    SlW2                                                                
-
-X,Y: 4,2 - Pos: 22 - LineSize: 9
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 52
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-                                                    Exit
-                         Avatar1                        
-                                                      M1
-                            StW1    StW1    StW1        
-                                                    StW1
-
-X,Y: 5,2 - Pos: 17 - LineSize: 7
-
-==>  Head for: -1,0
-------------------------------------------------------------------
-
-Iteration: 53
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-                                                        
-                         Avatar1                        
-                                                        
-                                    StW1    StW1    StW1
-                                                        
-
-X,Y: 4,2 - Pos: 17 - LineSize: 7
-
-ViewPerimeter: 4,4
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                                                            Exit
-    SlW2                         Avatar1                                
-    SlW2                                                                
-    SlW2                                    StW1    StW1    StW1      M1
-    SlW2                                                            StW1
-    SlW2                                                                
-
-X,Y: 4,2 - Pos: 22 - LineSize: 9
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 54
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-                                                    Exit
-                         Avatar1                        
-                                                      M1
-                            StW1    StW1    StW1        
-                                                    StW1
-
-X,Y: 5,2 - Pos: 17 - LineSize: 7
-
-==>  Head for: -1,0
-------------------------------------------------------------------
-
 Iteration: 55
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
                                                         
-                         Avatar1                        
-                                                      M1
-                                    StW1    StW1    StW1
+                                                        
+               .       . Avatar1                        
+                       .            StW1    StW1    StW1
+                              M1                        
                                                         
 
-X,Y: 4,2 - Pos: 17 - LineSize: 7
+X,Y: 4,3 - Pos: 24 - LineSize: 7
 
-ViewPerimeter: 4,4
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                                                            Exit
-    SlW2                         Avatar1                                
-    SlW2                                                      M1        
-    SlW2                                    StW1    StW1    StW1        
-    SlW2                                                            StW1
-    SlW2                                                                
-
-X,Y: 4,2 - Pos: 22 - LineSize: 9
-
-==>  Head for: 1,0
+==>  Head for: 0,-1
 ------------------------------------------------------------------
 
 Iteration: 56
@@ -1475,15 +1435,27 @@ Iteration: 56
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-                                                    Exit
+                                                        
                          Avatar1                        
-                                      M1                
-                            StW1    StW1    StW1        
-                                                    StW1
+               .       .                                
+                       .            StW1    StW1    StW1
+                                                        
 
-X,Y: 5,2 - Pos: 17 - LineSize: 7
+X,Y: 4,2 - Pos: 17 - LineSize: 7
 
-==>  Head for: 0,-1
+ViewPerimeter: 4,4
+------------------------------------------------------------------
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+    SlW2                                                            Exit
+    SlW2                         Avatar1                                
+    SlW2               .       .                                    StW1
+    SlW2                       .            StW1    StW1    StW1        
+    SlW2                                                            StW1
+    SlW2                              M1                                
+
+X,Y: 4,2 - Pos: 22 - LineSize: 9
+
+==>  Head for: 1,0
 ------------------------------------------------------------------
 
 Iteration: 57
@@ -1491,12 +1463,13 @@ Iteration: 57
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-                         Avatar1                    Exit
-                                                        
-                              M1                        
-                            StW1    StW1    StW1        
+                                                    Exit
+                         Avatar1                        
+       .       .                                    StW1
+               .            StW1    StW1    StW1        
+                                                    StW1
 
-X,Y: 5,1 - Pos: 10 - LineSize: 7
+X,Y: 5,2 - Pos: 17 - LineSize: 7
 
 ==>  Head for: -1,0
 ------------------------------------------------------------------
@@ -1506,23 +1479,25 @@ Iteration: 58
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-                         Avatar1                        
                                                         
+                         Avatar1                        
+               .       .                                
+                       .            StW1    StW1    StW1
                               M1                        
-                                    StW1    StW1    StW1
 
-X,Y: 4,1 - Pos: 10 - LineSize: 7
+X,Y: 4,2 - Pos: 17 - LineSize: 7
 
 ViewPerimeter: 4,4
 ------------------------------------------------------------------
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                         Avatar1                            Exit
+    SlW2                                                            Exit
+    SlW2                         Avatar1                                
+    SlW2               .       .                                    StW1
+    SlW2                       .            StW1    StW1    StW1        
+    SlW2                              M1                            StW1
     SlW2                                                                
-    SlW2                              M1                                
-    SlW2                                    StW1    StW1    StW1        
-    SlW2                                                            StW1
 
-X,Y: 4,1 - Pos: 13 - LineSize: 9
+X,Y: 4,2 - Pos: 22 - LineSize: 9
 
 ==>  Head for: 1,0
 ------------------------------------------------------------------
@@ -1532,14 +1507,15 @@ Iteration: 59
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-                         Avatar1                    Exit
-                                                        
-                                                        
-                      M1    StW1    StW1    StW1        
+                                                    Exit
+                         Avatar1                        
+       .       .                                    StW1
+               .            StW1    StW1    StW1        
+                                                    StW1
 
-X,Y: 5,1 - Pos: 10 - LineSize: 7
+X,Y: 5,2 - Pos: 17 - LineSize: 7
 
-==>  Head for: 1,0
+==>  Head for: -1,0
 ------------------------------------------------------------------
 
 Iteration: 60
@@ -1547,12 +1523,25 @@ Iteration: 60
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-                         Avatar1            Exit    SlW2
-                                                    SlW2
-                                                    SlW2
-                    StW1    StW1    StW1            SlW2
+                                                        
+                         Avatar1                        
+               .       .                                
+                       .            StW1    StW1    StW1
+                                                        
 
-X,Y: 6,1 - Pos: 10 - LineSize: 7
+X,Y: 4,2 - Pos: 17 - LineSize: 7
+
+ViewPerimeter: 4,4
+------------------------------------------------------------------
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+    SlW2                                                            Exit
+    SlW2                         Avatar1                                
+    SlW2               .       .                                    StW1
+    SlW2                       .            StW1    StW1    StW1        
+    SlW2                                                            StW1
+    SlW2                                      M1                        
+
+X,Y: 4,2 - Pos: 22 - LineSize: 9
 
 ==>  Head for: 1,0
 ------------------------------------------------------------------
@@ -1561,28 +1550,42 @@ Iteration: 61
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-                         Avatar1    Exit    SlW2
-                                            SlW2
-                                            SlW2
-            StW1    StW1    StW1            SlW2
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+                                                    Exit
+                         Avatar1                        
+       .       .                                    StW1
+               .            StW1    StW1    StW1        
+                              M1                    StW1
 
-X,Y: 7,1 - Pos: 9 - LineSize: 6
+X,Y: 5,2 - Pos: 17 - LineSize: 7
 
-==>  Head for: 1,0
+==>  Head for: -1,0
 ------------------------------------------------------------------
 
 Iteration: 62
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2 Avatar1                        
-    SlW2                                
-    SlW2    StW1    StW1    StW1        
-    SlW2    Diam                        
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+                                                        
+                         Avatar1                        
+               .       .                                
+                       .            StW1    StW1    StW1
+                              M1                        
 
-X,Y: 1,1 - Pos: 6 - LineSize: 5
+X,Y: 4,2 - Pos: 17 - LineSize: 7
+
+ViewPerimeter: 4,4
+------------------------------------------------------------------
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+    SlW2                                                            Exit
+    SlW2                         Avatar1                                
+    SlW2               .       .                                    StW1
+    SlW2                       .            StW1    StW1    StW1        
+    SlW2                              M1                            StW1
+    SlW2                                                                
+
+X,Y: 4,2 - Pos: 22 - LineSize: 9
 
 ==>  Head for: 1,0
 ------------------------------------------------------------------
@@ -1591,15 +1594,16 @@ Iteration: 63
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2         Avatar1                    Exit
-    SlW2                                        
-    SlW2    StW1    StW1    StW1                
-    SlW2    Diam                                
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+                                                    Exit
+                         Avatar1                        
+       .       .                                    StW1
+               .            StW1    StW1    StW1        
+                                                    StW1
 
-X,Y: 2,1 - Pos: 8 - LineSize: 6
+X,Y: 5,2 - Pos: 17 - LineSize: 7
 
-==>  Head for: 1,0
+==>  Head for: -1,0
 ------------------------------------------------------------------
 
 Iteration: 64
@@ -1607,12 +1611,25 @@ Iteration: 64
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                 Avatar1            Exit    SlW2
-    SlW2                                            SlW2
-    SlW2    StW1    StW1    StW1                    SlW2
-    SlW2    Diam                                    SlW2
+                                                        
+                         Avatar1                        
+               .       .                                
+                       .            StW1    StW1    StW1
+                                                        
 
-X,Y: 3,1 - Pos: 10 - LineSize: 7
+X,Y: 4,2 - Pos: 17 - LineSize: 7
+
+ViewPerimeter: 4,4
+------------------------------------------------------------------
+    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+    SlW2                                                            Exit
+    SlW2                         Avatar1                                
+    SlW2               .       .                                    StW1
+    SlW2                       .            StW1    StW1    StW1        
+    SlW2                                                            StW1
+    SlW2                                      M1                        
+
+X,Y: 4,2 - Pos: 22 - LineSize: 9
 
 ==>  Head for: 1,0
 ------------------------------------------------------------------
@@ -1621,866 +1638,15 @@ Iteration: 65
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2 Avatar1                        
-    SlW2                                
-    SlW2    StW1    StW1    StW1        
-    SlW2    Diam                        
-
-X,Y: 1,1 - Pos: 6 - LineSize: 5
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 66
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2         Avatar1                    Exit
-    SlW2                                        
-    SlW2    StW1    StW1    StW1                
-    SlW2    Diam                                
-
-X,Y: 2,1 - Pos: 8 - LineSize: 6
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 67
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                 Avatar1            Exit    SlW2
-    SlW2                                            SlW2
-    SlW2    StW1    StW1    StW1                    SlW2
-    SlW2    Diam                                    SlW2
+                                                    Exit
+                         Avatar1                        
+       .       .                                    StW1
+               .            StW1    StW1    StW1        
+                              M1                    StW1
 
-X,Y: 3,1 - Pos: 10 - LineSize: 7
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 68
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-                         Avatar1    Exit    SlW2
-                                            SlW2
-    StW1    StW1    StW1                    SlW2
-    Diam                                    SlW2
-
-X,Y: 4,1 - Pos: 9 - LineSize: 6
-
-==>  Head for: 0,1
-------------------------------------------------------------------
-
-Iteration: 69
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-                                    Exit    SlW2
-                         Avatar1            SlW2
-    StW1    StW1    StW1                    SlW2
-    Diam                                    SlW2
-    Diam    Diam                            SlW2
-
-X,Y: 4,2 - Pos: 15 - LineSize: 6
-
-==>  Head for: 0,1
-------------------------------------------------------------------
-
-Iteration: 70
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-                                    Exit    SlW2
-                                            SlW2
-    StW1    StW1    StW1 Avatar1            SlW2
-    Diam                                    SlW2
-    Diam    Diam                            SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 4,3 - Pos: 21 - LineSize: 6
-
-==>  Head for: 0,1
-------------------------------------------------------------------
-
-Iteration: 71
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-                                    Exit    SlW2
-                                            SlW2
-    StW1    StW1    StW1                    SlW2
-    Diam                 Avatar1            SlW2
-    Diam    Diam                            SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 4,4 - Pos: 21 - LineSize: 6
+X,Y: 5,2 - Pos: 17 - LineSize: 7
 
 ==>  Head for: -1,0
-------------------------------------------------------------------
-
-Iteration: 72
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2                                    Exit    SlW2
-    SlW2                                            SlW2
-    SlW2    StW1    StW1    StW1                    SlW2
-    SlW2    Diam         Avatar1                    SlW2
-    SlW2    Diam    Diam                            SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 3,4 - Pos: 24 - LineSize: 7
-
-==>  Head for: -1,0
-------------------------------------------------------------------
-
-Iteration: 73
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2                                    Exit
-    SlW2                                        
-    SlW2    StW1    StW1    StW1                
-    SlW2    Diam Avatar1                        
-    SlW2    Diam    Diam                        
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 2,4 - Pos: 20 - LineSize: 6
-
-==>  Head for: -1,0
-------------------------------------------------------------------
-
-Iteration: 74
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2                                
-    SlW2                                
-    SlW2    StW1    StW1    StW1        
-    SlW2 Avatar1                        
-    SlW2    Diam    Diam                
-    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 1,4 - Pos: 16 - LineSize: 5
-
-==>  Head for: 0,1
-------------------------------------------------------------------
-
-Iteration: 75
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2                                
-    SlW2    StW1    StW1    StW1        
-    SlW2                                
-    SlW2 Avatar1    Diam                
-    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 1,5 - Pos: 16 - LineSize: 5
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 76
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2                                        
-    SlW2    StW1    StW1    StW1                
-    SlW2                                        
-    SlW2         Avatar1                        
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 2,5 - Pos: 20 - LineSize: 6
-
-ViewPerimeter: 4,4
-------------------------------------------------------------------
-    SlW2                                    Exit    SlW2
-    SlW2                                            SlW2
-    SlW2    StW1    StW1    StW1                    SlW2
-    SlW2                                            SlW2
-    SlW2         Avatar1                            SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 2,5 - Pos: 30 - LineSize: 7
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 77
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2                                            SlW2
-    SlW2    StW1    StW1    StW1                    SlW2
-    SlW2                                            SlW2
-    SlW2                 Avatar1                    SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 3,5 - Pos: 24 - LineSize: 7
-
-ViewPerimeter: 4,4
-------------------------------------------------------------------
-    SlW2                                    Exit    SlW2
-    SlW2                                            SlW2
-    SlW2    StW1    StW1    StW1                    SlW2
-    SlW2                                            SlW2
-    SlW2                 Avatar1                    SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 3,5 - Pos: 31 - LineSize: 7
-
-==>  Head for: 0,-1
-------------------------------------------------------------------
-
-Iteration: 78
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2                                    Exit    SlW2
-    SlW2                                            SlW2
-    SlW2    StW1    StW1    StW1                    SlW2
-    SlW2                 Avatar1                    SlW2
-    SlW2                                            SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 3,4 - Pos: 24 - LineSize: 7
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 79
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-                                    Exit    SlW2
-                                            SlW2
-    StW1    StW1    StW1                    SlW2
-                         Avatar1            SlW2
-                                            SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 4,4 - Pos: 21 - LineSize: 6
-
-==>  Head for: 0,-1
-------------------------------------------------------------------
-
-Iteration: 80
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-                                    Exit    SlW2
-                                            SlW2
-    StW1    StW1    StW1 Avatar1            SlW2
-                                            SlW2
-                                            SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 4,3 - Pos: 21 - LineSize: 6
-
-==>  Head for: 0,-1
-------------------------------------------------------------------
-
-Iteration: 81
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-                                    Exit    SlW2
-                         Avatar1            SlW2
-    StW1    StW1    StW1                    SlW2
-                                            SlW2
-                                            SlW2
-
-X,Y: 4,2 - Pos: 15 - LineSize: 6
-
-==>  Head for: 0,-1
-------------------------------------------------------------------
-
-Iteration: 82
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-                         Avatar1    Exit    SlW2
-                                            SlW2
-    StW1    StW1    StW1                    SlW2
-                                            SlW2
-
-X,Y: 4,1 - Pos: 9 - LineSize: 6
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 83
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-                                    SlW2
-    StW1                            SlW2
-                           Stone    SlW2
-                   Stone Avatar1    SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 5,5 - Pos: 18 - LineSize: 5
-
-ViewPerimeter: 4,4
-------------------------------------------------------------------
-                                    Exit    SlW2
-                                            SlW2
-    StW1    StW1                            SlW2
-    Diam                           Stone    SlW2
-    Diam                   Stone Avatar1    SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 5,5 - Pos: 28 - LineSize: 6
-
-==>  Head for: 0,-1
-------------------------------------------------------------------
-
-Iteration: 84
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-                            Exit    SlW2
-                                    SlW2
-    StW1                   Stone    SlW2
-    Diam                 Avatar1    SlW2
-                   Stone            SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 5,4 - Pos: 18 - LineSize: 5
-
-==>  Head for: -1,0
-------------------------------------------------------------------
-
-Iteration: 85
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-                                    Exit    SlW2
-                                            SlW2
-    StW1    StW1                   Stone    SlW2
-                         Avatar1            SlW2
-    Diam    Diam           Stone            SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 4,4 - Pos: 21 - LineSize: 6
-
-==>  Head for: -1,0
-------------------------------------------------------------------
-
-Iteration: 86
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2                                    Exit    SlW2
-    SlW2                                            SlW2
-    SlW2    StW1    StW1                            SlW2
-    SlW2                 Avatar1           Stone    SlW2
-    SlW2    Diam    Diam           Stone            SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 3,4 - Pos: 24 - LineSize: 7
-
-==>  Head for: -1,0
-------------------------------------------------------------------
-
-Iteration: 87
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2                                    Exit
-    SlW2                                        
-    SlW2    StW1    StW1                        
-    SlW2         Avatar1                        
-    SlW2    Diam    Diam           Stone   Stone
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 2,4 - Pos: 20 - LineSize: 6
-
-==>  Head for: -1,0
-------------------------------------------------------------------
-
-Iteration: 88
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2                                
-    SlW2                                
-    SlW2    StW1    StW1                
-    SlW2 Avatar1                        
-    SlW2    Diam    Diam           Stone
-    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 1,4 - Pos: 16 - LineSize: 5
-
-==>  Head for: 0,1
-------------------------------------------------------------------
-
-Iteration: 89
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2                                
-    SlW2    StW1    StW1                
-    SlW2                                
-    SlW2 Avatar1    Diam           Stone
-    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 1,5 - Pos: 16 - LineSize: 5
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 90
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2                                        
-    SlW2    StW1    StW1                        
-    SlW2                                        
-    SlW2         Avatar1           Stone   Stone
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 2,5 - Pos: 20 - LineSize: 6
-
-ViewPerimeter: 4,4
-------------------------------------------------------------------
-    SlW2                                    Exit    SlW2
-    SlW2                                            SlW2
-    SlW2    StW1    StW1                            SlW2
-    SlW2                                            SlW2
-    SlW2         Avatar1           Stone   Stone    SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 2,5 - Pos: 30 - LineSize: 7
-
-==>  Head for: 0,-1
-------------------------------------------------------------------
-
-Iteration: 91
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2                                    Exit
-    SlW2                                        
-    SlW2    StW1    StW1                        
-    SlW2         Avatar1                        
-    SlW2                           Stone   Stone
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 2,4 - Pos: 20 - LineSize: 6
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 92
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2                                    Exit    SlW2
-    SlW2                                            SlW2
-    SlW2    StW1    StW1                            SlW2
-    SlW2                 Avatar1                    SlW2
-    SlW2                           Stone   Stone    SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 3,4 - Pos: 24 - LineSize: 7
-
-==>  Head for: 0,-1
-------------------------------------------------------------------
-
-Iteration: 93
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                                    Exit    SlW2
-    SlW2                                            SlW2
-    SlW2    StW1    StW1 Avatar1                    SlW2
-    SlW2                                            SlW2
-    SlW2                           Stone   Stone    SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 3,3 - Pos: 24 - LineSize: 7
-
-==>  Head for: 0,-1
-------------------------------------------------------------------
-
-Iteration: 94
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                                    Exit    SlW2
-    SlW2                 Avatar1                    SlW2
-    SlW2    StW1    StW1                            SlW2
-    SlW2                                            SlW2
-    SlW2                           Stone   Stone    SlW2
-
-X,Y: 3,2 - Pos: 17 - LineSize: 7
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 95
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-                                    Exit    SlW2
-                         Avatar1            SlW2
-    StW1    StW1                            SlW2
-                                            SlW2
-                           Stone   Stone    SlW2
-
-X,Y: 4,2 - Pos: 15 - LineSize: 6
-
-==>  Head for: 0,-1
-------------------------------------------------------------------
-
-Iteration: 96
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-                         Avatar1    Exit    SlW2
-                                            SlW2
-    StW1    StW1                            SlW2
-                                            SlW2
-
-X,Y: 4,1 - Pos: 9 - LineSize: 6
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 97
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2 Avatar1               .      M1
-    SlW2               .       .    Diam
-    SlW2                               .
-    SlW2                                
-
-X,Y: 1,1 - Pos: 6 - LineSize: 5
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 98
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2         Avatar1       .      M1       .
-    SlW2               .       .    Diam       .
-    SlW2                               .        
-    SlW2                                        
-
-X,Y: 2,1 - Pos: 8 - LineSize: 6
-
-==>  Head for: 0,1
-------------------------------------------------------------------
-
-Iteration: 99
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                       .      M1       .
-    SlW2         Avatar1       .    Diam       .
-    SlW2                               .        
-    SlW2                                        
-    SlW2                                    Exit
-
-X,Y: 2,2 - Pos: 14 - LineSize: 6
-
-==>  Head for: -1,0
-------------------------------------------------------------------
-
-Iteration: 100
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                       .      M1
-    SlW2 Avatar1               .    Diam
-    SlW2                               .
-    SlW2                                
-    SlW2                                
-
-X,Y: 1,2 - Pos: 11 - LineSize: 5
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 101
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                       .      M1       .
-    SlW2         Avatar1       .    Diam       .
-    SlW2                               .        
-    SlW2                                        
-    SlW2                                    Exit
-
-X,Y: 2,2 - Pos: 14 - LineSize: 6
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 102
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                       .      M1       .    SlW2
-    SlW2                 Avatar1    Diam       .    SlW2
-    SlW2                               .            SlW2
-    SlW2                                            SlW2
-    SlW2                                    Exit    SlW2
-
-X,Y: 3,2 - Pos: 17 - LineSize: 7
-
-==>  Head for: -1,0
-------------------------------------------------------------------
-
-Iteration: 103
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                       .      M1       .
-    SlW2         Avatar1            Diam       .
-    SlW2                               .        
-    SlW2                                        
-    SlW2                                    Exit
-
-X,Y: 2,2 - Pos: 14 - LineSize: 6
-
-==>  Head for: -1,0
-------------------------------------------------------------------
-
-Iteration: 104
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                       .      M1
-    SlW2 Avatar1                    Diam
-    SlW2                               .
-    SlW2                                
-    SlW2                                
-
-X,Y: 1,2 - Pos: 11 - LineSize: 5
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 105
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                       .      M1       .
-    SlW2         Avatar1            Diam       .
-    SlW2                               .        
-    SlW2                                        
-    SlW2                                    Exit
-
-X,Y: 2,2 - Pos: 14 - LineSize: 6
-
-==>  Head for: -1,0
-------------------------------------------------------------------
-
-Iteration: 106
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                       .      M1
-    SlW2 Avatar1                    Diam
-    SlW2                               .
-    SlW2                                
-    SlW2                                
-
-X,Y: 1,2 - Pos: 11 - LineSize: 5
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 107
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                       .      M1       .
-    SlW2         Avatar1            Diam       .
-    SlW2                               .        
-    SlW2                                        
-    SlW2                                    Exit
-
-X,Y: 2,2 - Pos: 14 - LineSize: 6
-
-==>  Head for: -1,0
-------------------------------------------------------------------
-
-Iteration: 108
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                       .      M1
-    SlW2 Avatar1                    Diam
-    SlW2                               .
-    SlW2                                
-    SlW2                                
-
-X,Y: 1,2 - Pos: 11 - LineSize: 5
-
-==>  Head for: 0,-1
-------------------------------------------------------------------
-
-Iteration: 109
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2 Avatar1               .      M1
-    SlW2                            Diam
-    SlW2                               .
-    SlW2                                
-
-X,Y: 1,1 - Pos: 6 - LineSize: 5
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 110
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2         Avatar1       .      M1       .
-    SlW2                            Diam       .
-    SlW2                               .        
-    SlW2                                        
-
-X,Y: 2,1 - Pos: 8 - LineSize: 6
-
-==>  Head for: 0,1
-------------------------------------------------------------------
-
-Iteration: 111
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                       .      M1       .
-    SlW2         Avatar1            Diam       .
-    SlW2                               .        
-    SlW2                                        
-    SlW2                                    Exit
-
-X,Y: 2,2 - Pos: 14 - LineSize: 6
-
-==>  Head for: 0,1
-------------------------------------------------------------------
-
-Iteration: 112
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                       .      M1       .
-    SlW2                            Diam       .
-    SlW2         Avatar1               .        
-    SlW2                                        
-    SlW2                                    Exit
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 2,3 - Pos: 20 - LineSize: 6
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 113
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                       .      M1       .    SlW2
-    SlW2                            Diam       .    SlW2
-    SlW2                 Avatar1       .            SlW2
-    SlW2                                            SlW2
-    SlW2                                    Exit    SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 3,3 - Pos: 24 - LineSize: 7
-
-==>  Head for: -1,0
-------------------------------------------------------------------
-
-Iteration: 114
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                       .      M1       .
-    SlW2                            Diam       .
-    SlW2         Avatar1               .        
-    SlW2                                        
-    SlW2                                    Exit
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 2,3 - Pos: 20 - LineSize: 6
-
-==>  Head for: 1,0
-------------------------------------------------------------------
-
-Iteration: 115
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                       .      M1       .    SlW2
-    SlW2                            Diam       .    SlW2
-    SlW2                 Avatar1       .            SlW2
-    SlW2                                            SlW2
-    SlW2                                    Exit    SlW2
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-
-X,Y: 3,3 - Pos: 24 - LineSize: 7
-
-==>  Head for: 0,-1
-------------------------------------------------------------------
-
-Iteration: 116
-------------------------------------------------------------------
-ViewPerimeter: 3,3
-------------------------------------------------------------------
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
-    SlW2                       .      M1       .    SlW2
-    SlW2                 Avatar1    Diam       .    SlW2
-    SlW2                               .            SlW2
-    SlW2                                            SlW2
-    SlW2                                    Exit    SlW2
-
-X,Y: 3,2 - Pos: 17 - LineSize: 7
-
-==>  Head for: 1,0
 ------------------------------------------------------------------
 
