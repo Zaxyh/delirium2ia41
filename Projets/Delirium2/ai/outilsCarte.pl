@@ -69,3 +69,31 @@ numCaseGauche(N, Size, Ret) :-
 **/								
 numCaseDroite(N, _, Ret) :-  
 	Ret is N + 1.
+
+
+/**
+* Remplace la case d'incide Indice (commence à 0) dans L par la valeur Valeur
+* retourne la nouvelle liste dans NewL
+**/
+replaceElement([T|R], 1, Valeur, [Valeur|R]).
+replaceElement([T|R], Indice, Valeur, [T|R2]) :-
+                  I2 is Indice - 1,
+                  replaceElement(R, I2, Valeur, R2),!.
+	
+/**
+* Remplace dans L tous les élements d'indice compris dans la liste I exemple : [indice0, indice5, ...]
+* par la valeur V, ne remplace pas la case contenant le joueur
+* Puis renvoi la liste modifié sous L2
+* @profil : replaceAll(+L, +I, -L2, +V)
+**/	
+replaceAll(L, I, L2, V) :-
+             sublist( <(-1), I, I2),
+              sort(I2, I3),
+              replaceAll2(L, I3, L2, V),!.
+replaceAll2(L, [], L, _).
+replaceAll2([T|R], [0|RI], [V|R2], V) :-
+                  maplist(plus(-1), RI, I2),
+                  replaceAll2(R, I2, R2, V),!.
+replaceAll2([T|R], I, [T|R2], V) :-
+              maplist(plus(-1), I, I2),
+              replaceAll2(R, I2, R2, V).

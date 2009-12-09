@@ -728,27 +728,29 @@ Iteration: 44
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-    SlW2    StW1    StW1    Diam                
-    SlW2                    StW1    StW1        
-    SlW2                                        
-    SlW2    Diam Avatar1                    Diam
-    SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+    SlW2    SlW2    SlW2    SlW2    SlW2
+    SlW2 Avatar1               .      M1
+    SlW2               .       .    Diam
+    SlW2                               .
+    SlW2                                
 
-X,Y: 2,5 - Pos: 20 - LineSize: 6
+X,Y: 1,1 - Pos: 6 - LineSize: 5
 
-==>  Head for: 0,-1
+==>  Head for: 1,0
 ------------------------------------------------------------------
 
 Iteration: 45
 ------------------------------------------------------------------
 ViewPerimeter: 3,3
 ------------------------------------------------------------------
-    SlW2    Diam                            Exit
-    SlW2    StW1    StW1    Diam                
-    SlW2                    StW1    StW1        
-    SlW2         Avatar1                        
-    SlW2    Diam                            Diam
     SlW2    SlW2    SlW2    SlW2    SlW2    SlW2
+    SlW2         Avatar1       .      M1       .
+    SlW2               .       .    Diam       .
+    SlW2                               .        
+    SlW2                                        
 
-X,Y: 2,4 - Pos: 20 - LineSize: 6
+X,Y: 2,1 - Pos: 8 - LineSize: 6
+
+==>  Head for: 1,0
+------------------------------------------------------------------
 
