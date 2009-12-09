@@ -1,10 +1,10 @@
 <Maps MapsPerLevel="20">
 
   <List>
-	<Map Name="smallmap.xml" />
+	<Map Name="smallmap3.xml" />
 	<Map Name="smallmap2.xml" />
 	<Map Name="smallmap4.xml" />
-	<Map Name="smallmap3.xml" />
+	<Map Name="smallmap.xml" />
 	<Map Name="smallmap5.xml" />
     <Map Name="defmap_L001_N001.xml" />
     <Map Name="defmap_L001_N002.xml" />
