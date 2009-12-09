@@ -1,6 +1,6 @@
 :-use_module('outilsCarte').
 :-use_module('plusCourtChemin').
-%:-use_module('eviterMonstre').
+:-use_module('eviterMonstre').
 
 /*
   Définition de l'IA du mineur
@@ -132,23 +132,24 @@ trouverOuAller(Xplayer, Yplayer , L, Size, Direction, CanGotoExit) :-	CanGotoExi
 % Mouvement aléatoire avec le prédicat move/12
 %  avec augmentation du périmètre de vue si aucun diamant n'est en vue
 
-/*
-move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- eviterMonstre(L, Pos, Size, Direction),
-																dir( Direction, Dx, Dy ), 
-																ecrire('Il y a eu danger'),
+move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- CanGotoExit = 1,
+																eviterMonstre(L, Size, L2),
+																trouverOuAller(X, Y, L2, Size, Direction, CanGotoExit),
+																dir( Direction, Dx, Dy ), ecrire('ok on va a la sortie mais on évite le monstre'),
 																!.
-*/
-
+																
 move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- CanGotoExit = 1,
 																trouverOuAller(X, Y, L, Size, Direction, CanGotoExit),
 																dir( Direction, Dx, Dy ), ecrire('ok on va a la sortie'),
 																!.
 			
-move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _) :-  %ecrire('dans move'), ecrire('---'),
-																%ecrire(L),
-																%ecrire('---'),
-																member( 2, L ), 
-																%ecrire('oO'),
+move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _) :-  member( 2, L ), 
+																eviterMonstre(L, Size, L2),
+																trouverOuAller(X, Y, L2, Size, Direction, CanGotoExit), ecrire('ok on prendl e diamant mais on évite le monstre'), 
+																dir( Direction, Dx, Dy ), 
+																!.			
+
+move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _) :-  member( 2, L ), 
 																trouverOuAller(X, Y, L, Size, Direction, CanGotoExit), ecrire('ok on prendl e diamant'), 
 																dir( Direction, Dx, Dy ), 
 																!.
@@ -161,6 +162,14 @@ ecrire( T ) :- open( 'trace.txt', append, L ), write( L, T ), nl( L ), close( L 
 ecrire2( T ) :- open( 'dangerMonstre.txt', append, L ), write( L, T ), nl( L ), close( L ).
 
 ecrire3( T ) :- open( 'L.txt', append, L ), write( L, T ), nl( L ), close( L ).
+
+ecrire4( T ) :- open( 'L2.txt', append, L ), write( L, T ), nl( L ), close( L ).
+
+/**
+Ecrit dans un fichier indiqué en paramètre
+@profil : ecrireFile( +T , +NomFichier )
+**/
+ecrireFile( T , File ) :- open( File , append, L ), write( L, T ), nl( L ), close( L ).
 
 ecrireL([]) :- ecrire3('------------------------------------------------').
 ecrireL([T|R]) :- 

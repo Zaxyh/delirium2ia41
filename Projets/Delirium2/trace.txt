@@ -99,11 +99,3 @@ ok on va a la sortie
 je cherche la sortie
 haut
 ok on va a la sortie
-droite
-ok on prendl e diamant
-droite
-ok on prendl e diamant
-droite
-ok on prendl e diamant
-droite
-ok on prendl e diamant
