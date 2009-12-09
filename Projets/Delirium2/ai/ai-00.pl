@@ -1,6 +1,7 @@
 :-use_module('outilsCarte').
 :-use_module('plusCourtChemin').
 :-use_module('eviterMonstre').
+:-use_module('situations').
 
 /*
   Définition de l'IA du mineur
@@ -132,17 +133,20 @@ trouverOuAller(Xplayer, Yplayer , L, Size, Direction, CanGotoExit) :-	CanGotoExi
 % Mouvement aléatoire avec le prédicat move/12
 %  avec augmentation du périmètre de vue si aucun diamant n'est en vue
 
+move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- situations(L, Pos, Size, Direction),
+																dir( Direction, Dx, Dy ),!.
+
 move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- CanGotoExit = 1,
 																eviterMonstre(L, Size, L2),
 																trouverOuAller(X, Y, L2, Size, Direction, CanGotoExit),
 																dir( Direction, Dx, Dy ), ecrire('ok on va a la sortie mais on évite le monstre'),
 																!.
-																
+															
 move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- CanGotoExit = 1,
 																trouverOuAller(X, Y, L, Size, Direction, CanGotoExit),
 																dir( Direction, Dx, Dy ), ecrire('ok on va a la sortie'),
 																!.
-			
+	
 move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _) :-  member( 2, L ), 
 																eviterMonstre(L, Size, L2),
 																trouverOuAller(X, Y, L2, Size, Direction, CanGotoExit), ecrire('ok on prendl e diamant mais on évite le monstre'), 
