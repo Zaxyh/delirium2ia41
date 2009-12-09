@@ -6,7 +6,9 @@
 			  numCaseHaut/3,
 			  numCaseBas/3,
 			  numCaseGauche/3,
-			  numCaseDroite/3
+			  numCaseDroite/3,
+			  replaceElement/4,
+			  replaceAll/4
 			]
 ).
 
