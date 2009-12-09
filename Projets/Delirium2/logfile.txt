@@ -14,8 +14,8 @@ Initializing Input Devices...
 
 ------------------------------------------------------------------
 Vendor: NVIDIA Corporation
-Renderer: GeForce 8400M G/PCI/SSE2
-Version: 3.0.0
+Renderer: GeForce 9100M G/PCI/SSE2/3DNOW!
+Version: 2.1.2
 ------------------------------------------------------------------
 GLEW initialized!
 ------------------------------------------------------------------
@@ -667,3 +667,8 @@ Texture 'GRAVITY.TGA' loaded (256x256)!
 Texture 'ARROW.TGA' loaded (64x98)!
 Texture 'TAXIS.BMP' loaded (192x192)!
 Texture 'GREENTR.TGA' loaded (384x192)!
+Parsing file: 'smallmap2.xml'...
+Parsing file: 'smallmap4.xml'...
+Parsing file: 'smallmap3.xml'...
+Parsing file: 'smallmap3.xml'...
+Parsing file: 'smallmap5.xml'...

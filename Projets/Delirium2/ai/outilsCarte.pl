@@ -2,7 +2,11 @@
               caseExist/2, 
 			  getElement/3,
 			  caseAccessible/2,
-			  caseDanger/2
+			  caseDanger/2,
+			  numCaseHaut/3,
+			  numCaseBas/3,
+			  numCaseGauche/3,
+			  numCaseDroite/3
 			]
 ).
 
@@ -36,3 +40,32 @@ caseAccessible(L, Indice) :- getElement(L, Indice, Element), Element = 0, !.
 **/
 caseDanger(L, Indice) :- getElement(L, Indice, Element), Element = 11, !.
 caseDanger(L, Indice) :- getElement(L, Indice, Element), Element = 12, !.
+
+
+/**
+* Permet de connaitre le numéro de la case du dessus
+* @profil : numCaseHaut(+N, +Size, -Ret)
+**/
+numCaseHaut(N, Size, Ret) :- 
+	Ret is N - Size.
+
+/**
+* Permet de connaitre le numéro de la case du dessus
+* @profil : numCaseBas(+N, +Size, -Ret)
+**/							 
+numCaseBas(N, Size, Ret) :- 
+	Ret is N + Size.
+							 
+/**
+* Permet de connaitre le numéro de la case de gauche
+* @profil : numCaseGauche(+N, +Size, -Ret)
+**/
+numCaseGauche(N, Size, Ret) :- 
+	Ret is N - 1.
+
+/**
+* Permet de connaitre le numéro de la case de droite
+* @profil : numCaseDroite(+N, +Size, -Ret)
+**/								
+numCaseDroite(N, _, Ret) :-  
+	Ret is N + 1.

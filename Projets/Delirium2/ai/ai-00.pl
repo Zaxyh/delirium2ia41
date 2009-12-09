@@ -1,6 +1,6 @@
 :-use_module('outilsCarte').
 :-use_module('plusCourtChemin').
-:-use_module('eviterMonstre').
+%:-use_module('eviterMonstre').
 
 /*
   Définition de l'IA du mineur
@@ -32,9 +32,26 @@ trouverPositionElement([_|R], Code, Indice, I) :- Indice2 is Indice + 1, trouver
 	plus court chemin pour atteindre une destination Xd, Yd a partir des coordonnées du joueur Xp, Yp
 	Pas de gestion des obstacles
 */
-pccDestination(Start, Finish, L, Size, D) :- Size2 is Size - 2,
-											dijkstra(Start, Finish, [T,N|_], Len, L, Size2), % tete : ou je suis, N : next case
-											quelleSuivante(T, N, D2, Size),
+pccDestination(Start, Finish, L, Size, D) :- %ecrire('recherche du passage'), 
+											%ecrire(Start), ecrire(L), ecrire(Size), ecrire(Finish), ecrire('---'),
+											solve(Start, Soln, L, Size, Finish), % tete : ou je suis, N : next case
+											%ecrire('passage trouve'),
+											%ecrire(Soln).
+											%ecrire(SolPath).
+											%reverse(Soln, [_|ToGo|_]),
+											reverse(Soln, Oo),
+											nth0(1, Oo, ToGo),
+											%ecrire('Je vais en :'),
+											%ecrire(ToGo),
+											%ecrire('Solution :'),
+											%ecrire(Soln),
+											%ecrire('Depart, togo, L, Size'),
+											%ecrire(Start),
+											%ecrire(ToGo),
+											%ecrire(L),
+											%ecrire(Size),
+											%ecrire('---'),
+											quelleSuivante(Start, ToGo, D2, Size),
 											D is D2.
 
 /*
@@ -43,19 +60,27 @@ pccDestination(Start, Finish, L, Size, D) :- Size2 is Size - 2,
   1 : droite
   2 : haut
   3 : bas
+  
+  quelleSuivante(+Current, +Next, -Direction, +Size)
 */
-quelleSuivante(C, N, D, _) 		:- C2 is C + 1, N = C2, !, D is 1.
-quelleSuivante(C, N, D, _) 		:- C2 is C - 1, N = C2, !, D is 0.
-quelleSuivante(C, N, D, Size) 	:- C2 is C + Size, N = C2, !, D is 3.
-quelleSuivante(C, N, D, Size) 	:- C2 is C - Size, N = C2, !, D is 2.
+quelleSuivante(C, N, D, _) 		:- C2 is C + 1, N = C2, !, ecrire('droite'), D is 1.
+quelleSuivante(C, N, D, _) 		:- C2 is C - 1, N = C2, !, ecrire('gauche'), D is 0.
+quelleSuivante(C, N, D, Size) 	:- C2 is C + Size, N = C2, !, ecrire('bas'), D is 3.
+quelleSuivante(C, N, D, Size) 	:- C2 is C - Size, N = C2, !, ecrire('haut'), D is 2.
 %quelleSuivante(_, _, D, _) 		:- ecrire('ALEATOIRE !'), D is random(5). 
 quelleSuivante(_, _, D, _) 		:- ecrire('Bloque !'), D is 4.
- 
+
 /*
 	renvoie la direction à prendre pour atteindre le diamant
 */
 trouverPpcDiamant(L, Size, D) :- 	trouverPositionElement(L, 2, 0, I),   %  I = position diamant
 									trouverPositionElement(L, 10, 0, I2), %  I2 = position joueur
+									%ecrire('Bon faut que jaille au diamant qui est en :'),
+									%ecrire(I),
+									%ecrire(L),
+									%ecrire(Size),
+									%ecrire('Et je suis en :'),
+									%ecrire(I2),
 									pccDestination(I2, I, L, Size ,D).
 /*
 	renvoie la direction à prendre pour atteindre le diamant
@@ -64,6 +89,7 @@ trouverPpcSortie(L, Size, D) :- trouverPositionElement(L, 17, 0, I),  %  I = pos
 								trouverPositionElement(L, 10, 0, I2), %  I2 = position joueur
 								pccDestination(I2, I, L, Size ,D).
 	
+
 
 /* 
 	trouve ou aller s il reste des diamants 
@@ -81,7 +107,7 @@ trouverOuAller(Xplayer, Yplayer , L, Size, Direction, CanGotoExit) :- 	CanGotoEx
 trouverOuAller(Xplayer, Yplayer , L, Size, Direction, CanGotoExit) :-	CanGotoExit = 1,
 																		member( 17, L ),
 																		!,
-																		%ecrire('je cherche la sortie'),
+																		ecrire('je cherche la sortie'),
 																		trouverPpcSortie(L, Size, Direction).	
 
 
@@ -106,19 +132,25 @@ trouverOuAller(Xplayer, Yplayer , L, Size, Direction, CanGotoExit) :-	CanGotoExi
 % Mouvement aléatoire avec le prédicat move/12
 %  avec augmentation du périmètre de vue si aucun diamant n'est en vue
 
+/*
 move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- eviterMonstre(L, Pos, Size, Direction),
 																dir( Direction, Dx, Dy ), 
 																ecrire('Il y a eu danger'),
 																!.
+*/
 
 move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- CanGotoExit = 1,
 																trouverOuAller(X, Y, L, Size, Direction, CanGotoExit),
 																dir( Direction, Dx, Dy ), ecrire('ok on va a la sortie'),
 																!.
 			
-move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _) :-  member( 2, L ), 
-																trouverOuAller(X, Y, L, Size, Direction, CanGotoExit), 
-																dir( Direction, Dx, Dy ), ecrire('ok on prendl e diamant'), 
+move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _) :-  %ecrire('dans move'), ecrire('---'),
+																%ecrire(L),
+																%ecrire('---'),
+																member( 2, L ), 
+																%ecrire('oO'),
+																trouverOuAller(X, Y, L, Size, Direction, CanGotoExit), ecrire('ok on prendl e diamant'), 
+																dir( Direction, Dx, Dy ), 
 																!.
 
 move( L, X, Y, Pos, Size, CanGotoExit, _, _, Vx, Vy, Vx1, Vy1 ) :- Vx1 is Vx+1, Vy1 is Vy+1.

@@ -1,32 +1,29 @@
-<Map Name="SmallMap_01" Width="8" Height="7">
+<Map Name="SmallMap_01" Width="4" Height="4">
 
  <Data>
-  "Avatar1, , , , , , ,Exit"
-  " , , , , , , , "
-  ".,.,.,., , , ,StW1"
-  ".,.,.,.,StW1,StW1,StW1, "
-  " , , , , ,M1, ,StW1"
-  " , , , , , ,Diam, "
-  " , , ,Diam,Diam,Diam, , "
+  "Avatar1, , ,Exit"
+  " , , , "
+  " , , , "
+  "Diam,Diam,Diam, "
  </Data>
 
  <Infos GameDifficulty="Easy">
   <Goals Player="1" Time="80">
-    <Goal Gather="4" Item="Diam" Points="10" />
+    <Goal Gather="3" Item="Diam" Points="10" />
   </Goals>
   <Gravity Direction="0,1" />
  </Infos>
 
  <Infos GameDifficulty="Medium">
   <Goals Player="1" Time="80">
-    <Goal Gather="4" Item="Diam" Points="10" />
+    <Goal Gather="3" Item="Diam" Points="10" />
   </Goals>
   <Gravity Direction="0,1" />
  </Infos>
 
  <Infos GameDifficulty="Hard">
   <Goals Player="1" Time="80">
-    <Goal Gather="4" Item="Diam" Points="10" />
+    <Goal Gather="3" Item="Diam" Points="10" />
   </Goals>
   <Gravity Direction="0,1" />
  </Infos>
