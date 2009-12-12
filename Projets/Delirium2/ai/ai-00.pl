@@ -19,44 +19,30 @@ setViewPerimeter( 3,3 ).
 
 
 /* 
-	trouve la position du diamant le plus proche à partir du coin haut-gauche, enfin en ligne par ligne bof bof
-	L : la liste des cases
-	Code : code de l'élément à trouver , par exemple 2 pour les diamants
-	Indice : indice en cours d'inspection (envoyer 0 lors de l'appel)
-	I : Contiendra l'indice de la case contenant le diamant : valeur de retour
+        trouve la position du diamant le plus proche à partir du coin haut-gauche, enfin en ligne par ligne bof bof
+        L : la liste des cases
+        Code : code de l'élément à trouver , par exemple 2 pour les diamants
+        Indice : indice en cours d'inspection (envoyer 0 lors de l'appel)
+        I : Contiendra l'indice de la case contenant le diamant : valeur de retour
 */
 trouverPositionElement([T|R], Code, Indice, I) :- T=Code, I is Indice, !.
 trouverPositionElement([_|R], Code, Indice, I) :- Indice2 is Indice + 1, trouverPositionElement(R, Code, Indice2, I), !.
 
 
 /* 
-	plus court chemin pour atteindre une destination Xd, Yd a partir des coordonnées du joueur Xp, Yp
-	Pas de gestion des obstacles
+        plus court chemin pour atteindre une destination Xd, Yd a partir des coordonnées du joueur Xp, Yp
+        Pas de gestion des obstacles
 */
-pccDestination(Start, Finish, L, Size, D) :- %ecrire('recherche du passage'), 
-											%ecrire(Start), ecrire(L), ecrire(Size), ecrire(Finish), ecrire('---'),
-											solve(Start, Soln, L, Size, Finish), % tete : ou je suis, N : next case
-											%ecrire('passage trouve'),
-											%ecrire(Soln).
-											%ecrire(SolPath).
-											%reverse(Soln, [_|ToGo|_]),
-											reverse(Soln, Oo),
-											nth0(1, Oo, ToGo),
-											%ecrire('Je vais en :'),
-											%ecrire(ToGo),
-											%ecrire('Solution :'),
-											%ecrire(Soln),
-											%ecrire('Depart, togo, L, Size'),
-											%ecrire(Start),
-											%ecrire(ToGo),
-											%ecrire(L),
-											%ecrire(Size),
-											%ecrire('---'),
-											quelleSuivante(Start, ToGo, D2, Size),
-											D is D2.
+pccDestination(Start, Finish, L, Size, D) :-
+                solve(Start, Soln, L, Size, Finish), % tete : ou je suis, N : next case
+                not(Soln = []),
+                reverse(Soln, Oo),
+                nth0(1, Oo, ToGo),
+                quelleSuivante(Start, ToGo, D2, Size),
+                D is D2.
 
 /*
-	quelle est la direction pour la case suivante ? : C : courant, N : next, D : direction
+        quelle est la direction pour la case suivante ? : C : courant, N : next, D : direction
   0 : gauche
   1 : droite
   2 : haut
@@ -64,52 +50,73 @@ pccDestination(Start, Finish, L, Size, D) :- %ecrire('recherche du passage'),
   
   quelleSuivante(+Current, +Next, -Direction, +Size)
 */
-quelleSuivante(C, N, D, _) 		:- C2 is C + 1, N = C2, !, ecrire('droite'), D is 1.
-quelleSuivante(C, N, D, _) 		:- C2 is C - 1, N = C2, !, ecrire('gauche'), D is 0.
-quelleSuivante(C, N, D, Size) 	:- C2 is C + Size, N = C2, !, ecrire('bas'), D is 3.
-quelleSuivante(C, N, D, Size) 	:- C2 is C - Size, N = C2, !, ecrire('haut'), D is 2.
-%quelleSuivante(_, _, D, _) 		:- ecrire('ALEATOIRE !'), D is random(5). 
-quelleSuivante(_, _, D, _) 		:- ecrire('Bloque !'), D is 4.
+quelleSuivante(C, N, D, _)              :- C2 is C + 1, N = C2, !, D is 1.
+quelleSuivante(C, N, D, _)              :- C2 is C - 1, N = C2, !, D is 0.
+quelleSuivante(C, N, D, Size)   :- C2 is C + Size, N = C2, !, D is 3.
+quelleSuivante(C, N, D, Size)   :- C2 is C - Size, N = C2, !, D is 2.
+%quelleSuivante(_, _, D, _)             :- ecrire('ALEATOIRE !'), D is random(5). 
+quelleSuivante(_, _, D, _)              :- ecrire('Bloque !'), D is 4.
 
 /*
-	renvoie la direction à prendre pour atteindre le diamant
+trouverPlusProcheDiamant(+positionJoueur, +Map, +Size, -Position)
 */
-trouverPpcDiamant(L, Size, D) :- 	trouverPositionElement(L, 2, 0, I),   %  I = position diamant
-									trouverPositionElement(L, 10, 0, I2), %  I2 = position joueur
-									%ecrire('Bon faut que jaille au diamant qui est en :'),
-									%ecrire(I),
-									%ecrire(L),
-									%ecrire(Size),
-									%ecrire('Et je suis en :'),
-									%ecrire(I2),
-									pccDestination(I2, I, L, Size ,D).
+
+trouverPlusProcheDiamant(PosPlayer, L, Size, Indice) :-
+      XPlayer is PosPlayer mod Size,
+      YPlayer is PosPlayer // Size,
+      findall(
+           Couple,
+           (
+                nth0(Indice, L, 2),
+                XDiamant is Indice mod Size,
+                YDiamant is Indice // Size,
+                Distance is ( (XDiamant-XPlayer)*(XDiamant-XPlayer) + (YDiamant-YPlayer)*(YDiamant-YPlayer) ),
+                Couple = [Distance, Indice]
+           ),
+           Succs
+      ),
+      not(Succs = []),
+      sort(Succs, S),
+      S = [ [_|[Indice]] | _ ].
+
 /*
-	renvoie la direction à prendre pour atteindre le diamant
+        renvoie la direction à prendre pour atteindre le diamant
 */
-trouverPpcSortie(L, Size, D) :- trouverPositionElement(L, 17, 0, I),  %  I = position sortie
-								trouverPositionElement(L, 10, 0, I2), %  I2 = position joueur
-								pccDestination(I2, I, L, Size ,D).
-	
+trouverPpcDiamant(L, Size, D) :-     
+		%trouverPositionElement(L, 2, 0, I),   %  I = position diamant
+		trouverPositionElement(L, 10, 0, I2), %  I2 = position joueur
+		trouverPlusProcheDiamant(I2, L, Size, I),
+		pccDestination(I2, I, L, Size ,D).
+/*
+        renvoie la direction à prendre pour atteindre le diamant
+*/
+trouverPpcSortie(L, Size, D) :- 
+		trouverPositionElement(L, 17, 0, I),  %  I = position sortie
+		trouverPositionElement(L, 10, 0, I2), %  I2 = position joueur
+		pccDestination(I2, I, L, Size ,D).
+        
 
 
 /* 
-	trouve ou aller s il reste des diamants 
-	Xplayer, Yplayer : position du joueur
-	L : Map du jeux
-	Size : longeur d'une ligne du jeux
-	Direction : direction à prendre
-	CanGotoExit : peux aller a la sortie
+        trouve ou aller s il reste des diamants 
+        Xplayer, Yplayer : position du joueur
+        L : Map du jeux
+        Size : longeur d'une ligne du jeux
+        Direction : direction à prendre
+        CanGotoExit : peux aller a la sortie
 */
-trouverOuAller(Xplayer, Yplayer , L, Size, Direction, CanGotoExit) :- 	CanGotoExit = 0,
-																		!, 
-																		trouverPpcDiamant(L, Size, Direction).
+trouverOuAller(Xplayer, Yplayer , L, Size, Direction, CanGotoExit) :-   
+		CanGotoExit = 0,
+		!, 
+		trouverPpcDiamant(L, Size, Direction).
 
-% aller a la sortie				
-trouverOuAller(Xplayer, Yplayer , L, Size, Direction, CanGotoExit) :-	CanGotoExit = 1,
-																		member( 17, L ),
-																		!,
-																		ecrire('je cherche la sortie'),
-																		trouverPpcSortie(L, Size, Direction).	
+% aller a la sortie                             
+trouverOuAller(Xplayer, Yplayer , L, Size, Direction, CanGotoExit) :-   
+		CanGotoExit = 1,
+		member( 17, L ),
+		!,
+		%ecrire('je cherche la sortie'),
+		trouverPpcSortie(L, Size, Direction).   
 
 
 /*
@@ -133,30 +140,39 @@ trouverOuAller(Xplayer, Yplayer , L, Size, Direction, CanGotoExit) :-	CanGotoExi
 % Mouvement aléatoire avec le prédicat move/12
 %  avec augmentation du périmètre de vue si aucun diamant n'est en vue
 
-move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- situations(L, Pos, Size, Direction),
-																dir( Direction, Dx, Dy ),!.
+move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- 
+		situations(L, Pos, Size, Direction),
+		dir( Direction, Dx, Dy ),!.
 
-move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- CanGotoExit = 1,
-																eviterMonstre(L, Size, L2),
-																trouverOuAller(X, Y, L2, Size, Direction, CanGotoExit),
-																dir( Direction, Dx, Dy ), ecrire('ok on va a la sortie mais on évite le monstre'),
-																!.
-															
-move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- CanGotoExit = 1,
-																trouverOuAller(X, Y, L, Size, Direction, CanGotoExit),
-																dir( Direction, Dx, Dy ), ecrire('ok on va a la sortie'),
-																!.
-	
-move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _) :-  member( 2, L ), 
-																eviterMonstre(L, Size, L2),
-																trouverOuAller(X, Y, L2, Size, Direction, CanGotoExit), ecrire('ok on prendl e diamant mais on évite le monstre'), 
-																dir( Direction, Dx, Dy ), 
-																!.			
+move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- 
+		CanGotoExit = 1,
+		eviterMonstre(L, Size, L2),
+		trouverOuAller(X, Y, L2, Size, Direction, CanGotoExit),
+		dir( Direction, Dx, Dy ),
+		ecrire('ok on va a la sortie mais on évite le monstre'),
+		!.
 
-move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _) :-  member( 2, L ), 
-																trouverOuAller(X, Y, L, Size, Direction, CanGotoExit), ecrire('ok on prendl e diamant'), 
-																dir( Direction, Dx, Dy ), 
-																!.
+move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- 
+		CanGotoExit = 1,
+		trouverOuAller(X, Y, L, Size, Direction, CanGotoExit),
+		dir( Direction, Dx, Dy ), 
+		%ecrire('ok on va a la sortie'),
+		!.
+
+move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _) :-  
+		member( 2, L ), 
+		eviterMonstre(L, Size, L2),
+		trouverOuAller(X, Y, L2, Size, Direction, CanGotoExit),
+		ecrire('ok on prendl e diamant mais on évite le monstre'), 
+		dir( Direction, Dx, Dy ), 
+		!.                      
+
+move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _) :- 
+		member( 2, L ), 
+		trouverOuAller(X, Y, L, Size, Direction, CanGotoExit), 
+		%ecrire('ok on prendl e diamant'), 
+		dir( Direction, Dx, Dy ), 
+		!.
 
 move( L, X, Y, Pos, Size, CanGotoExit, _, _, Vx, Vy, Vx1, Vy1 ) :- Vx1 is Vx+1, Vy1 is Vy+1.
 
@@ -177,7 +193,7 @@ ecrireFile( T , File ) :- open( File , append, L ), write( L, T ), nl( L ), clos
 
 ecrireL([]) :- ecrire3('------------------------------------------------').
 ecrireL([T|R]) :- 
-	ecrire3(T), ecrireL(R).
+        ecrire3(T), ecrireL(R).
 
 /*
   Définition des quatre directions

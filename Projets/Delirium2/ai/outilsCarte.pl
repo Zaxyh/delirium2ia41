@@ -1,15 +1,15 @@
 :- module(outilsCarte, [
               caseExist/2, 
-			  getElement/3,
-			  caseAccessible/2,
-			  caseDanger/2,
-			  numCaseHaut/3,
-			  numCaseBas/3,
-			  numCaseGauche/3,
-			  numCaseDroite/3,
-			  replaceElement/4,
-			  replaceAll/4
-			]
+                          getElement/3,
+                          caseAccessible/2,
+                          caseDanger/2,
+                          numCaseHaut/3,
+                          numCaseBas/3,
+                          numCaseGauche/3,
+                          numCaseDroite/3,
+                          replaceElement/4,
+                          replaceAll/4
+                        ]
 ).
 
 /** 
@@ -49,28 +49,32 @@ caseDanger(L, Indice) :- getElement(L, Indice, Element), Element = 12, !.
 * @profil : numCaseHaut(+N, +Size, -Ret)
 **/
 numCaseHaut(N, Size, Ret) :- 
-	Ret is N - Size.
+        Ret is N - Size.
 
 /**
 * Permet de connaitre le numéro de la case du dessus
 * @profil : numCaseBas(+N, +Size, -Ret)
-**/							 
+**/                                                      
 numCaseBas(N, Size, Ret) :- 
-	Ret is N + Size.
-							 
+        Ret is N + Size.
+                                                         
 /**
 * Permet de connaitre le numéro de la case de gauche
 * @profil : numCaseGauche(+N, +Size, -Ret)
 **/
-numCaseGauche(N, Size, Ret) :- 
-	Ret is N - 1.
+numCaseGauche(N, Size, Ret) :-
+        Col is N mod Size,
+        Col \= 0,
+        Ret is N - 1.
 
 /**
 * Permet de connaitre le numéro de la case de droite
 * @profil : numCaseDroite(+N, +Size, -Ret)
-**/								
-numCaseDroite(N, _, Ret) :-  
-	Ret is N + 1.
+**/                                                             
+numCaseDroite(N, Size, Ret) :-
+        Col is ( N mod Size ) + 1,
+        Col \= Size,
+        Ret is N + 1.
 
 
 /**
@@ -81,13 +85,13 @@ replaceElement([T|R], 1, Valeur, [Valeur|R]).
 replaceElement([T|R], Indice, Valeur, [T|R2]) :-
                   I2 is Indice - 1,
                   replaceElement(R, I2, Valeur, R2),!.
-	
+        
 /**
 * Remplace dans L tous les élements d'indice compris dans la liste I exemple : [indice0, indice5, ...]
 * par la valeur V, ne remplace pas la case contenant le joueur
 * Puis renvoi la liste modifié sous L2
 * @profil : replaceAll(+L, +I, -L2, +V)
-**/	
+**/     
 replaceAll(L, I, L2, V) :-
              sublist( <(-1), I, I2),
               sort(I2, I3),
