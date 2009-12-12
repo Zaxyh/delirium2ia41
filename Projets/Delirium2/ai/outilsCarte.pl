@@ -17,7 +17,10 @@
 * @profil : caseExist(+L, +Indice)
 **/
 caseExist([_|_], 0).
-caseExist([T|R], Indice) :- Indice > 0, I2 is Indice - 1, caseExist(R, I2).
+caseExist([_|R], Indice) :- 
+	Indice > 0, 
+	I2 is Indice - 1, 
+	caseExist(R, I2).
 
 /** 
 * Permet de récupérer la valeur de l'élément d'indice Indice dans la liste L

@@ -34,15 +34,14 @@ trouverPositionElement([_|R], Code, Indice, I) :- Indice2 is Indice + 1, trouver
         Pas de gestion des obstacles
 */
 pccDestination(Start, Finish, L, Size, D) :-
-                solve(Start, Soln, L, Size, Finish), % tete : ou je suis, N : next case
+                solve(Start, Soln, L, Size, Finish),
                 not(Soln = []),
                 reverse(Soln, Oo),
                 nth0(1, Oo, ToGo),
-                quelleSuivante(Start, ToGo, D2, Size),
-                D is D2.
+                quelleSuivante(Start, ToGo, D, Size).
 
 /*
-        quelle est la direction pour la case suivante ? : C : courant, N : next, D : direction
+  quelle est la direction pour la case suivante ? : C : courant, N : next, D : direction
   0 : gauche
   1 : droite
   2 : haut
@@ -50,18 +49,31 @@ pccDestination(Start, Finish, L, Size, D) :-
   
   quelleSuivante(+Current, +Next, -Direction, +Size)
 */
-quelleSuivante(C, N, D, _)              :- C2 is C + 1, N = C2, !, D is 1.
-quelleSuivante(C, N, D, _)              :- C2 is C - 1, N = C2, !, D is 0.
-quelleSuivante(C, N, D, Size)   :- C2 is C + Size, N = C2, !, D is 3.
-quelleSuivante(C, N, D, Size)   :- C2 is C - Size, N = C2, !, D is 2.
-%quelleSuivante(_, _, D, _)             :- ecrire('ALEATOIRE !'), D is random(5). 
-quelleSuivante(_, _, D, _)              :- ecrire('Bloque !'), D is 4.
+quelleSuivante(C, N, 1, _) :- 
+	C2 is C + 1, 
+	N = C2, 
+	!.
+quelleSuivante(C, N, 0, _) :- 
+    C2 is C - 1, 
+	N = C2, 
+	!.
+quelleSuivante(C, N, 3, Size) :- 
+    C2 is C + Size,
+	N = C2,
+	!.
+quelleSuivante(C, N, 2, Size) :- 
+    C2 is C - Size, 
+	N = C2, 
+	!.
+%quelleSuivante(_, _, D, _) :- ecrire('ALEATOIRE !'), D is random(5). 
+quelleSuivante(_, _, 4, _) :- 
+	ecrire('Bloque !').
 
 /*
-trouverPlusProcheDiamant(+positionJoueur, +Map, +Size, -Position)
+trouverPlusProcheDiamant(+positionJoueur, +Map, +Size, -Destination)
 */
 
-trouverPlusProcheDiamant(PosPlayer, L, Size, Indice) :-
+trouverPlusProcheDiamant(PosPlayer, L, Size, D) :-
       XPlayer is PosPlayer mod Size,
       YPlayer is PosPlayer // Size,
       findall(
@@ -77,16 +89,27 @@ trouverPlusProcheDiamant(PosPlayer, L, Size, Indice) :-
       ),
       not(Succs = []),
       sort(Succs, S),
-      S = [ [_|[Indice]] | _ ].
+	  tenterDeplacement(PosPlayer, S, L, Size, D).
+      %S = [ [_|[Indice]] | _ ].
 
+	  
+tenterDeplacement(_, [], _, _, _) :- !, fail.
+	 
+tenterDeplacement(From, [[_|[To]]|Others], L, Size, D) :-
+	pccDestination(From, To, L, Size, D),
+	!.
+	
+tenterDeplacement(From, [_|Others], L, Size, D) :-	  
+	tenterDeplacement(From, Others, L, Size, D).
+	
 /*
         renvoie la direction à prendre pour atteindre le diamant
 */
 trouverPpcDiamant(L, Size, D) :-     
 		%trouverPositionElement(L, 2, 0, I),   %  I = position diamant
 		trouverPositionElement(L, 10, 0, I2), %  I2 = position joueur
-		trouverPlusProcheDiamant(I2, L, Size, I),
-		pccDestination(I2, I, L, Size ,D).
+		trouverPlusProcheDiamant(I2, L, Size, D).
+		%pccDestination(I2, I, L, Size ,D).
 /*
         renvoie la direction à prendre pour atteindre le diamant
 */
