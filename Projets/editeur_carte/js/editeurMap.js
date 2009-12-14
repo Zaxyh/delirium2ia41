@@ -16,7 +16,7 @@ function AfficherElement(){
 		"Vide", "Herbe", "Diam", "Stone",
 		"StW1", "StW2", "StW3", "StW4",
 		"S1W1", "S1W2", "Avatar1", 
-		"M1", "M2", "Exit"
+		"M1", "M2", "Amoeba", "Exit"
 	];
 	
 	var elements = "";
