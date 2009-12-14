@@ -14,6 +14,8 @@ passageH(A, B, Size, L) :- numCaseHaut(A, Size, B),
                                                    getElement(L, B, El),
                                                    ( El < 3 ; El = 17 ).
 
+passageH(A, B, Size, L) :- numCaseHaut(A, Size, B), B2 is B+Size, pousserRocherHaut(L, B2, Size).
+												   
 /*
 en bas
 */
@@ -28,10 +30,8 @@ passageG(A, B, Size, L) :- numCaseGauche(A, Size, B),
                                                    getElement(L, B, El),
                                                    ( El < 3 ; El = 17 ).
 
-% rocher méthode express
-passageG(A, B, Size, L) :- numCaseGauche(A, Size, B),
-                                                   getElement(L, B, El),
-                                                   ( El = 3 ).
+
+passageG(A, B, Size, L) :- numCaseGauche(A, Size, B), B2 is B+1, pousserRocherGauche(L, B2, Size).
 
 /*
 a droite
@@ -41,7 +41,37 @@ passageD(A, B, Size, L) :- numCaseDroite(A, Size, B),
                                                    ( El < 3 ; El = 17 ).
 
 
-
+passageD(A, B, Size, L) :- numCaseDroite(A, Size, B), B2 is B-1, pousserRocherDroite(L, B2, Size).
+												   
+/**
+Pousser les rochers
+Methode complète.
+jusqu'a 2 rochers
+**/	
+pousserRocherGauche(L, Pos, Size) :- 
+	G1t is Pos-1, G2t is Pos-2,
+	getElement(L, G1t, G1), getElement(L, G2t, G2),
+	G1 = 3, G2 = 0,!.
+pousserRocherGauche(L, Pos, Size) :- 
+	G1t is Pos-1, G2t is Pos-2, G3t is Pos-3,
+	getElement(L, G1t, G1), getElement(L, G2t, G2), getElement(L, G3t, G3),
+	G1 = 3, G2 = 3,G3 = 0,!.
+pousserRocherDroite(L, Pos, Size) :- 
+	G1t is Pos+1, G2t is Pos+2, 
+	getElement(L, G1t, G1), getElement(L, G2t, G2),
+	G1 = 3, G2 = 0,!.
+pousserRocherDroite(L, Pos, Size) :- 
+	G1t is Pos+1, G2t is Pos+2, G3t is Pos+3, 
+	getElement(L, G1t, G1), getElement(L, G2t, G2), getElement(L, G3t, G3),
+	G1 = 3, G2 = 3,G3 = 0,!.	
+pousserRocherHaut(L, Pos, Size) :- 
+	G1t is Pos-Size, G2t is Pos-2*Size, 
+	getElement(L, G1t, G1), getElement(L, G2t, G2),
+	G1 = 3, G2 = 0,!.
+pousserRocherHaut(L, Pos, Size) :- 
+	G1t is Pos-Size, G2t is Pos-2*Size, G3t is Pos-3*Size,
+	getElement(L, G1t, G1), getElement(L, G2t, G2), getElement(L, G3t, G3),
+	G1 = 3, G2 = 3,G3 = 0,!.	
 
 s(A, B, 0, L, Size) :- passageD(A, B, Size, L).
 s(A, B, 0, L, Size) :- passageH(A, B, Size, L).

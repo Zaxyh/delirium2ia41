@@ -1,8 +1,19 @@
 :- module(eviterMonstre, [eviterMonstre/3]).
 
+/**
+* Retourne l'indice du monstre présent dans le champs de vision
+* @profil : getIndiceMonstre(+L, +Size, -Indice)
+**/
 getIndiceMonstre(L, Size, Indice) :- 
 	nth0(Indice, L, 11),!.
+getIndiceMonstre(L, Size, Indice) :- 
+	nth0(Indice, L, 12),!.
 	
+/**
+* Entoure le monstre de bloc
+* et retourne le nouveau champs de vision du mineur
+* @profil : entourerMonstres(+L, +Size, -L2).
+**/
 entourerMonstres(L, Size, L2) :- 
 	getIndiceMonstre(L, Size, I),
 	
@@ -32,12 +43,24 @@ entourerMonstres(L, Size, L2) :-
 	
 	!.
 	
+/**
+* Empeche de remplacer les élements du décors (autour du monstre) non accecibles par un mur
+**/
 verifierIndices(L, [], []).
 verifierIndices(L, [T|R], [T|R2]) :- 
 	caseAccessible(L, T), verifierIndices(L, R, R2),!.
 verifierIndices(L, [T|R], [-1|R2]) :- 
 	verifierIndices(L, R, R2), !.
 
+/**
+* Empèche de placer un bloc sur la liste de manière incohérente.
+* Exemple : Si le mineur est tout à droite de la carte, un Pos + 2 ramenera sur la ligne suivante.
+* @profil : verifierIndicesCN(+L, +Cases, -R, + Size).
+* C1 => PosMineur - Size
+* C2 => PosMineur - 1
+* C3 => PosMineur + 1
+* C4 => PosMineur + Size
+**/
 verifierIndicesC1(L, [H1,H2,H3,H4,H5,H6,H7,H8,C1,C2,C3,C4], R, Size) :- 
 	not(caseAccessible(L, C1)),
 	R = [-1,H2,H3,H4,H5,H6,H7,H8,C1,C2,C3,C4],!.
@@ -61,7 +84,9 @@ verifierIndicesC4(L, L2, L2, Size).
 	
 	
 /**
-Prédication eviter monstre
+* Prédicat principal
+* @profil : eviterMonstre(+L, +Size, -L2)
 **/	
 eviterMonstre(L, Size, L2) :- 
-	entourerMonstres(L, Size, L2),ecrireFile(L2, 'StephLog.txt'),!.
+	entourerMonstres(L, Size, L2),!.
+eviterMonstre(L, Size, L) :- !.

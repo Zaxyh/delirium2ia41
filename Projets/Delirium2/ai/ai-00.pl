@@ -105,18 +105,15 @@ tenterDeplacement(From, [_|Others], L, Size, D) :-
 /*
         renvoie la direction à prendre pour atteindre le diamant
 */
-trouverPpcDiamant(L, Size, D) :-     
-		%trouverPositionElement(L, 2, 0, I),   %  I = position diamant
-		trouverPositionElement(L, 10, 0, I2), %  I2 = position joueur
-		trouverPlusProcheDiamant(I2, L, Size, D).
-		%pccDestination(I2, I, L, Size ,D).
+trouverPpcDiamant(L, Pos, Size, D) :-     
+		trouverPlusProcheDiamant(Pos, L, Size, D).
+
 /*
         renvoie la direction à prendre pour atteindre le diamant
 */
-trouverPpcSortie(L, Size, D) :- 
-		trouverPositionElement(L, 17, 0, I),  %  I = position sortie
-		trouverPositionElement(L, 10, 0, I2), %  I2 = position joueur
-		pccDestination(I2, I, L, Size ,D).
+trouverPpcSortie(L, Pos, Size, D) :- 
+		nth0(I, L, 17),
+		pccDestination(Pos, I, L, Size ,D).
         
 
 
@@ -128,18 +125,14 @@ trouverPpcSortie(L, Size, D) :-
         Direction : direction à prendre
         CanGotoExit : peux aller a la sortie
 */
-trouverOuAller(Xplayer, Yplayer , L, Size, Direction, CanGotoExit) :-   
+trouverOuAller(L, Pos, Size, Direction, CanGotoExit) :-   
 		CanGotoExit = 0,
-		!, 
-		trouverPpcDiamant(L, Size, Direction).
+		trouverPpcDiamant(L, Pos, Size, Direction),!.
 
 % aller a la sortie                             
-trouverOuAller(Xplayer, Yplayer , L, Size, Direction, CanGotoExit) :-   
+trouverOuAller(L, Pos, Size, Direction, CanGotoExit) :-   
 		CanGotoExit = 1,
-		member( 17, L ),
-		!,
-		%ecrire('je cherche la sortie'),
-		trouverPpcSortie(L, Size, Direction).   
+		trouverPpcSortie(L, Pos, Size, Direction),!.
 
 
 /*
@@ -160,9 +153,6 @@ trouverOuAller(Xplayer, Yplayer , L, Size, Direction, CanGotoExit) :-
   * NewVPx et NewVPy représente le nouveau périmètre de vue du mineur
 */
 
-% Mouvement aléatoire avec le prédicat move/12
-%  avec augmentation du périmètre de vue si aucun diamant n'est en vue
-
 move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- 
 		situations(L, Pos, Size, Direction),
 		dir( Direction, Dx, Dy ),!.
@@ -170,53 +160,31 @@ move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :-
 move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- 
 		CanGotoExit = 1,
 		eviterMonstre(L, Size, L2),
-		trouverOuAller(X, Y, L2, Size, Direction, CanGotoExit),
+		trouverOuAller(L2, Pos, Size, Direction, CanGotoExit),
 		dir( Direction, Dx, Dy ),
-		ecrire('ok on va a la sortie mais on évite le monstre'),
-		!.
-
-move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- 
-		CanGotoExit = 1,
-		trouverOuAller(X, Y, L, Size, Direction, CanGotoExit),
-		dir( Direction, Dx, Dy ), 
-		%ecrire('ok on va a la sortie'),
 		!.
 
 move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _) :-  
 		member( 2, L ), 
 		eviterMonstre(L, Size, L2),
-		trouverOuAller(X, Y, L2, Size, Direction, CanGotoExit),
-		ecrire('ok on prendl e diamant mais on évite le monstre'), 
+		trouverOuAller(L2, Pos, Size, Direction, CanGotoExit),
 		dir( Direction, Dx, Dy ), 
 		!.                      
-
-move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _) :- 
-		member( 2, L ), 
-		trouverOuAller(X, Y, L, Size, Direction, CanGotoExit), 
-		%ecrire('ok on prendl e diamant'), 
-		dir( Direction, Dx, Dy ), 
-		!.
 
 move( L, X, Y, Pos, Size, CanGotoExit, _, _, Vx, Vy, Vx1, Vy1 ) :- Vx1 is Vx+1, Vy1 is Vy+1.
 
 
-ecrire( T ) :- open( 'trace.txt', append, L ), write( L, T ), nl( L ), close( L ).
-
-ecrire2( T ) :- open( 'dangerMonstre.txt', append, L ), write( L, T ), nl( L ), close( L ).
-
-ecrire3( T ) :- open( 'L.txt', append, L ), write( L, T ), nl( L ), close( L ).
-
-ecrire4( T ) :- open( 'L2.txt', append, L ), write( L, T ), nl( L ), close( L ).
-
-/**
+/** 
 Ecrit dans un fichier indiqué en paramètre
 @profil : ecrireFile( +T , +NomFichier )
 **/
 ecrireFile( T , File ) :- open( File , append, L ), write( L, T ), nl( L ), close( L ).
 
-ecrireL([]) :- ecrire3('------------------------------------------------').
-ecrireL([T|R]) :- 
-        ecrire3(T), ecrireL(R).
+/** 
+Ecrit dans le fichier trace.txt
+**/
+ecrire( T ) :- open( 'trace.txt', append, L ), write( L, T ), nl( L ), close( L ).
+
 
 /*
   Définition des quatre directions
@@ -239,4 +207,3 @@ dir( 4, 0, 0 ).
 
 display( X,Y,0 ) :- write( X ), write( ',' ), write( Y ), nl.
 display( X,Y,1 ) :- write( X ), write( ',' ), write( Y ), write( ' - Tous les diamants necessaires ont ete recoltes !' ), nl.
-

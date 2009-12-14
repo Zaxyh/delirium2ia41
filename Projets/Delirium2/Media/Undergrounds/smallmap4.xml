@@ -2,10 +2,10 @@
 
  <Data>
   " , , , ,Exit"
-  " , , , , "
-  "StW1,StW1, , , "
   "Diam, , , ,Stone"
-  "Diam, , ,Stone,Avatar1"
+  "StW1,StW1, , ,Stone"
+  " , , , ,Stone"
+  "Diam, ,Stone,Stone,Avatar1"
  </Data>
 
  <Infos GameDifficulty="Easy">
