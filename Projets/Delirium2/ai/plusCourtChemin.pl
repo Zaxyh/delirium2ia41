@@ -1,5 +1,6 @@
 :-module(plusCourtChemin, [solve/5]).
 :-use_module('outilsCarte').
+:-use_module('rochers').
 
 
 /*
@@ -10,81 +11,76 @@
  en haut
 */
 % si ya rien en haut
-passageH(A, B, Size, L) :- numCaseHaut(A, Size, B),
-                                                   getElement(L, B, El),
-                                                   ( El < 3 ; El = 17 ).
+passageH(A, B, Size, L, 1000) :- 
+		rocherMeTombeDessus(L, Size, A),
+		!,
+		%ecrire(A), ecrire(L), ecrire(Size),
+		numCaseHaut(A, Size, B),
+        getElement(L, B, El),
+	    ( El =< 3 ; El = 17 ).
 
-passageH(A, B, Size, L) :- numCaseHaut(A, Size, B), B2 is B+Size, pousserRocherHaut(L, B2, Size).
-												   
+
+passageH(A, B, Size, L, 1) :- 
+		numCaseHaut(A, Size, B),
+        getElement(L, B, El),
+	    ( El < 3 ; El = 17 ).
+
 /*
 en bas
 */
-passageB(A, B, Size, L) :- numCaseBas(A, Size, B),
-                                                   getElement(L, B, El),
-                                                   ( El < 3 ; El = 17 ).
+passageB(A, B, Size, L, 1) :- 
+		numCaseBas(A, Size, B),
+		getElement(L, B, El),
+		( El < 3 ; El = 17 ).
 
 /*
 a gauche
 */
-passageG(A, B, Size, L) :- numCaseGauche(A, Size, B),
-                                                   getElement(L, B, El),
-                                                   ( El < 3 ; El = 17 ).
+passageG(A, B, Size, L, 1) :- 
+		numCaseGauche(A, Size, B),
+	    getElement(L, B, El),
+	    ( El < 3 ; El = 17 ).
 
 
-passageG(A, B, Size, L) :- numCaseGauche(A, Size, B), B2 is B+1, pousserRocherGauche(L, B2, Size).
+passageG(A, B, Size, L, 500) :- 
+	pousserRocherGauche(5, A, L, Size),
+	numCaseGauche(A, Size, B).
 
 /*
 a droite
 */
-passageD(A, B, Size, L) :- numCaseDroite(A, Size, B),
-                                                   getElement(L, B, El),
-                                                   ( El < 3 ; El = 17 ).
+passageD(A, B, Size, L, 1) :- 
+		numCaseDroite(A, Size, B),
+	    getElement(L, B, El),
+	    ( El < 3 ; El = 17 ).
 
 
-passageD(A, B, Size, L) :- numCaseDroite(A, Size, B), B2 is B-1, pousserRocherDroite(L, B2, Size).
-												   
-/**
-Pousser les rochers
-Methode complète.
-jusqu'a 2 rochers
-**/	
-pousserRocherGauche(L, Pos, Size) :- 
-	G1t is Pos-1, G2t is Pos-2,
-	getElement(L, G1t, G1), getElement(L, G2t, G2),
-	G1 = 3, G2 = 0,!.
-pousserRocherGauche(L, Pos, Size) :- 
-	G1t is Pos-1, G2t is Pos-2, G3t is Pos-3,
-	getElement(L, G1t, G1), getElement(L, G2t, G2), getElement(L, G3t, G3),
-	G1 = 3, G2 = 3,G3 = 0,!.
-pousserRocherDroite(L, Pos, Size) :- 
-	G1t is Pos+1, G2t is Pos+2, 
-	getElement(L, G1t, G1), getElement(L, G2t, G2),
-	G1 = 3, G2 = 0,!.
-pousserRocherDroite(L, Pos, Size) :- 
-	G1t is Pos+1, G2t is Pos+2, G3t is Pos+3, 
-	getElement(L, G1t, G1), getElement(L, G2t, G2), getElement(L, G3t, G3),
-	G1 = 3, G2 = 3,G3 = 0,!.	
-pousserRocherHaut(L, Pos, Size) :- 
-	G1t is Pos-Size, G2t is Pos-2*Size, 
-	getElement(L, G1t, G1), getElement(L, G2t, G2),
-	G1 = 3, G2 = 0,!.
-pousserRocherHaut(L, Pos, Size) :- 
-	G1t is Pos-Size, G2t is Pos-2*Size, G3t is Pos-3*Size,
-	getElement(L, G1t, G1), getElement(L, G2t, G2), getElement(L, G3t, G3),
-	G1 = 3, G2 = 3,G3 = 0,!.	
+passageD(A, B, Size, L, 500) :-
+		pousserRocherDroite(5, A, L, Size),
+		numCaseDroite(A, Size, B).
 
-s(A, B, 0, L, Size) :- passageD(A, B, Size, L).
-s(A, B, 0, L, Size) :- passageH(A, B, Size, L).
-s(A, B, 0, L, Size) :- passageG(A, B, Size, L).
-s(A, B, 0, L, Size) :- passageB(A, B, Size, L).
+	
+	
+	
+s(A, B, Poids, L, Size) :- 
+		passageD(A, B, Size, L, Poids).
+		
+s(A, B, Poids, L, Size) :- 
+		passageH(A, B, Size, L, Poids).
+		
+s(A, B, Poids, L, Size) :- 
+		passageG(A, B, Size, L, Poids).
+		
+s(A, B, Poids, L, Size) :- 
+		passageB(A, B, Size, L, Poids).
 
 
 h(A, Distance, B, Size) :-
-                Xa is A mod Size,
-                Ya is A // Size,
-                Xb is B mod Size,
-                Yb is B // Size,
-                Distance is ( (Xb-Xa)*(Xb-Xa) + (Yb-Ya)*(Yb-Ya) ).
+		Xa is A mod Size,
+		Ya is A // Size,
+		Xb is B mod Size,
+		Yb is B // Size,
+		Distance is ( (Xb-Xa)*(Xb-Xa) + (Yb-Ya)*(Yb-Ya) ).
 
 
 solve(Start, Solution, L, Size, Finish) :-
@@ -118,10 +114,11 @@ astar(Solution, L, Size, Finish) :-
       nb_setval(closedList, ListeFerme),
       % trouver tous les enfants
       findall(
-           S,
+           Couple,
            (
-                s(DernierNoeud, S, _, L, Size) ,
-                not(member(S, ListeFerme))
+                s(DernierNoeud, S, P, L, Size) ,
+                not(member(S, ListeFerme)),
+				Couple = [S, P] % noeud et poids
            ),
            Succs
       ),
@@ -134,10 +131,13 @@ astar(Solution, L, Size, Finish) :-
 
 ajouterChemin(_, _, [], _, _) :- !. % plus rien à ajouter
 
-ajouterChemin(MeilleurChemin, Cout, [S|NoeudsRestants], Size, Finish) :-
+ajouterChemin(MeilleurChemin, Cout, [Couple|NoeudsRestants], Size, Finish) :-
+	  % récup noeud et poids
+	  Couple = [S|CoutDeplacement],
       % calcul du nouveau cout
       h(S, Distance, Finish, Size),
-      NouveauCout is Cout + Distance,
+	  %ecrire(CoutDeplacement),
+      NouveauCout is Cout + Distance + CoutDeplacement,
       %write(S), write('  '), write(NouveauCout), write('\n'),
       % ajout a la liste ouverte
       append([S], MeilleurChemin, NouveauChemin),

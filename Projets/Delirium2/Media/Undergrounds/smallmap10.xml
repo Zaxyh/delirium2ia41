@@ -1,0 +1,31 @@
+<Map Name="" Width="5" Height="5">
+<Data>
+" , , , , "
+" , , , , "
+"Diam, , , , "
+"StW1,StW1, , , "
+"Exit, , ,Stone,Avatar1"
+</Data>
+
+<Infos GameDifficulty="Easy">
+<Goals Player="1" Time="80">
+  <Goal Gather="1" Item="Diam" Points="10" />
+</Goals>
+<Gravity Direction="0,1" />
+ </Infos>
+
+<Infos GameDifficulty="Medium">
+ <Goals Player="1" Time="80">
+	<Goal Gather="1" Item="Diam" Points="10" />
+ </Goals>
+ <Gravity Direction="0,1" />
+</Infos>
+
+<Infos GameDifficulty="Hard">
+ <Goals Player="1" Time="80">
+	<Goal Gather="1" Item="Diam" Points="10" />
+ </Goals>
+ <Gravity Direction="0,1" />
+ </Infos>
+
+</Map>

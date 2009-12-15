@@ -15,6 +15,7 @@ getIndiceMonstre(L, Size, Indice) :-
 * @profil : entourerMonstres(+L, +Size, -L2).
 **/
 entourerMonstres(L, Size, L2) :- 
+	
 	getIndiceMonstre(L, Size, I),
 	
 	% Indices à 2 cases
