@@ -92,13 +92,72 @@ trouverPlusProcheDiamant(PosPlayer, Ldepart, Size, D) :-
       ),
       not(Succs = []),
       sort(Succs, S),
-	  tenterDeplacement(PosPlayer, S, L, Size, D), !.
+	  tenterDeplacement(PosPlayer, S, L, Size, D), 
+	  !.
       %S = [ [_|[Indice]] | _ ].
 
 % un monstre nous bloque le passage	  
-trouverPlusProcheDiamant(PosPlayer, L, Size, D) :- nth0(Indice, L, 11), D is random(4).
-trouverPlusProcheDiamant(PosPlayer, L, Size, D) :- nth0(Indice, L, 12), D is random(4).%, solve(PosPlayer, Soln, L, Size, Indice), not(Soln = []).
-	  
+trouverPlusProcheDiamant(PosPlayer, L, Size, D) :-
+		nth0(Indice, L, 12), 
+		distance(PosPlayer, Indice, Size, Dist),
+		trouverCompromis(PosPlayer, Indice, Dist, Size, L, D).
+
+/*
+distance euclidienne entre deux points A et B
+distance(+A, +B, +Size, -Distance) 
+*/
+distance(A, B, Size, Distance) :-
+		Xa is A mod Size,
+		Ya is A // Size,
+		Xb is B mod Size,
+		Yb is B // Size,
+		Distance is ( (Xb-Xa)*(Xb-Xa) + (Yb-Ya)*(Yb-Ya) ).
+
+/* 
+compromis pour fuir un monstre, on cherche à s'en éloigner a tout prit sachant qu'on a pas de passage vers le diamant : 
+	trouverCompromis(+PosPlayer, +PositionMonstre, +DistanceMonstre, +Size, +L, -DirectionAPrendre)
+*/
+% en bas
+trouverCompromis(P, PM, DM, Size, L, 3) :- 
+		numCaseBas(P, Size, B),
+		nth0(B, L, El),
+		ecrire(El),
+		(El = 0 ; El = 1 ),
+		distance(B, PM, Size, DistanceMonstre),
+		DistanceMonstre >= DM,
+		!.
+% a gauche
+trouverCompromis(P, PM, DM, Size, L, 0) :- 
+		numCaseGauche(P, Size, B),
+		nth0(B, L, El),
+		ecrire(El),
+		(El = 0 ; El = 1 ),
+		distance(B, PM, Size, DistanceMonstre),
+		DistanceMonstre >= DM,
+		!.
+% a droite
+trouverCompromis(P, PM, DM, Size, L, 1) :- 
+		numCaseDroite(P, Size, B),
+		nth0(B, L, El),
+		ecrire(El),
+		(El = 0 ; El = 1 ),
+		distance(B, PM, Size, DistanceMonstre),
+		DistanceMonstre >= DM,
+		!.
+% en haut
+trouverCompromis(P, PM, DM, Size, L, 2) :- 
+		numCaseHaut(P, Size, B),
+		nth0(B, L, El),
+		ecrire(El),
+		(El = 0 ; El = 1 ),
+		distance(B, PM, Size, DistanceMonstre),
+		DistanceMonstre >= DM,
+		!.	
+	
+
+
+
+
 tenterDeplacement(_, [], _, _, _) :- !, fail.
 	 
 tenterDeplacement(From, [[_|[To]]|Others], L, Size, D) :-
@@ -179,20 +238,64 @@ move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _) :-
 
 move( L, X, Y, Pos, Size, CanGotoExit, _, _, Vx, Vy, Vx1, Vy1 ) :- Vx1 is Vx+1, Vy1 is Vy+1.
 
-/**
-Suppression des diamants inaccessible pour le mineur de manière sur
-**/
-suppressionDiamantsInnaccessible(L, Pos, Size, L2) :- 
+
+suppressionDiamantsInnaccessible(L, Pos, Size, L3) :- 
 			
 	findall(Indice,(nth0(Indice, L, 2)),ListeIndicesDiamants),
 	not(ListeIndicesDiamants = []),
 		
 	supprimerDiamantsEncercles(L, Size, ListeIndicesDiamants, LI),
 	replaceAll(L, LI, L2, 9),
+	
+	supprimerDiamantsBloques(L2, Pos, Size, L3),
 	!.
 
 suppressionDiamantsInnaccessible(L, Pos, Size, L).
+
+isQueMur([]) :- !.
+isQueMur([T|R]) :- T =< 9 , T >= 4, isQueMur(R),!.
+
+rechercheIndiceLigneMur([], _, _) :- fail, !.
+rechercheIndiceLigneMur([T|R], CPT, CPT) :-
+        isQueMur(T),!.
+rechercheIndiceLigneMur([T|R], I, CPT) :-
+        CPT2 is CPT+1, rechercheIndiceLigneMur(R, I, CPT2),!.
 	
+listeInt(Debut, Debut, [Debut]):-!.
+listeInt(Debut, Fin, [Debut|R]) :- Debut2 is Debut+1, listeInt(Debut2, Fin, R),!.
+	
+supprimerDiamantsBloques(L, Pos, Size, LFin) :- 
+	getLignes(L, Size, L2),
+	rechercheIndiceLigneMur(L2, I, 0),
+	I > 0, length(L2, LongL2), LongL21 is LongL2 - 1, I < LongL21,
+	ecrireFile(I, 'putain.txt'),
+	IDebMur is (Size * I),
+	ecrireFile('Va y matte le debmur', 'putain.txt'),
+	ecrireFile(IDebMur, 'putain.txt'),
+	IFinMur is (IDebMur + Size),
+	ecrireFile(IFinMur, 'putain.txt'),
+	nettoyerLMurBloque(Pos, IDebMur, IFinMur, L, LFin),!.
+	
+supprimerDiamantsBloques(L, _, _, L) :- ecrireFile('ben on va la alors', 'putain.txt'), !.
+
+nettoyerLMurBloque(Pos, ID, IF, L, L2) :- 
+	length(L, Long),
+	ecrireFile('Longueur :', 'putain.txt'), ecrireFile(Long, 'putain.txt'),
+	Pos < ID,
+	ecrireFile('Ok cest plus petit', 'putain.txt'),
+	Long2 is Long-1,
+	listeInt(ID, Long2, LInt),
+	ecrireFile('ListeInt :','putain.txt'), ecrireFile(L,'putain.txt'), ecrireFile(LInt, 'putain.txt'),
+	replaceAll(L, LInt, L3, 9),L2=L3,!.
+nettoyerLMurBloque(Pos, ID, IF, L, L2) :- 
+	length(L, Long),
+	Pos > ID,
+	ecrireFile('Ok cest plus grand', 'putain.txt'),
+	listeInt(0, IF, LInt),
+	ecrireFile(LInt, 'putain.txt'),
+	replaceAll(L, LInt, L3, 9),L2=L3!.
+	
+
 % Betement on regarde si le diamant est encerclé
 supprimerDiamantsEncercles(L, Size, [], []):-!.
 supprimerDiamantsEncercles(L, Size, [T|R], [T|R2]) :-

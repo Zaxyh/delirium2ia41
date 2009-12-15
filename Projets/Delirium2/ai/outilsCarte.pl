@@ -10,7 +10,8 @@
                           numCaseDroite/3,
                           replaceElement/4,
                           replaceAll/4,
-						  retourneElementFromTo/4
+						  retourneElementFromTo/4,
+						  getLignes/3
                         ]
 ).
 
@@ -103,12 +104,13 @@ replaceElement([T|R], Indice, Valeur, [T|R2]) :-
 * par la valeur V, ne remplace pas la case contenant le joueur
 * Puis renvoi la liste modifié sous L2
 * @profil : replaceAll(+L, +I, -L2, +V)
-**/     
+**/  
 replaceAll(L, I, L2, V) :-
              sublist( <(-1), I, I2),
               sort(I2, I3),
               replaceAll2(L, I3, L2, V),!.
-replaceAll2(L, [], L, _).
+replaceAll2(L, [], L, _):-!.
+replaceAll2([], _, [], _):-!.
 replaceAll2([T|R], [0|RI], [V|R2], V) :-
                   maplist(plus(-1), RI, I2),
                   replaceAll2(R, I2, R2, V),!.
@@ -141,3 +143,17 @@ retourneElementFromTo2([T|R], D, A, L2) :-
                    D2 is D-1,
                    A2 is A-1,
                    retourneElementFromTo2(R, D2, A2, L2),!.
+
+/**
+Retourne L Sous forme de liste de lignes
+**/				   
+nPremiersTermes(_, 0, []) :- !.
+nPremiersTermes([T|R], N, [T|R2]) :- N2 is N-1, nPremiersTermes(R, N2, R2).
+supprimerNPremiers(L, 0, L) :- !.
+supprimerNPremiers([T|R], N, R2) :- N2 is N-1, supprimerNPremiers(R, N2, R2).
+
+getLignes([], _, []) :- !.
+getLignes(L, Size, [T|R2]) :-
+             nPremiersTermes(L, Size, T),
+             supprimerNPremiers(L, Size, L2),
+             getLignes(L2, Size, R2).
