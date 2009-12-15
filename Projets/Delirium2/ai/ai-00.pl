@@ -73,7 +73,10 @@ quelleSuivante(_, _, 4, _) :-
 trouverPlusProcheDiamant(+positionJoueur, +Map, +Size, -Destination)
 */
 
-trouverPlusProcheDiamant(PosPlayer, L, Size, D) :-
+trouverPlusProcheDiamant(PosPlayer, Ldepart, Size, D) :- 
+
+	  suppressionDiamantsInnaccessible(Ldepart, PosPlayer, Size, L),
+
       XPlayer is PosPlayer mod Size,
       YPlayer is PosPlayer // Size,
       findall(
@@ -176,6 +179,32 @@ move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _) :-
 
 move( L, X, Y, Pos, Size, CanGotoExit, _, _, Vx, Vy, Vx1, Vy1 ) :- Vx1 is Vx+1, Vy1 is Vy+1.
 
+/**
+Suppression des diamants inaccessible pour le mineur de manière sur
+**/
+suppressionDiamantsInnaccessible(L, Pos, Size, L2) :- 
+			
+	findall(Indice,(nth0(Indice, L, 2)),ListeIndicesDiamants),
+	not(ListeIndicesDiamants = []),
+		
+	supprimerDiamantsEncercles(L, Size, ListeIndicesDiamants, LI),
+	replaceAll(L, LI, L2, 9),
+	!.
+
+suppressionDiamantsInnaccessible(L, Pos, Size, L).
+	
+% Betement on regarde si le diamant est encerclé
+supprimerDiamantsEncercles(L, Size, [], []):-!.
+supprimerDiamantsEncercles(L, Size, [T|R], [T|R2]) :-
+        C1t is T - Size, getElement(L, C1t, C1),
+        C2t is T - 1, getElement(L, C2t, C2),
+        C3t is T + 1, getElement(L, C3t, C3),
+        C4t is T + Size,write(C4t), getElement(L, C4t, C4),
+        (C1 =< 9 , C1 >= 4, C2 =< 9 , C2 >= 4, C3 =< 9 , C3 >= 4, C4 =< 9 , C4 >= 4),
+        supprimerDiamantsEncercles(L, Size, R, R2),
+!.
+supprimerDiamantsEncercles(L, Size, [T|R], R2) :-
+        supprimerDiamantsEncercles(L, Size, R, R2),!.
 
 /** 
 Ecrit dans un fichier indiqué en paramètre

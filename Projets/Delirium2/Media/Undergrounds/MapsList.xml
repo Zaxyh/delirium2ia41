@@ -1,12 +1,6 @@
 <Maps MapsPerLevel="21">
 
   <List>
-	<Map Name="smallmap.xml" />
-	<Map Name="smallmap2.xml" />
-	<Map Name="smallmap3.xml" />
-	<Map Name="smallmap4.xml" />
-	<Map Name="smallmap5.xml" />
-	<Map Name="smallmap6.xml" />
 	<Map Name="smallmap7.xml" />
 	<Map Name="smallmap8.xml" />
 	<Map Name="smallmap9.xml" />

@@ -1,6 +1,7 @@
 :- module(outilsCarte, [
               caseExist/2, 
                           getElement/3,
+						  dernierElement/2,
                           caseAccessible/2,
                           caseDanger/2,
                           numCaseHaut/3,
@@ -8,9 +9,15 @@
                           numCaseGauche/3,
                           numCaseDroite/3,
                           replaceElement/4,
-                          replaceAll/4
+                          replaceAll/4,
+						  retourneElementFromTo/4
                         ]
 ).
+
+/**
+* Dernier élement d'une liste
+**/
+dernierElement(L, E) :- reverse(L, [E|_]).
 
 /** 
 * Permet de vérifier si une case est existante
@@ -30,6 +37,8 @@ getElement([], _, _) :- fail.
 getElement([T|_], 0, Element) :- Element is T. 
 getElement([T|R], Indice, Element) :- Indice > 0, I2 = Indice - 1, getElement(R, I2, Element).
 **/
+getElement(L, Indice, Element) :- length(L, Long), Indice > Long, Element = 9,!.
+getElement(L, Indice, Element) :- Indice < 0, Element = 9,!.
 getElement(L, Indice, Element) :- nth0(Indice, L, E), Element is E.
 
 /**
@@ -106,3 +115,29 @@ replaceAll2([T|R], [0|RI], [V|R2], V) :-
 replaceAll2([T|R], I, [T|R2], V) :-
               maplist(plus(-1), I, I2),
               replaceAll2(R, I2, R2, V).
+			  
+
+/**
+* Retourne les élements d'une liste de l'indice D à l'indice A
+* Indice commencant à 1
+* retourne la liste des élements dans L2
+* @profil : retourneElementFromTo(L, D, A, L2)
+**/
+retourneElementFromTo(L, D, A, L2) :-
+        D < 0, retourneElementFromTo(L, 1, A, L2),!.
+retourneElementFromTo(L, D, A, L2) :-
+        A < 0, retourneElementFromTo(L, D, 1, L2),!.
+retourneElementFromTo(L, D, D, L2) :-
+        nth1(D, L, E),
+        L2 = [E],!.
+retourneElementFromTo(L, D, A, L2) :-
+        retourneElementFromTo2(L, D, A, L2),!.
+
+retourneElementFromTo2([T|R], 0, 0, [T]) :- !.
+retourneElementFromTo2([T|R], 0, A, [T|R2]) :-
+                             A2 is A - 1,
+                             retourneElementFromTo2(R, 0, A2, R2),!.
+retourneElementFromTo2([T|R], D, A, L2) :-
+                   D2 is D-1,
+                   A2 is A-1,
+                   retourneElementFromTo2(R, D2, A2, L2),!.
