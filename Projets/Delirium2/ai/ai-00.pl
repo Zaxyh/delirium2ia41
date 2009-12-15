@@ -93,8 +93,8 @@ trouverPlusProcheDiamant(PosPlayer, L, Size, D) :-
       %S = [ [_|[Indice]] | _ ].
 
 % un monstre nous bloque le passage	  
-trouverPlusProcheDiamant(PosPlayer, L, Size, 0) :- member(11 ,L).
-trouverPlusProcheDiamant(PosPlayer, L, Size, 0) :- member(12 ,L).
+trouverPlusProcheDiamant(PosPlayer, L, Size, D) :- nth0(Indice, L, 11), D is random(4).
+trouverPlusProcheDiamant(PosPlayer, L, Size, D) :- nth0(Indice, L, 12), D is random(4).%, solve(PosPlayer, Soln, L, Size, Indice), not(Soln = []).
 	  
 tenterDeplacement(_, [], _, _, _) :- !, fail.
 	 
