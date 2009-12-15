@@ -89,9 +89,12 @@ trouverPlusProcheDiamant(PosPlayer, L, Size, D) :-
       ),
       not(Succs = []),
       sort(Succs, S),
-	  tenterDeplacement(PosPlayer, S, L, Size, D).
+	  tenterDeplacement(PosPlayer, S, L, Size, D), !.
       %S = [ [_|[Indice]] | _ ].
 
+% un monstre nous bloque le passage	  
+trouverPlusProcheDiamant(PosPlayer, L, Size, 0) :- member(11 ,L).
+trouverPlusProcheDiamant(PosPlayer, L, Size, 0) :- member(12 ,L).
 	  
 tenterDeplacement(_, [], _, _, _) :- !, fail.
 	 
