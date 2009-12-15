@@ -2,8 +2,21 @@
 /* CSS Document */
 
 body{
-	background: #464646;
-	font-size: 12pt;
+	background: #00293b;
+	font: 12pt "Trebuchet MS", sans-serif;
+}
+
+h1,h2{
+	color: #00a3ec;
+	font-size: 16pt;
+	border-bottom: 2px solid #00a3ec;
+	padding: 2px 5px;
+	background: #00a3ec;
+	color: #00293b;
+}
+
+p{
+	color: #ddf4ff;
 }
 
 div#MapEditor_boxMap{
@@ -17,12 +30,12 @@ table.MapEditor{
 }
 table.MapEditor tr td{
 	font-size: 12pt;
-	color: #6b6a6a;
+	color: #000;
 	padding: 10px;
 }
 table.MapEditor tr td.params{
 	background: #fff9ef;
-	border: 3px solid #ffecd2;
+	border: 3px solid #ffc3c3;
 }
 table.MapEditor tr td.params input.button{
 	background: #ffecd2;
@@ -38,7 +51,7 @@ table.MapEditor tr td.skin{
 }
 table.MapEditor tr td.map{
 	background: #f2ffe8;
-	border: 3px solid #cdffa9;
+	border: 3px solid #86e442;
 	text-align: center;
 	vertical-align: top;
 }
@@ -72,7 +85,7 @@ table.MapEditor tr td.code input{
 }
 table.MapEditor tr td.sauv{
 	background: #cdffa9;
-	border: 3px solid #a1e96d;
+	border: 3px solid #51991d;
 	color: #2b6302;
 }
 table.MapEditor tr td.sauv table tr td{
@@ -103,7 +116,7 @@ table.MapEditor tr td.sauv input.button_enre{
 }
 table.MapEditor tr td.elements{
 	background: #bcebff;
-	border: 3px solid #91deff;
+	border: 3px solid #2eaee4;
 	vertical-align: top;
 	width: 220px;
 }
