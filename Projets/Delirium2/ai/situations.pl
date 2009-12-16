@@ -11,11 +11,10 @@ situations(L, Pos, Size, Direction) :-
         situation1(L, Pos, Size, Direction),!.
 situations(L, Pos, Size, Direction) :- 
         situation1_2(L, Pos, Size, Direction),!.
-/*
 situations(L, Pos, Size, Direction) :- 
         situation_rocher(L, Pos, Size, Direction),!.
 
-
+/*
 *********************************************************************************
 Situation 1
 Verifie si il y a un monstre en Mineur - Size * 2 et un diamant en Mineur - Size
@@ -88,67 +87,32 @@ situation1_2(L, Pos, Size, Direction) :-
 * La possiblité de déplacement est accepté si les 2 cases dans la direction sont accecible.
 **/
 situation_rocher(L, Pos, Size, Direction) :- 
-	
-	Rocher is Pos - 2 * Size,
-	CaseVide is Pos - Size,
-	
-	getElement(L, CaseVide, ECaseVide),
-	ECaseVide = 0,
-	
-	getElement(L, Rocher, ERocher),
-	ERocher = 3,
-	
-	trouverDirectionSituation_rocher(L, Pos, Size, Direction),!.
 
+	Rocher is Pos - 2*Size + 1,
+	CaseVide is Pos + 1, CaseVide2 is Pos - Size + 1, getElement(L, CaseVide2, EV2), EV2 = 0,
+	getElement(L, Rocher, ER), ER = 3,
+	getElement(L, CaseVide, EV), EV = 0,
+	H is Pos - Size,
+	G is Pos - 1,
+	D is Pos + 1,
+	choisirDirRocher(L, H, G, 0, Direction),!.
+	
 situation_rocher(L, Pos, Size, Direction) :- 
-	
-	Rocher is Pos - Size * 2 - 1,
-	CaseVide1 is Pos - Size,
-	CaseVide2 is Pos - Size * 2,
-	
-	getElement(L, CaseVide1, ECaseVide1),
-	ECaseVide1 = 0,
-	getElement(L, CaseVide2, ECaseVide2),
-	ECaseVide2 = 0,
-	
-	getElement(L, Rocher, ERocher),
-	ERocher = 3,
-	
-	trouverDirectionSituation_rocher(L, Pos, Size, Direction),!.	
 
-situation_rocher(L, Pos, Size, Direction) :- 
+	Rocher is Pos - 2*Size - 1,
+	CaseVide is Pos - 1, CaseVide2 is Pos - Size - 1, getElement(L, CaseVide2, EV2), EV2 = 0,
+	getElement(L, Rocher, ER), ER = 3,
+	getElement(L, CaseVide, EV), EV = 0,
+	H is Pos - Size,
+	G is Pos - 1,
+	D is Pos + 1,
+	choisirDirRocher(L, H, G, 0, Direction),!.
 	
-	Rocher is Pos - Size * 2 + 1,
-	CaseVide1 is Pos - Size,
-	CaseVide2 is Pos - Size * 2,
-	
-	getElement(L, CaseVide1, ECaseVide1),
-	ECaseVide1 = 0,
-	getElement(L, CaseVide2, ECaseVide2),
-	ECaseVide2 = 0,
-	
-	getElement(L, Rocher, ERocher),
-	ERocher = 3,
-	
-	trouverDirectionSituation_rocher(L, Pos, Size, Direction),!.
-	
-trouverDirectionSituation_rocher(L, Pos, Size, Direction) :- 
-        Droite1 is Pos + 1,
-        Droite2 is Pos + 2,
-        Gauche1 is Pos - 1,
-        Gauche2 is Pos - 2,
-		Bas1 is Pos + Size,
-		Bas2 is Pos + 2*Size,
-        trouverDirectionSituation1E2(L, Droite1, Droite2, Gauche1, Gauche2, Bas1, Bas2, Direction),!.
-trouverDirectionSituation1E2(L, D1, D2, G1, G2, B1, B2, Direction) :- 
-        caseAccessibleOuDiamant(L, D1),
-        caseAccessibleOuDiamant(L, D2),
-        Direction = 1,!.
-trouverDirectionSituation1E2(L, D1, D2, G1, G2, B1, B2, Direction) :- 
-        caseAccessibleOuDiamant(L, B1),
-        caseAccessibleOuDiamant(L, B2),
-        Direction = 3,!.
-trouverDirectionSituation1E2(L, D1, D2, G1, G2, B1, B2, Direction) :- 
-        caseAccessibleOuDiamant(L, G1),
-        caseAccessibleOuDiamant(L, G2),
-        Direction = 0,!.
+choisirDirectionRocher(L, H, G, D, 1) :- 	
+	caseAccessibleOuDiamant(L, D),!.
+choisirDirectionRocher(L, H, G, D, 3) :- 
+	caseAccessibleOuDiamant(L, B),!.
+choisirDirectionRocher(L, H, G, D, 0) :- 
+	caseAccessibleOuDiamant(L, G),!.
+choisirDirectionRocher(L, H, G, D, 2) :- 
+	caseAccessibleOuDiamant(L, H),!.

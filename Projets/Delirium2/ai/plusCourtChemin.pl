@@ -36,31 +36,26 @@ passageB(A, B, Size, L, 1) :-
 /*
 a gauche
 */
+passageG(A, B, Size, L, 500) :- 
+	pousserRocherGauche(5, A, L, Size),
+	numCaseGauche(A, Size, B).
+	
 passageG(A, B, Size, L, 1) :- 
 		numCaseGauche(A, Size, B),
 	    getElement(L, B, El),
 	    ( El < 3 ; El = 17 ).
 
-
-passageG(A, B, Size, L, 500) :- 
-	pousserRocherGauche(5, A, L, Size),
-	numCaseGauche(A, Size, B).
-
 /*
 a droite
 */
+passageD(A, B, Size, L, 500) :-
+		pousserRocherDroite(5, A, L, Size),
+		numCaseDroite(A, Size, B).
+	
 passageD(A, B, Size, L, 1) :- 
 		numCaseDroite(A, Size, B),
 	    getElement(L, B, El),
 	    ( El < 3 ; El = 17 ).
-
-
-passageD(A, B, Size, L, 500) :-
-		pousserRocherDroite(5, A, L, Size),
-		numCaseDroite(A, Size, B).
-
-	
-	
 	
 s(A, B, Poids, L, Size) :- 
 		passageD(A, B, Size, L, Poids).

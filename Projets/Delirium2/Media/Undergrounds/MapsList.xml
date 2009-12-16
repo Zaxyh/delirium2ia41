@@ -1,6 +1,8 @@
 <Maps MapsPerLevel="21">
 
   <List>
+	<Map Name="monstre1.xml" />
+	<Map Name="tunel.xml" />
 	<Map Name="smallmap10.xml" />
 	<Map Name="smallmap11.xml" />
     <Map Name="defmap_L001_N001.xml" />
