@@ -2,6 +2,7 @@
 :-use_module('plusCourtChemin').
 :-use_module('eviterMonstre').
 :-use_module('situations').
+:-use_module('situations2').
 
 /*
   Définition de l'IA du mineur
@@ -121,7 +122,6 @@ compromis pour fuir un monstre, on cherche à s'en éloigner a tout prit sachant q
 trouverCompromis(P, PM, DM, Size, L, 3) :- 
 		numCaseBas(P, Size, B),
 		nth0(B, L, El),
-		ecrire(El),
 		(El = 0 ; El = 1 ),
 		distance(B, PM, Size, DistanceMonstre),
 		DistanceMonstre >= DM,
@@ -130,7 +130,6 @@ trouverCompromis(P, PM, DM, Size, L, 3) :-
 trouverCompromis(P, PM, DM, Size, L, 0) :- 
 		numCaseGauche(P, Size, B),
 		nth0(B, L, El),
-		ecrire(El),
 		(El = 0 ; El = 1 ),
 		distance(B, PM, Size, DistanceMonstre),
 		DistanceMonstre >= DM,
@@ -139,7 +138,6 @@ trouverCompromis(P, PM, DM, Size, L, 0) :-
 trouverCompromis(P, PM, DM, Size, L, 1) :- 
 		numCaseDroite(P, Size, B),
 		nth0(B, L, El),
-		ecrire(El),
 		(El = 0 ; El = 1 ),
 		distance(B, PM, Size, DistanceMonstre),
 		DistanceMonstre >= DM,
@@ -148,7 +146,6 @@ trouverCompromis(P, PM, DM, Size, L, 1) :-
 trouverCompromis(P, PM, DM, Size, L, 2) :- 
 		numCaseHaut(P, Size, B),
 		nth0(B, L, El),
-		ecrire(El),
 		(El = 0 ; El = 1 ),
 		distance(B, PM, Size, DistanceMonstre),
 		DistanceMonstre >= DM,
@@ -217,10 +214,15 @@ trouverOuAller(L, Pos, Size, Direction, CanGotoExit) :-
   * VPx et VPy représente le périmètre de vue actuel utilisé pour générer L
   * NewVPx et NewVPy représente le nouveau périmètre de vue du mineur
 */
-
+/*
+move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- 
+		situations2(L, Pos, Size, Goal),
+		pccDestination(Pos, Goal, L, Size, D),
+		dir( D, Dx, Dy ), !.
+*/
 move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- 
 		situations(L, Pos, Size, Direction),
-		dir( Direction, Dx, Dy ),!.
+		dir( Direction, Dx, Dy ), !.
 
 move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- 
 		CanGotoExit = 1,
