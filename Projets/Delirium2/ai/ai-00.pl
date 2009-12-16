@@ -268,32 +268,23 @@ supprimerDiamantsBloques(L, Pos, Size, LFin) :-
 	getLignes(L, Size, L2),
 	rechercheIndiceLigneMur(L2, I, 0),
 	I > 0, length(L2, LongL2), LongL21 is LongL2 - 1, I < LongL21,
-	ecrireFile(I, 'putain.txt'),
 	IDebMur is (Size * I),
-	ecrireFile('Va y matte le debmur', 'putain.txt'),
-	ecrireFile(IDebMur, 'putain.txt'),
 	IFinMur is (IDebMur + Size),
-	ecrireFile(IFinMur, 'putain.txt'),
 	nettoyerLMurBloque(Pos, IDebMur, IFinMur, L, LFin),!.
 	
-supprimerDiamantsBloques(L, _, _, L) :- ecrireFile('ben on va la alors', 'putain.txt'), !.
+supprimerDiamantsBloques(L, _, _, L) :- !.
 
 nettoyerLMurBloque(Pos, ID, IF, L, L2) :- 
 	length(L, Long),
-	ecrireFile('Longueur :', 'putain.txt'), ecrireFile(Long, 'putain.txt'),
 	Pos < ID,
-	ecrireFile('Ok cest plus petit', 'putain.txt'),
 	Long2 is Long-1,
 	listeInt(ID, Long2, LInt),
-	ecrireFile('ListeInt :','putain.txt'), ecrireFile(L,'putain.txt'), ecrireFile(LInt, 'putain.txt'),
 	replaceAll(L, LInt, L3, 9),L2=L3,!.
 nettoyerLMurBloque(Pos, ID, IF, L, L2) :- 
 	length(L, Long),
 	Pos > ID,
-	ecrireFile('Ok cest plus grand', 'putain.txt'),
 	listeInt(0, IF, LInt),
-	ecrireFile(LInt, 'putain.txt'),
-	replaceAll(L, LInt, L3, 9),L2=L3!.
+	replaceAll(L, LInt, L3, 9),L2=L3,!.
 	
 
 % Betement on regarde si le diamant est encerclé
