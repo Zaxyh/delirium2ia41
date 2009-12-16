@@ -1,0 +1,41 @@
+<Map Name="TunelMap" Width="10" Height="15">
+<Data>
+" , , , , , , , , ,Avatar1"
+" , , , , , , , , ,."
+" , , , , , , , ,.,."
+" , , , , , ,Stone,Stone, ,."
+" , , , , ,.,.,.,Stone,."
+" , , , , ,.,.,.,Stone,."
+" , , , , , ,.,Stone,Stone, "
+" , , , , , , ,Stone,Stone,."
+" , , , , ,Stone,Stone,Stone,Stone,."
+" , , , ,.,Stone,Stone,Stone,Stone,Diam"
+" , , ,.,.,Stone,Stone,Stone,Diam,."
+" , , ,.,.,Stone,Stone,Stone,.,Diam"
+" , , ,.,.,Stone,Stone,Stone,Diam,."
+" , , ,.,.,Stone,Stone,Stone,Stone,."
+"Exit, , ,.,.,Diam,Diam,.,.,."
+</Data>
+
+<Infos GameDifficulty="Easy">
+<Goals Player="1" Time="80">
+  <Goal Gather="6" Item="Diam" Points="10" />
+</Goals>
+<Gravity Direction="0,1" />
+ </Infos>
+
+<Infos GameDifficulty="Medium">
+ <Goals Player="1" Time="80">
+	<Goal Gather="6" Item="Diam" Points="10" />
+ </Goals>
+ <Gravity Direction="0,1" />
+</Infos>
+
+<Infos GameDifficulty="Hard">
+ <Goals Player="1" Time="80">
+	<Goal Gather="6" Item="Diam" Points="10" />
+ </Goals>
+ <Gravity Direction="0,1" />
+ </Infos>
+
+</Map>

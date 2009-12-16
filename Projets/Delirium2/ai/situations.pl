@@ -1,4 +1,7 @@
-:- module(situations, [situations/4]).
+:- module(situations, [
+					situations/4,
+					situation_monstreMur/4
+					]).
 
 /**
 * Repertories les différentes situations
@@ -116,3 +119,30 @@ choisirDirectionRocher(L, H, G, D, 0) :-
 	caseAccessibleOuDiamant(L, G),!.
 choisirDirectionRocher(L, H, G, D, 2) :- 
 	caseAccessibleOuDiamant(L, H),!.
+	
+/**
+Situation 3 : Faire exploser le mur en tuant le monstre
+par contre cette fonction modifie L
+Il faut avoir un monstre dans le champs de vision,
+deux stone bien placé et un bou d'herbe
+**/
+situation_monstreMur(L, Pos, Size, NewL) :- 
+	
+	findall(Situation,
+		(
+			nth0(IMur, L, 4),
+			IndiceBloc is IMur - Size,
+			IndiceVide is IMur - Size + 1,
+			IndiceHerbe is IMur - Size*2 + 1,
+			IndiceBlocTueur is IMur - 3*Size + 1,
+			IndiceDiamantAPlacer is Mur - 2*Size,
+			getElement(L, IndiceBloc, EBloc), EBloc = 3,
+			getElement(L, IndiceVide, EVide), EVide = 0,
+			getElement(L, IndiceHerbe, EHerbe), EHerbe = 1,
+			getElement(L, IndiceDiamantAPlacer, EDiamantAPlacer = 1,
+			getElement(L, IndiceBlocTueur, EBlocTueur), EBlocTueur = 3,
+			Situation = IndiceBlocDiamantAPlacer
+		),
+		SituationTab),
+		
+		ecrireFile(SituationTab, 'montabmonstre.txt'),!.

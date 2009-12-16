@@ -1,0 +1,36 @@
+<Map Name="Monstre1_Map" Width="7" Height="10">
+<Data>
+" , , , , , ,Avatar1"
+" , , , , , , "
+".,.,.,.,.,.,."
+".,.,.,.,.,Stone,."
+".,Stone,.,.,.,.,."
+".,.,.,.,., ,."
+"Stone, ,M1, , , ,Stone"
+"StW1,StW1,StW1,StW1,StW1,StW1,StW1"
+"Diam,Diam,., , , , "
+"Exit,Diam,., , , , "
+</Data>
+
+<Infos GameDifficulty="Easy">
+<Goals Player="1" Time="80">
+  <Goal Gather="3" Item="Diam" Points="10" />
+</Goals>
+<Gravity Direction="0,1" />
+ </Infos>
+
+<Infos GameDifficulty="Medium">
+ <Goals Player="1" Time="80">
+	<Goal Gather="3" Item="Diam" Points="10" />
+ </Goals>
+ <Gravity Direction="0,1" />
+</Infos>
+
+<Infos GameDifficulty="Hard">
+ <Goals Player="1" Time="80">
+	<Goal Gather="3" Item="Diam" Points="10" />
+ </Goals>
+ <Gravity Direction="0,1" />
+ </Infos>
+
+</Map>
