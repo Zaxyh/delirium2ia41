@@ -23,7 +23,7 @@ pousserRocherGauche(0, C, L, Size) :-
 		getElement(L, G, 0),
 		!.
 % un vide derriere les rochers
-pousserRocherGauche(Profondeur, C, L, Size) :-
+pousserRocherGauche(_, C, L, Size) :-
 		numCaseGauche(C, Size, G),
 		getElement(L, G, 0),
 		!.			
@@ -44,7 +44,7 @@ pousserRocherDroite(0, C, L, Size) :-
 		getElement(L, D, 0),
 		!.
 
-pousserRocherDroite(Profondeur, C, L, Size) :-
+pousserRocherDroite(_, C, L, Size) :-
 		numCaseDroite(C, Size, D),
 		getElement(L, D, 0),
 		!.		
