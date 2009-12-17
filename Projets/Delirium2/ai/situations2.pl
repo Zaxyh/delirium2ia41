@@ -58,19 +58,15 @@ situations2(L, Pos, Size, Objectif) :-
 		),
 		not( ListeCase = [] ),
 		!,
-		%ecrire('Situation 2'),
 		ListeCase = [O|_],
-		%ecrire(O),
-		prendreDecision(O, L, Size, Objectif).%, 
-		%ecrire(L), ecrire(Size), ecrire(Objectif).
+		prendreDecision(O, L, Size, Objectif).
 
 /*
 			Phase 2 : le piège est tendus
+			cas gauche
 */		
 
 situations2(L, Pos, Size, Objectif) :- 
-
-		%ecrire('---'), ecrire(L), ecrire(Size),
 		
 		findall(
 			Case,
@@ -107,15 +103,56 @@ situations2(L, Pos, Size, Objectif) :-
 			ListeCase
 		),
 		not( ListeCase = [] ),
-		!,
-		Objectif is Pos - 1.
-		%ecrire('Situation 2'),
-		%ListeCase = [O|_],
-		%ecrire(O),
-		%prendreDecision(O, L, Size, Objectif).%, 
-		%ecrire(L), ecrire(Size), ecrire(Objectif).	
+		Objectif is Pos - 1,
+		( nth0(Objectif, L, 0) ; nth0(Objectif, L, 0) ),
+		!.
+
 		
+/*
+			Phase 2 : le piège est tendus
+			cas haut
+*/		
+
+situations2(L, Pos, Size, Objectif) :- 
 		
+		findall(
+			Case,
+			(
+					(
+						nth0(Case, L, 1) ;
+						nth0(Case, L, 0) ;
+						nth0(Case, L, 10)
+					),
+					
+					numCaseDroite(Case, Size, CDroite),
+					(
+						nth0(CDroite, L, 10) ;
+						nth0(CDroite, L, 0)
+					),
+					
+					numCaseHaut(CDroite, Size, CHautDroite),
+					nth0(CHautDroite, L, 3),
+					
+					numCaseBas(Case, Size, CBas),
+					nth0(CBas, L, 3),
+					/*
+					numCaseBas(CDroite, Size, CBasDroite),
+					(
+						nth0(CBasDroite, L, 0)  ;
+						nth0(CBasDroite, L, 11) ;
+						nth0(CBasDroite, L, 12)
+					),
+					*/
+					% monstre sur la même ligne a 1..7
+					presenceMonstre(L, CBas, 7)
+					
+			),
+			ListeCase
+		),
+		not( ListeCase = [] ),
+		Objectif is Pos - Size,
+		( nth0(Objectif, L, 0) ; nth0(Objectif, L, 0) ).
+
 		
 /*
 Prise de décision pour la phase 1

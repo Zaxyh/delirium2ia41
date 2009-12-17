@@ -75,6 +75,7 @@ trouverPlusProcheDiamant(+positionJoueur, +Map, +Size, -Destination)
 */
 
 trouverPlusProcheDiamant(PosPlayer, Ldepart, Size, D) :- 
+		%ecrire(Size),
 
 	  suppressionDiamantsInnaccessible(Ldepart, PosPlayer, Size, L),
 
@@ -228,6 +229,17 @@ move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :-
 		pccDestination(P, Goal, L, Size, D),
 		dir( D, Dx, Dy ), !.		
 /* Fin situation 2 */	
+		
+		
+/*
+	Si size devient trop importante tentative
+	de mouvement aléatoire
+*/
+move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- 
+		Size > 18,
+		%D is random(4),
+		dir( 1, Dx, Dy ), !.
+		
 		
 move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- 
 		situations(L, Pos, Size, Direction),
