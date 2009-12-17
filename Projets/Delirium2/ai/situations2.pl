@@ -18,7 +18,7 @@ presenceMonstre(L, I, P) :-
 /*
 			Phase 1 : le monstre se ballade tranquille
 */
-situations2(L, Pos, Size, Objectif) :- 
+situations2(L, _, Size, Objectif) :- 
 
 		%ecrire('---'), ecrire(L), ecrire(Size),
 		
@@ -159,7 +159,7 @@ Prise de décision pour la phase 1
 */		
 
 % se placer sur la case Objectif
-prendreDecision(Objectif, L, Size, Objectif) :-
+prendreDecision(Objectif, L, _, Objectif) :-
 		( nth0(Objectif, L, 0) ; nth0(Objectif, L, 1) ),
 		!.
 
@@ -174,7 +174,7 @@ prendreDecision(Objectif, L, Size, Objectif) :-
 
 	
 % Monstre en position : on se met sous le cailloux
-prendreDecision(Objectif, L, Size, Goal) :-
+prendreDecision(Objectif, _, _, Goal) :-
 		Goal is Objectif + 1,
 		!.
 
