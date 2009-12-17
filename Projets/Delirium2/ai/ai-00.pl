@@ -214,12 +214,21 @@ trouverOuAller(L, Pos, Size, Direction, CanGotoExit) :-
   * VPx et VPy représente le périmètre de vue actuel utilisé pour générer L
   * NewVPx et NewVPy représente le nouveau périmètre de vue du mineur
 */
-/*
+
+
+/* Situation 2 */
 move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- 
-		situations2(L, Pos, Size, Goal),
-		pccDestination(Pos, Goal, L, Size, D),
-		dir( D, Dx, Dy ), !.
-*/
+		nth0(P, L, 10),
+		situations2(L, P, Size, P),
+		dir( 4, Dx, Dy ), !.
+
+move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- 
+		nth0(P, L, 10),
+		situations2(L, P, Size, Goal),
+		pccDestination(P, Goal, L, Size, D),
+		dir( D, Dx, Dy ), !.		
+/* Fin situation 2 */	
+		
 move( L, X, Y, Pos, Size, CanGotoExit, Dx, Dy, _, _, -1, _ ) :- 
 		situations(L, Pos, Size, Direction),
 		dir( Direction, Dx, Dy ), !.

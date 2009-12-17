@@ -1,0 +1,33 @@
+<Map Name="foo" Width="7" Height="7">
+<Data>
+"Avatar1, , ,Stone, , , "
+" , ,.,.,.,.,."
+" , ,Stone, , ,M1, "
+"StW1,StW1,StW1,StW1,StW1,StW1,StW1"
+" , , , , , , "
+" , , , , , , "
+" , , , , , ,Exit"
+</Data>
+
+<Infos GameDifficulty="Easy">
+<Goals Player="1" Time="80">
+  <Goal Gather="0" Item="Diam" Points="10" />
+</Goals>
+<Gravity Direction="0,1" />
+ </Infos>
+
+<Infos GameDifficulty="Medium">
+ <Goals Player="1" Time="80">
+	<Goal Gather="0" Item="Diam" Points="10" />
+ </Goals>
+ <Gravity Direction="0,1" />
+</Infos>
+
+<Infos GameDifficulty="Hard">
+ <Goals Player="1" Time="80">
+	<Goal Gather="0" Item="Diam" Points="10" />
+ </Goals>
+ <Gravity Direction="0,1" />
+ </Infos>
+
+</Map>

@@ -1,6 +1,7 @@
 <Maps MapsPerLevel="21">
 
   <List>
+	<Map Name="smallmap12.xml" />
     <Map Name="defmap_L001_N001.xml" />
     <Map Name="defmap_L001_N002.xml" />
     <Map Name="defmap_L001_N003.xml" />
