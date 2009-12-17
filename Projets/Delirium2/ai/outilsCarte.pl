@@ -39,7 +39,7 @@ getElement([T|_], 0, Element) :- Element is T.
 getElement([T|R], Indice, Element) :- Indice > 0, I2 = Indice - 1, getElement(R, I2, Element).
 **/
 getElement(L, Indice, Element) :- length(L, Long), Indice > Long, Element = 9,!.
-getElement(L, Indice, Element) :- Indice < 0, Element = 9,!.
+getElement(_, Indice, Element) :- Indice < 0, Element = 9,!.
 getElement(L, Indice, Element) :- nth0(Indice, L, E), Element is E.
 
 /**
@@ -94,7 +94,7 @@ numCaseDroite(N, Size, Ret) :-
 * Remplace la case d'incide Indice (commence à 0) dans L par la valeur Valeur
 * retourne la nouvelle liste dans NewL
 **/
-replaceElement([T|R], 1, Valeur, [Valeur|R]).
+replaceElement([_|R], 1, Valeur, [Valeur|R]).
 replaceElement([T|R], Indice, Valeur, [T|R2]) :-
                   I2 is Indice - 1,
                   replaceElement(R, I2, Valeur, R2),!.
@@ -111,7 +111,7 @@ replaceAll(L, I, L2, V) :-
               replaceAll2(L, I3, L2, V),!.
 replaceAll2(L, [], L, _):-!.
 replaceAll2([], _, [], _):-!.
-replaceAll2([T|R], [0|RI], [V|R2], V) :-
+replaceAll2([_|R], [0|RI], [V|R2], V) :-
                   maplist(plus(-1), RI, I2),
                   replaceAll2(R, I2, R2, V),!.
 replaceAll2([T|R], I, [T|R2], V) :-
@@ -135,11 +135,11 @@ retourneElementFromTo(L, D, D, L2) :-
 retourneElementFromTo(L, D, A, L2) :-
         retourneElementFromTo2(L, D, A, L2),!.
 
-retourneElementFromTo2([T|R], 0, 0, [T]) :- !.
+retourneElementFromTo2([T|_], 0, 0, [T]) :- !.
 retourneElementFromTo2([T|R], 0, A, [T|R2]) :-
                              A2 is A - 1,
                              retourneElementFromTo2(R, 0, A2, R2),!.
-retourneElementFromTo2([T|R], D, A, L2) :-
+retourneElementFromTo2([_|R], D, A, L2) :-
                    D2 is D-1,
                    A2 is A-1,
                    retourneElementFromTo2(R, D2, A2, L2),!.
@@ -150,7 +150,7 @@ Retourne L Sous forme de liste de lignes
 nPremiersTermes(_, 0, []) :- !.
 nPremiersTermes([T|R], N, [T|R2]) :- N2 is N-1, nPremiersTermes(R, N2, R2).
 supprimerNPremiers(L, 0, L) :- !.
-supprimerNPremiers([T|R], N, R2) :- N2 is N-1, supprimerNPremiers(R, N2, R2).
+supprimerNPremiers([_|R], N, R2) :- N2 is N-1, supprimerNPremiers(R, N2, R2).
 
 getLignes([], _, []) :- !.
 getLignes(L, Size, [T|R2]) :-
