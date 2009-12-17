@@ -4,9 +4,9 @@
 * Retourne l'indice du monstre présent dans le champs de vision
 * @profil : getIndiceMonstre(+L, +Size, -Indice)
 **/
-getIndiceMonstre(L, Size, Indice) :- 
+getIndiceMonstre(L, _, Indice) :- 
 	nth0(Indice, L, 11),!.
-getIndiceMonstre(L, Size, Indice) :- 
+getIndiceMonstre(L, _, Indice) :- 
 	nth0(Indice, L, 12),!.
 	
 /**
@@ -47,10 +47,10 @@ entourerMonstres(L, Size, L2) :-
 /**
 * Empeche de remplacer les élements du décors (autour du monstre) non accecibles par un mur
 **/
-verifierIndices(L, [], []).
+verifierIndices(_, [], []).
 verifierIndices(L, [T|R], [T|R2]) :- 
 	caseAccessible(L, T), verifierIndices(L, R, R2),!.
-verifierIndices(L, [T|R], [-1|R2]) :- 
+verifierIndices(L, [_|R], [-1|R2]) :- 
 	verifierIndices(L, R, R2), !.
 
 /**
@@ -62,26 +62,29 @@ verifierIndices(L, [T|R], [-1|R2]) :-
 * C3 => PosMineur + 1
 * C4 => PosMineur + Size
 **/
-verifierIndicesC1(L, [H1,H2,H3,H4,H5,H6,H7,H8,C1,C2,C3,C4], R, Size) :- 
+verifierIndicesC1(L, [_,H2,H3,H4,H5,H6,H7,H8,C1,C2,C3,C4], R, _) :- 
 	not(caseAccessible(L, C1)),
 	R = [-1,H2,H3,H4,H5,H6,H7,H8,C1,C2,C3,C4],!.
+
+verifierIndicesC1(_, L2, L2, _).
 	
-verifierIndicesC2(L, [H1,H2,H3,H4,H5,H6,H7,H8,C1,C2,C3,C4], R, Size) :- 
+verifierIndicesC2(L, [H1,H2,H3,_,H5,H6,H7,H8,C1,C2,C3,C4], R, _) :- 
 	not(caseAccessible(L, C2)),
 	R = [H1,H2,H3,-1,H5,H6,H7,H8,C1,C2,C3,C4],!.
+
+verifierIndicesC2(_, L2, L2, _).	
 	
-verifierIndicesC3(L, [H1,H2,H3,H4,H5,H6,H7,H8,C1,C2,C3,C4], R, Size) :- 
+verifierIndicesC3(L, [H1,H2,H3,H4,_,H6,H7,H8,C1,C2,C3,C4], R, _) :- 
 	not(caseAccessible(L, C3)),
 	R = [H1,H2,H3,H4,-1,H6,H7,H8,C1,C2,C3,C4],!.
-	
-verifierIndicesC4(L, [H1,H2,H3,H4,H5,H6,H7,H8,C1,C2,C3,C4], R, Size) :- 
+
+verifierIndicesC3(_, L2, L2, _).	
+
+verifierIndicesC4(L, [H1,H2,H3,H4,H5,H6,H7,_,C1,C2,C3,C4], R, _) :- 
 	not(caseAccessible(L, C4)),
 	R = [H1,H2,H3,H4,H5,H6,H7,-1,C1,C2,C3,C4],!.
 	
-verifierIndicesC1(L, L2, L2, Size).
-verifierIndicesC2(L, L2, L2, Size).
-verifierIndicesC3(L, L2, L2, Size).
-verifierIndicesC4(L, L2, L2, Size).
+verifierIndicesC4(_, L2, L2, _).
 	
 	
 /**
@@ -90,4 +93,4 @@ verifierIndicesC4(L, L2, L2, Size).
 **/	
 eviterMonstre(L, Size, L2) :- 
 	entourerMonstres(L, Size, L2),!.
-eviterMonstre(L, Size, L) :- !.
+eviterMonstre(L, _, L) :- !.
