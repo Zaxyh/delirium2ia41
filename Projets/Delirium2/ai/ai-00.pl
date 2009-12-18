@@ -221,7 +221,8 @@ trouverOuAller(L, Pos, Size, Direction, CanGotoExit) :-
 
 move( L, _, _, _, Size, _, Dx, Dy, _, _, -1, _ ) :- 
 		nth0(P, L, 10),
-		situations2(L, P, Size, P),
+		situations2(L, P, Size, Z),
+		P = Z,
 		dir( 4, Dx, Dy ), !.
 
 move( L, _, _, _, Size, _, Dx, Dy, _, _, -1, _ ) :- 

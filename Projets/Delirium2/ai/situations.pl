@@ -1,6 +1,5 @@
 :- module(situations, [
-					situations/4,
-					situation_monstreMur/4
+					situations/4
 					]).
 
 /**
@@ -34,17 +33,17 @@ situation1(L, Pos, Size, Direction) :-
 
         trouverDirectionSituation1(L, Pos, Size, Direction),!.
         
-trouverDirectionSituation1(L, Pos, Size, Direction) :- 
+trouverDirectionSituation1(L, Pos, _, Direction) :- 
         Droite1 is Pos + 1,
         Droite2 is Pos + 2,
         Gauche1 is Pos - 1,
         Gauche2 is Pos - 2,
         trouverDirectionSituation1E2(L, Droite1, Droite2, Gauche1, Gauche2, Direction),!.
-trouverDirectionSituation1E2(L, D1, D2, G1, G2, Direction) :- 
+trouverDirectionSituation1E2(L, D1, D2, _, _, Direction) :- 
         caseAccessible(L, D1),
         caseAccessible(L, D2),
         Direction = 1,!.
-trouverDirectionSituation1E2(L, D1, D2, G1, G2, Direction) :- 
+trouverDirectionSituation1E2(L, _, _, G1, G2, Direction) :- 
         caseAccessible(L, G1),
         caseAccessible(L, G2),
         Direction = 0,!.
@@ -97,7 +96,6 @@ situation_rocher(L, Pos, Size, Direction) :-
 	getElement(L, CaseVide, EV), EV = 0,
 	H is Pos - Size,
 	G is Pos - 1,
-	D is Pos + 1,
 	choisirDirRocher(L, H, G, 0, Direction),!.
 	
 situation_rocher(L, Pos, Size, Direction) :- 
@@ -108,41 +106,14 @@ situation_rocher(L, Pos, Size, Direction) :-
 	getElement(L, CaseVide, EV), EV = 0,
 	H is Pos - Size,
 	G is Pos - 1,
-	D is Pos + 1,
 	choisirDirRocher(L, H, G, 0, Direction),!.
 	
-choisirDirectionRocher(L, H, G, D, 1) :- 	
+choisirDirectionRocher(L, _, _, D, 1) :- 	
 	caseAccessibleOuDiamant(L, D),!.
-choisirDirectionRocher(L, H, G, D, 3) :- 
-	caseAccessibleOuDiamant(L, B),!.
-choisirDirectionRocher(L, H, G, D, 0) :- 
+choisirDirectionRocher(L, _, _, _, 3) :- 
+	caseAccessibleOuDiamant(L, _),!.
+choisirDirectionRocher(L, _, G, _, 0) :- 
 	caseAccessibleOuDiamant(L, G),!.
-choisirDirectionRocher(L, H, G, D, 2) :- 
+choisirDirectionRocher(L, H, _, _, 2) :- 
 	caseAccessibleOuDiamant(L, H),!.
 	
-/**
-Situation 3 : Faire exploser le mur en tuant le monstre
-par contre cette fonction modifie L
-Il faut avoir un monstre dans le champs de vision,
-deux stone bien placé et un bou d'herbe
-**/
-situation_monstreMur(L, Pos, Size, NewL) :- 
-	
-	findall(Situation,
-		(
-			nth0(IMur, L, 4),
-			IndiceBloc is IMur - Size,
-			IndiceVide is IMur - Size + 1,
-			IndiceHerbe is IMur - Size*2 + 1,
-			IndiceBlocTueur is IMur - 3*Size + 1,
-			IndiceDiamantAPlacer is Mur - 2*Size,
-			getElement(L, IndiceBloc, EBloc), EBloc = 3,
-			getElement(L, IndiceVide, EVide), EVide = 0,
-			getElement(L, IndiceHerbe, EHerbe), EHerbe = 1,
-			getElement(L, IndiceDiamantAPlacer, EDiamantAPlacer = 1,
-			getElement(L, IndiceBlocTueur, EBlocTueur), EBlocTueur = 3,
-			Situation = IndiceBlocDiamantAPlacer
-		),
-		SituationTab),
-		
-		ecrireFile(SituationTab, 'montabmonstre.txt'),!.
