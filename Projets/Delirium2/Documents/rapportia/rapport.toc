@@ -1,0 +1,21 @@
+\select@language {french}
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}Sp\IeC {\'e}cifications}{2}
+\contentsline {section}{\numberline {3}R\IeC {\'e}alisation}{4}
+\contentsline {subsection}{\numberline {3.1}Recherche du plus court chemin : Algorithme A*}{4}
+\contentsline {subsection}{\numberline {3.2}Strat\IeC {\'e}gie de recherche du plus proche diamant}{4}
+\contentsline {subsubsection}{\numberline {3.2.1}Situation simple}{4}
+\contentsline {subsubsection}{\numberline {3.2.2}Situation plus complexe}{5}
+\contentsline {subsection}{\numberline {3.3}D\IeC {\'e}placement de rochers}{6}
+\contentsline {subsection}{\numberline {3.4}Strat\IeC {\'e}gie mise en place pour \IeC {\'e}viter un monstre}{8}
+\contentsline {subsubsection}{\numberline {3.4.1}Cas g\IeC {\'e}n\IeC {\'e}ral}{8}
+\contentsline {subsubsection}{\numberline {3.4.2}Cas plus complexe}{8}
+\contentsline {subsection}{\numberline {3.5}Situation particuli\IeC {\`e}re 1 : Dimant pi\IeC {\'e}g\IeC {\'e} par un monstre}{9}
+\contentsline {subsubsection}{\numberline {3.5.1}Aper\IeC {\c c}u de la situation}{9}
+\contentsline {subsubsection}{\numberline {3.5.2}R\IeC {\'e}solution de la situation}{9}
+\contentsline {subsection}{\numberline {3.6}Situation particuli\IeC {\`e}re 2 : Attaque des montres}{10}
+\contentsline {subsubsection}{\numberline {3.6.1}Phase 1 : rep\IeC {\'e}rer la situation}{10}
+\contentsline {subsubsection}{\numberline {3.6.2}Phase 2 : placement sous le rocher}{11}
+\contentsline {subsubsection}{\numberline {3.6.3}Phase 3 : D\IeC {\'e}clenchement du pi\IeC {\`e}ge}{11}
+\contentsline {subsection}{\numberline {3.7}EXTRA : Editeur de carte Html/JavaScript}{12}
+\contentsline {section}{\numberline {4}Conclusion}{13}
