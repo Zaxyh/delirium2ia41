@@ -1,0 +1,82 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage [utf8] {inputenc}
+\usepackage [T1] {fontenc}
+\usepackage [french b] {babel}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}	% pour la référence à la derniere page (numerotation)
+
+\usepackage{graphicx}
+
+\usepackage{lmodern}
+
+% package geometry pour la mise en page 
+\usepackage{geometry} 
+\parskip 6pt %espace entre les paragraphes, tres util en mode article !
+\geometry{height=24cm,width=16cm}
+
+\usepackage{color}
+\usepackage{xcolor}
+
+\usepackage{listings}
+% style de mise en page des codes sources
+
+\definecolor{commentaires}{gray}{0.5}
+\definecolor{couleur_fonds_codes}{rgb}{0.8,0.8,0.9}
+
+\lstset{
+basicstyle=\small,
+keywordstyle=\bf \color{blue},
+%identifierstyle=\underline,
+commentstyle=\color{commentaires},
+stringstyle=\color{red},
+showstringspaces=false,
+frameround=tttt,	% bords arrondis, t=arrondie, f=normal
+frame=tblr,			% bordures
+backgroundcolor=\color{couleur_fonds_codes},
+breaklines=true,
+breakatwhitespace=true,
+tabsize=2,
+extendedchars=true,
+%numbers=left,
+%stepnumber=1,
+%numberstyle=\tiny,
+%numbersep=10pt
+}
+ 
+
+
+
+\title{IA41 - Delirium 2}
+\author{
+\textsc{Bastien CRAMILLET}
+\and
+\textsc{Stéphane GENET}
+\and
+\textsc{Thomas KRAUSE}
+\and
+\textsc{Xavier MICHEL}
+}
+\date{\today}
+
+
+% En tete et pieds de pages
+
+\makeatletter	% pour utiliser les variables tel que le titre : \@title
+
+\pagestyle{fancy}  	%définition du style d'en tête et de pied de page
+\fancyhf{}			%permet de vider les en-têtes et pieds de page par défaut de LaTeX afin de les personnaliser
+\fancyhead[C]{\it IA41 - Delirium 2}
+\fancyfoot[L]{\leftmark}
+\fancyfoot[R]{\thepage/\pageref{LastPage}}
+\renewcommand{\footrulewidth}{2pt}		    %épaisseur de la ligne qui sépare le corps du texte et le pied de page
+
+\makeatother
+
+
+\begin{document}
+
+	\section{Introduction}
+	
+Dans le cadre de notre UV IA41 à l'UTBM, nous devions réaliser un projet de fin de semestre. Le choix du sujet s

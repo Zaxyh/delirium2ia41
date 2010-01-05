@@ -339,27 +339,21 @@ Le travail que nous avons r\'ealis\'e peut tout \`a faire \^etre am\'elior\'e, n
 \subsection{ai-00.pl}
 \lstinputlisting[language=prolog]{ai-00.pl}
 
-\newpage
 \subsection{eviterMonstre.pl}
 \lstinputlisting[language=prolog]{eviterMonstre.pl}
 
-\newpage
 \subsection{outilsCarte.pl}
 \lstinputlisting[language=prolog]{outilsCarte.pl}
 
-\newpage
 \subsection{plusCourtChemin.pl}
 \lstinputlisting[language=prolog]{plusCourtChemin.pl}
 
-\newpage
 \subsection{rochers.pl}
 \lstinputlisting[language=prolog]{rochers.pl}
 
-\newpage
 \subsection{situations.pl}
 \lstinputlisting[language=prolog]{situations.pl}
 
-\newpage
 \subsection{situations2.pl}
 \lstinputlisting[language=prolog]{situations2.pl}
 
