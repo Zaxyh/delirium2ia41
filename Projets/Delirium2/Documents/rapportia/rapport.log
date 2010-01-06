@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.11.5)  5 JAN 2010 20:59
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.11.5)  6 JAN 2010 20:35
 entering extended mode
  %&-line parsing enabled.
 **rapport.tex
@@ -325,9 +325,18 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 83.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 83.
- [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./rapport.toc
+<logo.jpg, id=1, 547.2947pt x 158.09062pt>
+File: logo.jpg Graphic file (type jpg)
+ <use logo.jpg>
+Overfull \hbox (14.22638pt too wide) in paragraph at lines 85--86
+ [] 
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.jpg>]
+(./rapport.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 5.
 )
@@ -338,84 +347,84 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 93.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 98.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2007/01/14 v1.3 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 92--94
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
 [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
 
-Overfull \hbox (10.40208pt too wide) in paragraph at lines 146--147
+Overfull \hbox (10.40208pt too wide) in paragraph at lines 151--152
 []\T1/lmr/m/n/10.95 Une so-lu-tion avait été mise en place en début de pro-jet,
  qui con-sis-tait à dévelop-per l'\T1/lmtt/m/n/10.95 Algorithme
  []
 
-<simple1.jpg, id=25, 202.50656pt x 203.25937pt>
+<simple1.jpg, id=26, 202.50656pt x 203.25937pt>
 File: simple1.jpg Graphic file (type jpg)
  <use simple1.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<simple2.jpg, id=26, 394.47375pt x 388.45125pt>
+<simple2.jpg, id=27, 394.47375pt x 388.45125pt>
 File: simple2.jpg Graphic file (type jpg)
  <use simple2.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6] <rochers1.jpg, id=30, 231.86626pt x 231.86626pt>
+[6] <rochers1.jpg, id=31, 231.86626pt x 231.86626pt>
 File: rochers1.jpg Graphic file (type jpg)
  <use rochers1.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<rochers2.jpg, id=31, 231.86626pt x 233.37187pt>
+<rochers2.jpg, id=32, 231.86626pt x 233.37187pt>
 File: rochers2.jpg Graphic file (type jpg)
  <use rochers2.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7 <./simple1.jpg> <./simple2.jpg>]
-<rochers3.jpg, id=36, 232.61906pt x 382.42876pt>
+<rochers3.jpg, id=37, 232.61906pt x 382.42876pt>
 File: rochers3.jpg Graphic file (type jpg)
  <use rochers3.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8 <./rochers1.jpg> <./rochers2.jpg>] [9 <./rochers3.jpg>]
-<monstre1.jpg, id=43, 345.29pt x 350.30875pt>
+<monstre1.jpg, id=44, 345.29pt x 350.30875pt>
 File: monstre1.jpg Graphic file (type jpg)
  <use monstre1.jpg>
-<monstre2.jpg, id=44, 345.29pt x 350.30875pt>
+<monstre2.jpg, id=45, 345.29pt x 350.30875pt>
 File: monstre2.jpg Graphic file (type jpg)
  <use monstre2.jpg>
-<situation1.jpg, id=45, 310.15875pt x 311.1625pt>
+<situation1.jpg, id=46, 310.15875pt x 311.1625pt>
 File: situation1.jpg Graphic file (type jpg)
  <use situation1.jpg>
 
@@ -424,40 +433,40 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [10
 
  <./monstre1.jpg> <./monstre2.jpg>]
-<situation12.jpg, id=49, 310.15875pt x 311.1625pt>
+<situation12.jpg, id=50, 310.15875pt x 311.1625pt>
 File: situation12.jpg Graphic file (type jpg)
  <use situation12.jpg>
-<situation111.jpg, id=50, 321.2pt x 320.19624pt>
+<situation111.jpg, id=51, 321.2pt x 320.19624pt>
 File: situation111.jpg Graphic file (type jpg)
  <use situation111.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11 <./situation1.jpg> <./situation12.jpg>]
-<situation2-1.jpg, id=54, 298.11375pt x 298.11375pt>
+<situation2-1.jpg, id=55, 298.11375pt x 298.11375pt>
 File: situation2-1.jpg Graphic file (type jpg)
  <use situation2-1.jpg>
-<situation2-2.jpg, id=55, 298.11375pt x 298.11375pt>
+<situation2-2.jpg, id=56, 298.11375pt x 298.11375pt>
 File: situation2-2.jpg Graphic file (type jpg)
  <use situation2-2.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12 <./situation111.jpg> <./situation2-1.jpg>]
-<situation2-3.jpg, id=59, 298.86656pt x 298.11375pt>
+<situation2-3.jpg, id=60, 298.86656pt x 298.11375pt>
 File: situation2-3.jpg Graphic file (type jpg)
  <use situation2-3.jpg>
-<situation2-4.jpg, id=60, 301.125pt x 298.86656pt>
+<situation2-4.jpg, id=61, 301.125pt x 298.86656pt>
 File: situation2-4.jpg Graphic file (type jpg)
  <use situation2-4.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [13 <./situation2-2.jpg> <./situation2-3.jpg>]
-<editeur.jpg, id=65, 1445.4pt x 903.375pt>
+<editeur.jpg, id=66, 1445.4pt x 903.375pt>
 File: editeur.jpg Graphic file (type jpg)
  <use editeur.jpg> [14 <./situation2-4.jpg> <./editeur.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
+Underfull \hbox (badness 10000) in paragraph at lines 333--334
 
  []
 
@@ -504,11 +513,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5012 strings out of 95086
- 64406 string characters out of 1183255
- 241741 words of memory out of 1500000
- 8071 multiletter control sequences out of 10000+50000
- 67921 words of font info for 51 fonts, out of 1200000 for 2000
+ 5019 strings out of 95086
+ 64484 string characters out of 1183255
+ 241855 words of memory out of 1500000
+ 8076 multiletter control sequences out of 10000+50000
+ 70954 words of font info for 52 fonts, out of 1200000 for 2000
  28 hyphenation exceptions out of 8191
  39i,12n,43p,1280b,1973s stack positions out of 5000i,500n,6000p,200000b,5000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
@@ -517,11 +526,12 @@ lcircle1.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/tex
 mf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmc
 sc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on rapport.pdf (41 pages, 1645917 bytes).
+></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on rapport.pdf (41 pages, 1705070 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
+ 197 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
