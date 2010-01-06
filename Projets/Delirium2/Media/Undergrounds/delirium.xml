@@ -1,0 +1,33 @@
+<Map Name="" Width="30" Height="7">
+<Data>
+".,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,."
+"StW1,StW1,StW1,.,.,StW1,StW1,StW1,.,StW1,.,.,Diam,.,StW1,StW1,.,.,Diam,.,StW1,.,StW1,.,StW1,StW1,StW1,Exit,StW1,."
+"StW1,M1, ,StW1,.,StW1,.,.,.,StW1,.,.,.,.,StW1,.,StW1,.,.,.,StW1,.,StW1,.,StW1,.,StW1,.,StW1,."
+"StW1, , ,StW1,.,StW1,Avatar1,.,.,StW1,.,.,StW1,.,StW1,StW1,.,.,StW1,.,StW1,.,StW1,.,StW1,.,StW1,.,StW1,."
+"StW1, , ,StW1,.,StW1,.,.,.,StW1,.,.,StW1,.,StW1,.,StW1,.,StW1,.,StW1,.,StW1,.,StW1,.,StW1,.,StW1,."
+"StW1,StW1,StW1,.,.,StW1,StW1,StW1,.,StW1,StW1,.,StW1,.,StW1,.,StW1,.,StW1,.,StW1,StW1,StW1,.,StW1,.,StW1,.,StW1,."
+".,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,."
+</Data>
+
+<Infos GameDifficulty="Easy">
+<Goals Player="1" Time="80">
+  <Goal Gather="2" Item="Diam" Points="10" />
+</Goals>
+<Gravity Direction="0,1" />
+ </Infos>
+
+<Infos GameDifficulty="Medium">
+ <Goals Player="1" Time="80">
+	<Goal Gather="2" Item="Diam" Points="10" />
+ </Goals>
+ <Gravity Direction="0,1" />
+</Infos>
+
+<Infos GameDifficulty="Hard">
+ <Goals Player="1" Time="80">
+	<Goal Gather="2" Item="Diam" Points="10" />
+ </Goals>
+ <Gravity Direction="0,1" />
+ </Infos>
+
+</Map>

@@ -1,6 +1,7 @@
 <Maps MapsPerLevel="21">
 
   <List>
+	<Map Name="delirium.xml" />
 	<Map Name="smallmap.xml" />	
 	<Map Name="smallmap2.xml" />	
 	<Map Name="smallmap3.xml" />	
