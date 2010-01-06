@@ -92,18 +92,18 @@ extendedchars=true,
 Dans le cadre de notre UV IA41 \`a l'UTBM, nous devions r\'ealiser un projet de fin de semestre. Le choix du sujet s'est port\'e sur la cr\'eation d'une intelligence artificielle pour un jeu vid\'eo. 
 Dans le cas pr\'esent, il s'agit du jeu \texttt{Delirium 2}. Dans ce jeu, le joueur dirige un mineur se d\'epla\c cant dans des galeries souterraines \`a la recherche de diamants. Sur son parcours le mineur doit \'eviter un certain nombre de pi\`eges, comme des monstres ou des rochers pouvant lui tomber sur la t\^ete. Pour chaque souterrain, le joueur doit ramasser un certain nombre de diamant sur la carte pour ensuite se rendre \`a la sortie du niveau et passer au souterrain suivant.\\
 
-Le but du projet est donc de rendre le mineur compl\`etement autonome, ce dernier devant trouver seul son chemin pour r\'ecup\'erer les diamants, \'eviter les pi\`eges et les ennemies qui l'entour puis rejoindre la sortie.\\
+Le but du projet est donc de rendre le mineur compl\`etement autonome, ce dernier devant trouver seul son chemin pour r\'ecup\'erer les diamants, \'eviter les pi\`eges et les ennemis qui l'entourent puis rejoindre la sortie.\\
 
 Ainsi, toutes les situations devront \^etre \'etudi\'ees pour que le mineur r\'eponde intelligemment \`a celles-ci et fasse les choix les plus judicieux pour son \'evolution.\\
 
-Nous allons vous pr\'esenter, \`a travers ce rapport, les diff\'erents probl\`emes que peut rencontrer le mineur et pr\'esenter les solutions que nous avons impl\'ement\'ees. Mais dans un premier temps, il est n\'ec\'essaire de constituer une sp\'ecification d\'etaill\'ee.
+Nous allons vous pr\'esenter, \`a travers ce rapport, les diff\'erents probl\`emes que peut rencontrer le mineur et pr\'esenter les solutions que nous avons impl\'ement\'ees. Mais dans un premier temps, il est n\'ecessaire de constituer une sp\'ecification d\'etaill\'ee.
 	
 	\newpage
 	\section{Sp\'ecifications}
 	
-La r\'ealisation de la sp\'ecification s'est organis\'ee par l'interm\'ediaire de r\'eunions. Ces rencontres ont permis d'\'etudier les principes \'el\'ementaires requis pour une bonne \'evolution du mineur dans les souterrains. Ils nous on \'egalement permit de diviser notre travail en plusieurs partie. Chacune ayant pour r\^ole de r\'epondre \`a un probl\`eme particulier.\\
+La r\'ealisation de la sp\'ecification s'est organis\'ee par l'interm\'ediaire de r\'eunions. Ces rencontres ont permis d'\'etudier les principes \'el\'ementaires requis pour une bonne \'evolution du mineur dans les souterrains. Ils nous ont permit de diviser notre travail en plusieurs parties. Chacune ayant pour r\^ole de r\'epondre \`a un probl\`eme particulier.\\
 
-Il est \'evident que pour r\'ealiser ce projet il a fallu communiquer en dehors de ces s\'eances. Un serveur de gestion de version \`a  \'et\'e mis en place pour y d\'epos\'e notre travail et une chaine de courriel \`a \'et\'e utilis\'e pour la communication sur les diff\'erents \'etats du projet.
+Il est \'evident que pour r\'ealiser ce projet il a fallu communiquer en dehors de ces s\'eances. Un serveur de gestion de version a  \'et\'e mis en place pour y d\'eposer notre travail et une chaine de courriels a \'et\'e utilis\'ee pour la communication sur les diff\'erents \'etats du projet.
 
 Comme pr\'ecis\'e en introduction, le jeu D\'elirium 2 met en situation un mineur devant \'evoluer dans des souterrains et r\'epondant \`a certaines situations. Apr\`es analyse des diff\'erents niveaux d\'eja impl\'ement\'es dans le jeu de base, voici ce qui ressort de notre phase de sp\'ecifications :\\
 		
@@ -111,7 +111,7 @@ Comme pr\'ecis\'e en introduction, le jeu D\'elirium 2 met en situation un mineu
 			\item Le mineur peut se d\'eplacer dans 4 directions primaires (vers le haut, vers le bas, vers la droite, vers la gauche)
 			\item Son d\'eplacement d'une case A \`a une case B n'est possible que si la case B est de type "vide" ou "herbe"
 			\item Son d\'eplacement d'une case A \`a une case B est \'egalement possible si la case B est un rocher pouvant \^etre d\'eplac\'e.
-			\item Une s\'erie de rochers (allant de 1 \`a N rochers) peut \^etre d\'eplac\'ee si la case terminant la s\'erie de rocher et \'etant \`a l'oppos\'ee du mineur est de type "vide"
+			\item Une s\'erie de rochers (allant de 1 \`a N rochers) peut \^etre d\'eplac\'ee si la case terminant la s\'erie de rochers et \'etant \`a l'oppos\'ee du mineur est de type "vide"
 			\item Une s\'erie de rochers peut \^etre d\'eplac\'ee vers la droite, vers la gauche ou vers le haut si elle r\'epond aux points pr\'ec\'edents.
 			\item Son d\'eplacement doit \'egalement prendre en compte des dangers pouvant provenir du haut.
 			\item Un rocher peut tomber de sa position initiale si le mineur d\'eplace une s\'erie de rochers inf\'erieure, r\'ecup\`ere un diamant ou creuse une case "herbe" qui soutenait le rocher.
@@ -123,18 +123,18 @@ Comme pr\'ecis\'e en introduction, le jeu D\'elirium 2 met en situation un mineu
 			\item Un monstre ne peut se d\'eplacer que d'une case "vide" \`a une case "vide".
 			\item Certains monstre prot\`egent des diamants. Le mineur doit dans certaines situations trouver une solution pour permettre de d\'ebloquer le diamant sans se faire attrapper par le monstre prot\'egeant le diamant.
 			\item Les monstres peuvent \^etre tu\'es si un rocher leur tombe sur la t\^ete.
-			\item Les souterrains peuvent contenir plusieurs types de "mur" infranchissable par les monstre et le mineur. Dans cet enssemble de mur existe des murs pouvant \^etre d\'etruits en faisant exploser un monstre \`a cot\'e un certain nombre de fois (allant de 1 fois \`a 4 fois suivant le type de mur).
+			\item Les souterrains peuvent contenir plusieurs types de "murs" infranchissables par les monstres et le mineur. Dans cet enssemble de murs existe des murs pouvant \^etre d\'etruits en faisant exploser un monstre \`a cot\'e un certain nombre de fois (allant de 1 fois \`a 4 fois suivant le type de mur).
 			\item Certaines situations contraignent le mineur \`a devoir provoquer la destruction d'un mur pour pouvoir d\'ebloquer un passage vers une autre partie du souterrain.
 			\item Une carte de souterrain est d\'efinie par un fichier XML.
 			\item Afin de terminer un niveau (ou souterrain), le mineur doit r\'ecolter un nombre de diamant minimum. Ce param\`etre est d\'efinit dans le code XML de la carte.
 			\item Le mineur est \'egalement contraint par un temps de jeu qu'il ne doit pas d\'epasser pour chaque niveau. Ce param\`etre est \'egalement d\'efinit dans le code XML de la carte.
 			\item Le mineur doit pouvoir trouver le diamant le plus proche dans son p\'erim\`etre de vue.
 			\item Le mineur doit pouvoir trouver le chemin le plus rapide d'un point A \`a un point B. En prenant en compte les \'elements cit\'es pr\'ec\'edement.
-			\item Le mineur doit pouvoir abandonner un diamant qui ne sera jamais accessible. (Diamant entour\'e de mur par exemple.).
-			\item Le mineur doit se concentrer sur la sortie d\`es que le nombre de diamants r\'ecolt\'es est \'egale au nombre de diamants n\'ec\'essaire pour terminer le niveau.
+			\item Le mineur doit pouvoir abandonner un diamant qui ne sera jamais accessible. (Diamant entour\'e de murs par exemple.).
+			\item Le mineur doit se concentrer sur la sortie d\`es que le nombre de diamants r\'ecolt\'es est \'egal au nombre de diamants n\'ecessaire pour terminer le niveau.
 		\end{enumerate}
 		
-L'intelligence artificielle devra \^etre d\'evelopp\'ee gr\^ace au langage Prolog. Il sera \'egalement pr\'ef\'erable de s\'eparer les diff\'erentes groupes de pr\'edicats de m\^eme famille dans des modules prolog. Nous d\'etaillons nos modules dans la partie r\'ealisation de notre rapport.
+L'intelligence artificielle devra \^etre d\'evelopp\'ee gr\^ace au langage Prolog. Il sera \'egalement pr\'ef\'erable de s\'eparer les diff\'erents groupes de pr\'edicats de m\^eme famille dans des modules prolog. Nous d\'etaillerons nos modules dans la partie r\'ealisation de notre rapport.
 	
 	\newpage
 	\section{R\'ealisation}
@@ -325,7 +325,7 @@ D\`es le d\'ebut du projet, il nous \'etait difficile de concevoir des cartes r\
 	\newpage
 	\section{Conclusion}
 	
-Lors de ce projet de plusieurs mois, nous devions r\'ealisation l'intelligence artificielle du h\'ero d'un jeu vid\'eo, le permettant de se d\'eplacer, de r\'ecup\'erer ses objectifs de mission, \`a savoir, des diamants, ainsi qu'\'eviter les ennemis qui le pourchassent et les pi\`eges tendus par le d\'ecor et ses rochers. Aujourd'hui, notre h\'ero est tout \`a fait capable de se d\'ebrouiller dans ce genre d'environnement, en prenant la direction des diamants et en \'evitant ou \'eliminant les ennemis, se servant m\^eme de l'environnement pour s'en sortir indemne. Les objectifs que nous nous \'etions pos\'es ont donc \'et\'e remplis.\\
+Lors de ce projet de plusieurs mois, nous devions r\'ealiser l'intelligence artificielle du h\'ero d'un jeu vid\'eo, le permettant de se d\'eplacer, de r\'ecup\'erer ses objectifs de mission, \`a savoir, des diamants, ainsi qu'\'eviter les ennemis qui le pourchassent et les pi\`eges tendus par le d\'ecor et ses rochers. Aujourd'hui, notre h\'ero est tout \`a fait capable de se d\'ebrouiller dans ce genre d'environnement, en prenant la direction des diamants et en \'evitant ou \'eliminant les ennemis, se servant m\^eme de l'environnement pour s'en sortir indemne. Les objectifs que nous nous \'etions pos\'es ont donc \'et\'e remplis.\\
 
 De nombreuses difficult\'es ont \'et\'e rencontr\'ees, comme pour l'impl\'ementation de l'algorithme A* qui est quelque peu d\'elicat \`a programmer ou les situations d'esquive et d'\'elimination des ennemis. Travailler avec un langage r\'ecursif n'est pas non plus chose ais\'e au d\'ebut.
 
